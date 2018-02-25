@@ -4,7 +4,7 @@ class Footer extends Component {
 	
 	render() {
 
-		const version = 'Mortal Empires v1.3.0'
+		const version = 'Mortal Empires v1.3.1'
 
 		return (
 			<footer className="footer">
