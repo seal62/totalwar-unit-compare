@@ -1,0 +1,48 @@
+section.compare-container {
+	width: 90%;
+	margin: 0 auto;
+    font-size: 90%;
+}
+
+.compare-col-A,
+.compare-col-B {
+	width: 49%;
+	float: left;
+}
+.compare-col-A {
+    margin-right: 2%;
+}
+
+.compare-col-A .compare-controls,
+.compare-col-B .compare-controls {
+    margin-bottom: 20px;
+}
+
+.compare-tag {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+    float:right;
+}
+
+.greater {
+	background-color: green
+}
+.less {
+	background-color: red;
+}
+
+@media (min-width: 768px) {
+    section.compare-container {
+        font-size: 100%;
+    }
+}

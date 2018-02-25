@@ -1,0 +1,5001 @@
+{
+	"1": {
+		"name": "Foe-Seeker",
+		"atype": "Character ability",
+		"recharge": "45",
+		"type": "Augment",
+		"duration": "25 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+24% Speed",
+			"green2": "+18% Vigour"
+		},
+		"desc": "There are those who wish nothing more than to be at the heart of battle, seeking foes to vanquish."
+	},
+	"2": {
+		"name": "Deadly Onslaught",
+		"atype": "Character ability",
+		"recharge": "90",
+		"type": "Augment",
+		"duration": "29 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+36% Charge Bonus",
+			"green2": "+20% Armour-Piercing Damage",
+			"green3": "+20% Weapon Damange"
+		},
+		"desc": "Such is the power and ferocity of the champion, that those who stand in his way will falter against the warrior's impact."
+	},
+	"3": {
+		"name": "Sacred Spawning of Xhotl",
+		"atype": "Lord ability",
+		"recharge": "45",
+		"type": "Augment",
+		"duration": "22 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+22% Physical Resistance",
+			"green2": "+18% Vigour"
+		},
+		"desc": "Kroq-Gar arises once more, born anew to take revenge upon those who stand against him."
+	},
+	"4": {
+		"name": "Swiftness of Itzl",
+		"atype": "Character ability",
+		"recharge": "90",
+		"type": "Explosion",
+		"duration": "35 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Explosion does not affect friendly troops",
+			"green2": "Allows chance to escape melee",
+			"red1": "Poor against large combatants",
+			"green3": "+36% Speed"
+		},
+		"desc": "The speed and agility of the great three-horned ruler is sometimes bestowed upon his subjects."
+	},
+	"5": {
+		"name": "Stand Your Ground!",
+		"atype": "Character ability",
+		"recharge": "90",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"duration": "15 seconds",
+		"target": "Self. Affects allies in range",
+		"range": "40m",
+		"effects": {
+			"green1": "+27 Melee Defence",
+			"green2": "+16 Leadership"
+		},
+		"desc": "On the battlefield, the craven's path is an easy one, but for those champions that choose to stand? Fortune will surely favour them and their troops."
+	},
+	"6": {
+		"name": "Greater Arcane Conduit",
+		"atype": "Character ability",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Improved power recharge rate",
+			"green2": "Great increase to power reserves"
+		},
+		"desc": "A strong mind is needed to channel the Winds of Magic. Those that have such a gift become arcane conduits - funnelling the magical tempests to their cause."
+	},
+	"7": {
+		"name": "Shield of the Old Ones",
+		"atype": "Character ability",
+		"recharge": "90",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "15 seconds",
+		"target": "Self, Ground, Ally. Affects allies in range",
+		"range": "150m",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+44% Magic Resistance",
+			"green2": "+8 Leadership"
+		},
+		"desc": "The resilience of the Old Ones is channelled into an energy barrier that protects its users from the full brunt of magical attacks against them."
+	},
+	"8": {
+		"name": "The Ruination of Cities",
+		"atype": "Lord ability",
+		"recharge": "135",
+		"uses-per-battle": "2",
+		"type": "Wind",
+		"duration": "7 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Three damaging rifts spreading outwards",
+			"green3": "Strong vs. multiple units",
+			"red1": "Random launch directions",
+			"red2": "Weak vs. a single combatant"
+		},
+		"desc": "The Lord unleashes a force of seismic power like no other, causing the tectonic plates themselves to shift and buckle at his behest."
+	},
+	"9": {
+		"name": "Slippery",
+		"atype": "Hero ability",
+		"recharge": "45",
+		"type": "Augment",
+		"duration": "27 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+27 Melee Defence",
+			"green2": "+24% Speed"
+		},
+		"desc": "Those who are 'slippery' cannot be cornered or pinned - they simply 'slip' away..."
+	},
+	"10": {
+		"name": "Blessing of the Ancients",
+		"atype": "Hero ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Unit is not in forest",
+		"effects": {
+			"green1": "Increase to power reserves",
+			"green2": "Improved power recharge rate"
+		},
+		"desc": "The magical power permeating the forests is bestowed upon those who defend it."
+	},
+	"11": {
+		"name": "Lamentation of Despair",
+		"atype": "Lord ability",
+		"recharge": "90",
+		"type": "Magic Missiles",
+		"target": "Enemy",
+		"range": "80m",
+		"projectile-range": "80m",
+		"effects": {
+			"green1": "Causes armour-piercing damage",
+			"green2": "Strong vs. a single unit",
+			"green3": "Good from a high angle",
+			"red1": "Weak vs. a single combatant",
+			"red2": "Strikes any combatants in its path"
+		},
+		"desc": "The vines and foliage manifest their rage, bursting forth to entangle and debilitate the foe."
+	},
+	"12": {
+		"name": "Sword of Daith",
+		"atype": "Weapon",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "135",
+		"duration": "17 seconds",
+		"target": "Around self. Affects enemies in range.",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant",
+			"red3": "-30 Armour"
+		},
+		"desc": "This blade, like Durthu himself, is steeped in millennia of bitterness and rage waiting to be unleashed."
+	},
+	"13": {
+		"name": "Call of the Woods",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range.",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+5 Melee Attack"
+		},
+		"desc": "The living embodiment of the forest; through them, their warriors feel a greater call to war."
+	},
+	"14": {
+		"name": "Scroll of Shielding",
+		"atype": "Item",
+		"type": "Ward Save",
+		"duration": "67 seconds",
+		"uses-per-battle": "1",
+		"target": "Self, Ally",
+		"range": "100m",
+		"effects": {
+			"green1": "+22% Damage Resistance"
+		},
+		"desc": "Upon the Scroll of Shielding is a crude drawing of a warrior's shield displaying an unknown crest of a kingdom long lost."
+	},
+	"15": {
+		"name": "Power Stone",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"uses-per-battle": "1",
+		"duration": "57 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Increase to power reserves",
+			"green2": "Improved power recharge rate"
+		},
+		"desc": "When a magic-user rubs a power stone, the artefact glows for a split second before dulling forever. However, in that moment, the Winds of Magic blow a tempest!"
+	},
+	"16": {
+		"name": "The Eye of Kurnous",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"typeDesc": "Only acts on targets when in area",
+		"target": "Self. Affects allies in range.",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "10% Missile Damage"
+		},
+		"desc": "Setting their eye upon the foe, the general imbues their troops with Kurnous' spirit and the will to see his enemies destroyed."
+	},
+	"17": {
+		"name": "Arrow of Kurnous",
+		"atype": "Hero ability",
+		"type": "Magic Missiles",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"target": "Enemy",
+		"range": "600m",
+		"projectile-range": "600m",
+		"effects": {
+			"green1": "Causes armour-piercing damage",
+			"green2": "Effective at long range",
+			"green3": "Good penetration"
+		},
+		"desc": "The God of the Hunt blesses this arrow so it can travel great distances with unwavering accuracy and terrifying power."
+	},
+	"18": {
+		"name": "Prey of Anath Raema",
+		"atype": "Character ability",
+		"type": "Hex",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "21 seconds",
+		"target": "Enemy",
+		"range": "150m",
+		"effects": {
+			"red1": "-22% Missile Resistance",
+			"red2": "Cannot move"
+		},
+		"desc": "By all means summon the bloodthirsty Goddess of the Hunt to assit you, but always make sure you thank her afterwards..."
+	},
+	"19": {
+		"name": "Banner of the Eternal Queen",
+		"atype": "Banner",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range.",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+4 Leadership",
+			"green2": "+6% Damage Resistance"
+		},
+		"desc": "Those who go to battle with the Everqueen's personally hand-woven banner do so proudly, and never waver."
+	},
+	"20": {
+		"name": "Potion of Speed",
+		"atype": "Item",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "40 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+18% Acceleration",
+			"green2": "+18% Charge Speed",
+			"green3": "+24% Speed",
+			"green4": "+18% Vigour"
+		},
+		"desc": "The blue liquid in this small bottle blesses the imbiber with a boost of preternatural speed."
+	},
+	"21": {
+		"name": "Call of the Woods",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range.",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+5 Melee Attack"
+		},
+		"desc": "The living embodiment of the forest; through them, their warriors feel a greater call to war."
+	},
+	"22": {
+		"name": "Banner of the Hunter King",
+		"atype": "Banner",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+5 Melee Attack",
+			"green2": "+8% Charge Bonus",
+			"green3": "Can Cause Fear"
+		},
+		"desc": "Though tattered and ancient, this banner causes forces to charge - in the name of the Hunt - before the main Elven host."
+	},
+	"23": {
+		"name": "Potion of Foolhardiness",
+		"atype": "Item",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "27 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+36% Charge Bonus",
+			"green2": "Unbreakable"
+		},
+		"desc": "Those that drink this tincture may well be fools, but they are bold fools at that!"
+	},
+	"24": {
+		"name": "Warrior Bane",
+		"atype": "Weapon",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range.",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-6% Weapon Damage"
+		},
+		"desc": "This unsettling weapon spreads a curse on all around, disabusing enemy Warriors of their martial skills."
+	},
+	"25": {
+		"name": "Opal Amulet",
+		"atype": "Item",
+		"type": "Ward Save",
+		"recharge": "45",
+		"duration": "22 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+22% Damage Resistance"
+		},
+		"desc": "The Opal Amulet can grant its wearer a life-saving second chance, but suffers a hairline fracture in its previously perfect surface as a result."
+	},
+	"26": {
+		"name": "The Other Trickster's Shard",
+		"atype": "Item",
+		"type": "Ward Save Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range.",
+		"effect-range": "55m",
+		"effects": {
+			"green1": "-22% Magic Resistance"
+		},
+		"desc": "A shard of blackest night said to be a prison for the partial essence of the Trickster himself. Any close to it may be undone by its troubling aura."
+	},
+	"27": {
+		"name": "Hawk's Talon",
+		"atype": "Weapon",
+		"type": "Bombardment",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "5 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Medium strike area",
+			"green3": "Strong vs. a single unit",
+			"green4": "Good against armour",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "Nature manifests at Orion's call, raining a flurry of arrows upon the enemy in defence of Athel Loren."
+	},
+	"28": {
+		"name": "Hounds of Orion",
+		"atype": "Lord ability",
+		"type": "Vortex",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "13 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Medium, randomly-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "Orion's wolves run with their Lord, defending his person with great savagery and scant regard for their own lives."
+	},
+	"29": {
+		"name": "Cloak of Isha",
+		"atype": "Item",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit Points greater than 20%",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"green2": "+44% Damage Resistance"
+		},
+		"desc": "This cloak, renewed annually by Ariel herself, is all Orion needs to protect himself."
+	},
+	"30": {
+		"name": "Horn of the Wild Hunt",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"recharge": "135",
+		"duration": "21 seconds",
+		"target": "Self. Affects allies in range.",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "+24% Speed",
+			"green2": "+36% Charge Bonus"
+		},
+		"desc": "When this ancient and revered relic is blown, all Elven forces are driven to the Hunt with a savage determination."
+	},
+	"31": {
+		"name": "Apocalyptic Vision",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "90",
+		"duration": "14 seconds",
+		"target": "Self. Affects allies in range.",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+16 Leadership",
+			"green2": "+26 Melee Attack"
+		},
+		"desc": "In fitful dreams, he sees the end. The world collapsing in on itself, leaving nothing but ashes and aberration."
+	},
+	"32": {
+		"name": "The Dark Mail",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range.",
+		"target-if": "Casting",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "The Dark Mail (32 seconds)",
+			"red2": "-27 Melee Defence",
+			"red3": "-30 Armour",
+			"red4": "-18% Vigour"
+		},
+		"desc": "This ancient suit of chainmail can counter the fanciful enchantments and magicks of enemy blades."
+	},
+	"33": {
+		"name": "Scourge",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "43 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+27 Melee Defence"
+		},
+		"imbued": "Poison! (10 seconds)",
+		"desc": "Scourge is a lethal whip, thirsty for blood and wrapped in the bitter curses of many generations of Bray-Shamans."
+	},
+	"34": {
+		"name": "Spirit-Essence of Chaos",
+		"atype": "Lord ability",
+		"type": "Direct Damage",
+		"uses-per-battle": "1",
+		"duration": "10 seconds",
+		"target": "Enemy",
+		"range": "60m",
+		"cannot-use-if": "Army is full",
+		"cannot-target-if": "Unit is Lord or Hero, Hit Points greater than 20%, Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Spawns a unit of Chaos Spawn",
+			"green2": "Causes severe damage to combatants",
+			"green3": "Good at defending spellcaster",
+			"red1": "Summoned units degrade over time"
+		},
+		"desc": "To summon the essence of Chaos is to unleash its Ruinous fury upon any and all who witness it."
+	},
+	"35": {
+		"name": "Call of Violence",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "45",
+		"duration": "10 seconds",
+		"target": "Self. Affects allies in range.",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+16 Leadership"
+		},
+		"desc": "We feel it. We all feel it. The pull to war. The tug of battle. The NEED to kill."
+	},
+	"36": {
+		"name": "Stave of Ruinous Corruption",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"uses-per-battle": "1",
+		"target": "Ground",
+		"range": "60m",
+		"cannot-use-if": "Army is full",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Good at defending spellcaster"
+		},
+		"desc": "Imbued with the quiddity of Ruin, Morghur's gnarled staff summons deadly Chaos Spawn to do his bidding on the battlefield."
+	},
+	"37": {
+		"name": "Something Wicked This Way Comes",
+		"atype": "Hero ability",
+		"type": "Hex (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range.",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-4 Leadership"
+		},
+		"desc": "The presence of the Dark Omen is an awful thing that saps the foe's will to fight on."
+	},
+	"38": {
+		"name": "Unholy Power",
+		"atype": "Hero ability",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Improved power recharge rate"
+		},
+		"desc": "Malagor has a dread agenda given unto him by the Dark Gods themselves."
+	},
+	"39": {
+		"name": "Arcane Conduit",
+		"atype": "Character ability",
+		"type": "Augment of the Winds",
+		"recharge": "90",
+		"duration": "40 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Improved power recharge rate",
+			"green2": "Increase to power reserves"
+		},
+		"desc": "A strong mind is needed to channel the Winds of Magic. Those that have such a gift become arcane conduits - funnelling the magical tempests to their cause."
+	},
+	"40": {
+		"name": "Icons of Vilification",
+		"atype": "Item",
+		"type": "Augment",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+12 Leadership"
+		},
+		"desc": "These cursed items are all manner of blasphemy, from skulls of dead priests to hallowed, torn branches of Loren."
+	},
+	"41": {
+		"name": "Blood Lust",
+		"atype": "Character ability",
+		"type": "Augment",
+		"recharge": "45",
+		"duration": "31 seconds",
+		"target": "Ally",
+		"range": "100m",
+		"effects": {
+			"green1": "+20% Armour-Piercing Damage"
+		},
+		"desc": "The blood is the prize. The blood is the prize! THE BLOOD IS THE PRIZE!"
+	},
+	"42": {
+		"name": "Totem of Rust",
+		"atype": "Banner",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "-6 Armour"
+		},
+		"desc": "A jagged spike with the corroded remains of armoured warriors impaled; this totem spreads an aura of entropy."
+	},
+	"43": {
+		"name": "Horn of the First Beast",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "135",
+		"duration": "31 seconds",
+		"target": "Self. Affects allies in range",
+		"recharge-if": "Engaged in melee",
+		"effect-range": "55m",
+		"effects": {
+			"green1": "+18% Charge Bonus",
+			"green2": "+8 Leadership",
+			"green3": "+26 Melee Attack"
+		},
+		"desc": "When this ancient, fossilised horn is sounded a cloud of disarray falls upon the enemy but emboldens the Gors."
+	},
+	"44": {
+		"name": "Hagtree Fetish",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"uses-per-battle": "1",
+		"duration": "29 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "-50% Miscast Chance"
+		},
+		"desc": "A crude effigy and shamanic heirloom from one of the hag trees that grow deep in the forest."
+	},
+	"45": {
+		"name": "Jagged Dagger",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"recharge": "45",
+		"duration": "17 seconds",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "Great increase to power reserves",
+			"green2": "Improved power recharge rate"
+		},
+		"desc": "A potent sacrificial tool that radiates the wrath of a thousand different offerings to the Dark Gods."
+	},
+	"46": {
+		"name": "Slaughterer's Call",
+		"atype": "Unit ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"active-if": "In melee",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+8% Charge Bonus",
+			"green2": "+5 Melee Attack",
+			"green3": "+8 Leadership"
+		},
+		"desc": "The Minotaur Lord's blood-lust is infectious - his followers revel in the murder and gore!"
+	},
+	"47": {
+		"name": "Banner of the Fallen Kings",
+		"atype": "Banner",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit Points greater than 50% base",
+		"effects": {
+			"green1": "+10% Armour-Piercing Damage",
+			"green2": "+10% Weapon Damage"
+		},
+		"desc": "Once a proud standard of one of mankind's petty nations; it is now a wretched trophy blessed with all the Dark Gods' malice and vainglory."
+	},
+	"48": {
+		"name": "Axe of Men",
+		"atype": "Weapon",
+		"type": "Augment (Area)",
+		"recharge": "135",
+		"duration": "41 seconds",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "Can Cause Terror",
+			"green2": "Unbreakable"
+		},
+		"desc": "The Axe of Men is so-called because it hacks through men as easily as other, lesser axes, hew timber."
+	},
+	"49": {
+		"name": "Spirit of the Tempest",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+8% Charge Bonus",
+			"green2": "+10% Speed"
+		},
+		"desc": "More than just a Knight, Alberic is a true leader of men whose warriors are emboldened by his fighting spirit in battle."
+	},
+	"50": {
+		"name": "Rally!",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "45",
+		"duration": "10 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+16 Leadership"
+		},
+		"desc": "To rally the troops and bring them back to the fore takes strong leadership skills and an iron will."
+	},
+	"51": {
+		"name": "Heroic Killing Blow",
+		"atype": "Character ability",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "22 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+40% Armour-Piercing Damage",
+			"green2": "+40% Weapon Damage"
+		},
+		"desc": "There are powerful beings who can decapitate a dragon or plunge a sword into the heart of a griffon in one mighty strike."
+	},
+	"52": {
+		"name": "Wrath of Manann",
+		"atype": "Item",
+		"type": "Wind",
+		"recharge": "135",
+		"uses-per-battle": "2",
+		"duration": "5 seconds",
+		"target": "Ground",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Can disrupt unit formation",
+			"green3": "Medium, forward-moving area of effect",
+			"green4": "Strong vs. multiple units",
+			"green5": "Good against armour"
+		},
+		"contact": "Discouraged! (10 seconds) | -16 Leadership",
+		"desc": "Those struck by the Sea God's trident are swept away by a crushing tide of furious wrath."
+	},
+	"53": {
+		"name": "Sword of Anti-Heroes",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "36 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+20% Armour-Piercing Damage",
+			"green2": "+20% Weapon Damage"
+		},
+		"desc": "This sword was said to be smelted in a cursed furnace and then quenched in the bloody body of a dying champion."
+	},
+	"54": {
+		"name": "Crown of Command",
+		"atype": "Item",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "25 seconds",
+		"target": "Self, Ally",
+		"range": "100m",
+		"effects": {
+			"green1": "Unbreakable"
+		},
+		"desc": "The Crown of Command has been worn in countless battles. Its wearer is given great authority, instilling in his subjects an unbreakable courage."
+	},
+	"55": {
+		"name": "Aura of the Lady",
+		"atype": "Hero ability",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects allies in range",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+12% Magic Resistance"
+		},
+		"desc": "The Lady of the Lake protects her Knights from the devious enchantments of the enemy."
+	},
+	"56": {
+		"name": "Channelling Staff",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"recharge": "45",
+		"duration": "29 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "-15 Ability Recharge (seconds)"
+		},
+		"desc": "A staff of pure silver etched with all eight runes from the magic wheel. Such an item can only enhance a Wizard's ability to channel."
+	},
+	"57": {
+		"name": "Sceptre of Stability",
+		"atype": "Item",
+		"type": "Ward Save",
+		"recharge": "45",
+		"duration": "22 seconds",
+		"target": "Self, Ally",
+		"range": "100m",
+		"effects": {
+			"green1": "+44% Magic Resistance"
+		},
+		"desc": "The sceptre is an anti-magic totem, vanquishing spellcraft that gets too close to its wielder."
+	},
+	"58": {
+		"name": "Charmed Shield",
+		"atype": "Weapon",
+		"type": "Ward Save",
+		"recharge": "45",
+		"duration": "17 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+24 Missile Parry (with shield)",
+			"green2": "+22% Damage Resistance"
+		},
+		"desc": "The front of this shield depicts a warrior being blessed by a nameless lady. Its wielder gains protection from the sigil, especially against foes armed with missiles."
+	},
+	"59": {
+		"name": "Sacred Guardian",
+		"atype": "Hero ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Unit is not in forest",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "None shall pass!"
+	},
+	"60": {
+		"name": "Dolorous Blade",
+		"atype": "Hero ability",
+		"type": "Augment",
+		"recharge": "120",
+		"duration": "48 seconds",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "+40% Armour-Piercing Damage",
+			"green2": "+26 Melee Attack",
+			"green3": "+40% Weapon Damage"
+		},
+		"desc": "Glowing with an uncanny light, each stroke of this sword effortlessly carves the foe clean through."
+	},
+	"61": {
+		"name": "The Lady's Champion",
+		"atype": "Lord ability",
+		"type": "Regeneration",
+		"uses-per-battle": "1",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is broken",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "Those that claim the honour of the Lady's Champion benefit from her protection even more than Knights who have supped from the Grail."
+	},
+	"62": {
+		"name": "Beloved Son of Bretonnia",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects allies in range.",
+		"cannot-target-if": "Leadership is lower than 50%",
+		"disabled-if": "Hit Points greater than 50% base",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "+8 Melee Attack",
+			"green2": "+8% Charge Bonus",
+			"green3": "+12% Weapon Damage",
+			"green4": "Immune to Psychology"
+		},
+		"desc": "Should the Royarch of fair Bretonnia fall, then the anger in its Knights and smallfolk shall be fierce."
+	},
+	"63": {
+		"name": "The Lion's Shield",
+		"atype": "Lord ability",
+		"type": "Ward Save",
+		"recharge": "90",
+		"duration": "22 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+44% Missile Resistance",
+			"green2": "+44% Magic Resistance"
+		},
+		"desc": "King Louen's shield has protected him from the first days of his Knighthood; strengthened by enchantments, it will continue to do so."
+	},
+	"64": {
+		"name": "The Sword of Couronne",
+		"atype": "Weapon",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "135",
+		"duration": "39 seconds",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "30m",
+		"effects": {
+			"red1": "-27 Melee Defence",
+			"red2": "-30 Armour"
+		},
+		"desc": "This powerful heirloom was forged from the finest Bretonnian silverline. It catches the suns rays and magnifies them, dazzling Louen's enemies as he makes the death stroke."
+	},
+	"65": {
+		"name": "Mist of the Lady",
+		"atype": "Lord ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "In melee",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"red1": "-5 Melee Attack"
+		},
+		"desc": "The unearthly vapour moves around the foe, in between and inside - those found wanting are scarred by the Lady's enchanted touch."
+	},
+	"66": {
+		"name": "Favour of the Fay",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "44 seconds",
+		"target": "Ally",
+		"range": "100m",
+		"effects": {
+			"green1": "+44 Melee Attack"
+		},
+		"desc": "I didn't know how empty was my soul... until it was filled."
+	},
+	"67": {
+		"name": "Chalice of Potions",
+		"atype": "Item",
+		"type": "Bombardment",
+		"recharge": "135",
+		"uses-per-battle": "2",
+		"duration": "7 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"effects": {
+			"green1": "Causes massive magical damage",
+			"green2": "Huge explosion area",
+			"green3": "Large strike area",
+			"green4": "Good against armour",
+			"green5": "Strong vs. multiple units"
+		},
+		"desc": "Reaching to the highest heavens, the Wizard draws a wandering meteorite down upon the battlefield."
+	},
+	"68": {
+		"name": "Mighty Oath Stone",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "90",
+		"duration": "26 seconds",
+		"target": "Self. Affects allies in range",
+		"range": "40m",
+		"effects": {
+			"green1": "+27 Melee Defence",
+			"green2": "Expert Charge Defence"
+		},
+		"desc": "Belegar carries his enormous Oath Stone everywhere. In dire times, he stands tauntingly atop it to fight to the end."
+	},
+	"69": {
+		"name": "Revenge Incarnate",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "55 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+44 Melee Attack",
+			"green2": "+16 Leadership",
+			"green3": "+50% Weapon Damage"
+		},
+		"desc": "Centuries of Dwarf grudges flow through Belegar's veins, who uses them to wreak vengeance upon his enemies."
+	},
+	"70": {
+		"name": "Hammer of Angrund",
+		"atype": "Weapon",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is lower than 50%",
+		"effects": {
+			"green1": "+15% Armour-Piercing Damage",
+			"green2": "+9 Melee Attack",
+			"green3": "+15% Weapon Damage",
+			"green4": "+16% Charge Bonus"
+		},
+		"desc": "Soaked in centuries of Greenskin blood, the Ironhammer has been handed down to every rightful Angrund ruler of the Eight Peaks."
+	},
+	"71": {
+		"name": "Banner of Lost Holds",
+		"atype": "Banner",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+5 Melee Attack",
+			"green2": "+6% Weapon Damage"
+		},
+		"desc": "Created by Runelords who hailed from lost holds - to fight beneath this storied banner is to recall the fury of so many wrongs."
+	},
+	"72": {
+		"name": "Silver Horn of Vengeance",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "45",
+		"duration": "22 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+36% Charge Bonus"
+		},
+		"desc": "When winded, the Silver Horn sounds a clear note that brings hope to Dwarfs and foreboding doom to the enemy."
+	},
+	"73": {
+		"name": "Forgefire",
+		"atype": "Hero ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+10% Armour-Piercing Damage"
+		},
+		"desc": "The fires of a Runesmith's forge burn brighter and hotter, its blessing upon an ally's weapons increasing their potency."
+	},
+	"74": {
+		"name": "Rune of Hearth & Home",
+		"atype": "Rune",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "Immune to Psychology"
+		},
+		"desc": "The Rune of Hearth and Home stirs a Dwarf's pride in his noble Hold, Clan and Ancestors."
+	},
+	"75": {
+		"name": "Master Rune of Oath & Steel",
+		"atype": "Rune",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "90",
+		"duration": "25 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+60 Armour"
+		},
+		"desc": "Armour inscribed with the Rune of Oath and Steel will not bend or buckle."
+	},
+	"76": {
+		"name": "Master Rune of Wrath & Ruin",
+		"atype": "Rune",
+		"type": "Direct Damage",
+		"uses-per-battle": "3",
+		"recharge": "90",
+		"duration": "36 seconds",
+		"target": "Enemy",
+		"range": "150m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant",
+			"red3": "-48% Speed"
+		},
+		"desc": "As the Runelord hammers upon the Anvil of Doom he shapes the Rune of Wrath and Ruin, causing the earth to crack and vent forth fire and sulphur."
+	},
+	"77": {
+		"name": "Master Rune of Negation",
+		"atype": "Rune",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "135",
+		"duration": "18 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+44% Damage Resistance"
+		},
+		"desc": "The secret of this powerful rune was given to a Runelord by Valaya herself, insulating all under its auspices with protection from magic."
+	},
+	"78": {
+		"name": "Master Rune of Grungni",
+		"atype": "Rune",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+20% Missile Resistance"
+		},
+		"desc": "This rune stirs up the Winds of Magic, using their swirling arcane force to protect its bearer and shield nearby Dwarfs from missile fire."
+	},
+	"79": {
+		"name": "Master Rune of Stromni Redbeard",
+		"atype": "Rune",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+5 Melee Attack",
+			"green2": "+4 Leadership"
+		},
+		"desc": "Stromni Redbeard made this rune in the days of Bael, Lord of Karak Azul - it was used by Durgin, grandsire of Grimmir, the Ancestor God of Warriors."
+	},
+	"80": {
+		"name": "Tormentor Sword",
+		"atype": "Weapon",
+		"type": "Hex (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "90",
+		"duration": "19 seconds",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "30m",
+		"effects": {
+			"red1": "-26 Melee Attack",
+			"red2": "Cannot move"
+		},
+		"desc": "Those that take a wound from the jagged blade of the Tormentor Sword will not only feel pain - their thoughts will be wracked with terrible omens."
+	},
+	"81": {
+		"name": "Rune of Oath & Steel",
+		"atype": "Rune",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "45",
+		"duration": "25 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+30 Armour"
+		},
+		"desc": "Armour inscribed with the Rune of Oath and Steel will not bend or buckle."
+	},
+	"82": {
+		"name": "Rune of Wrath & Ruin",
+		"atype": "Rune",
+		"type": "Direct Damage",
+		"uses-per-battle": "4",
+		"recharge": "45",
+		"duration": "18 seconds",
+		"target": "Enemy",
+		"range": "150m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant",
+			"red3": "-48% Speed"
+		},
+		"desc": "As the Runelord hammers upon the Anvil of Doom he shapes the Rune of Wrath and Ruin, causing the earth to crack and vent forth fire and sulphur."
+	},
+	"83": {
+		"name": "Rune of Negation",
+		"atype": "Rune",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "90",
+		"duration": "25 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+22% Damage Resistance"
+		},
+		"desc": "The secret of this powerful rune was given to a Runelord by Valaya herself, insulating all under its auspices with protection from magic."
+	},
+	"84": {
+		"name": "Master Rune of Groth One-Eye",
+		"atype": "Rune",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+8 Leadership"
+		},
+		"desc": "Groth One-Eye first struck this rune in the time of Kurgan Ironbeard, when the Greenskins were driven from the Badlands and the Dwarfs prospered."
+	},
+	"85": {
+		"name": "The Hammer of Karak Drazh",
+		"atype": "Weapon",
+		"type": "Hex",
+		"recharge": "90",
+		"duration": "47 seconds",
+		"target": "Enemy",
+		"range": "50m",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"red1": "-25% Weapon Damage",
+			"red2": "-44 Melee Attack"
+		},
+		"desc": "The Hammer of Karak Drazh was struck with such powerful runes it can be swung with preternatural ease."
+	},
+	"86": {
+		"name": "Extra Powder",
+		"atype": "Hero ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"target-if": "Missile attack possible",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+10% Explosion",
+			"red2": "+10% Armour-Piercing Explosion"
+		},
+		"desc": "There are those who have a knack for pushing artillery and their crews to new heights, allowing such machines to fire further than ever before."
+	},
+	"87": {
+		"name": "Ballistics Calibration",
+		"atype": "Hero ability",
+		"type": "Augment",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "90",
+		"duration": "57 seconds",
+		"target": "Self. Affects allies in range",
+		"range": "40m",
+		"effects": {
+			"green1": "+30% Accuracy",
+			"green2": "+20 Reload Skill"
+		},
+		"desc": "This Hero has an eye for accuracy, firing rates and enemy sweet spots. War machines will benefit from his presence."
+	},
+	"88": {
+		"name": "Entrenchment",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "50 seconds",
+		"target": "Self, Ally",
+		"range": "150m",
+		"cannot-target-if": "Climbing, Manning equipment, Flying",
+		"effects": {
+			"green1": "+22% Physical Resistance",
+			"green2": "+40% Armour-Piercing Missile Damage",
+			"red1": "Cannot move"
+		},
+		"desc": "All the sons of Grungni can dig-in, enabling them to better resist physical attacks from the foe. Any missile attacks they can make are also improved."
+	},
+	"89": {
+		"name": "Rune of Slowness",
+		"atype": "Rune",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-12% Speed",
+			"red2": "-8% Charge Bonus"
+		},
+		"desc": "The Rune of Slowness hardens the air around those seeking to engage with honest Dwarfen axes."
+	},
+	"90": {
+		"name": "Fiery Ring of Thori",
+		"atype": "Item",
+		"type": "Breath",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "7 seconds",
+		"target": "Ground",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes major magical & fire damage",
+			"green2": "Long, thin, expanding, tear-shaped attack",
+			"green3": "Strong vs. multiple units",
+			"red1": "Weak against armour"
+		},
+		"desc": "When the rune within the dark ruby of the ring is activated a roiling ball of magic flame is hurled toward a nearby foe."
+	},
+	"91": {
+		"name": "High King",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects allies in range",
+		"cannot-target-if": "Leadership is lower than 50%",
+		"disabled-if": "Hit Points greater than 50% base",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "+12% Weapon Damage",
+			"green2": "+8% Charge Bonus",
+			"green3": "+8 Melee Attack",
+			"green4": "Immune to Psychology"
+		},
+		"desc": "The High King is the embodiment of the Karaz Ankor. Should he be wounded or even fall then the Dwarfs will rise in a vengeful rage!"
+	},
+	"92": {
+		"name": "The Great Book of Grudges",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "55m",
+		"effects": {
+			"green1": "+9 Melee Attack"
+		},
+		"desc": "The Dammaz Kron recounts every deed of infamy perpetuated against the Dwarfs, scribed in the blood of Kings and infused with vows of vengeance."
+	},
+	"93": {
+		"name": "Deathblow",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit Points greater than 20%",
+		"effects": {
+			"green1": "+15% Armour-Piercing Damage",
+			"green2": "+15% Weapon Damage"
+		},
+		"desc": "Such is the strength of the Dwarfen arm that a strike from this warrior's axe is sure to be a deathblow!"
+	},
+	"94": {
+		"name": "Axe of Dargo",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "30 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+40% Armour-Piercing Damage",
+			"green2": "+32 Bonus vs. Large"
+		},
+		"desc": "The Axe of Dargo, a runic weapon of monstrous size, is tempered with dragon's blood and iron-oaths of vengeance."
+	},
+	"95": {
+		"name": "Flash Bomb",
+		"atype": "Lord ability",
+		"type": "Hex (Area)",
+		"recharge": "135",
+		"duration": "28 seconds",
+		"target": "Around self. Affects enemies in range",
+		"recharge-if": "Engaged in melee",
+		"effect-range": "30m",
+		"effects": {
+			"red1": "-8 Leadership",
+			"red2": "-76% Speed",
+			"red3": "-27 Melee Defence"
+		},
+		"desc": "A bang, a flash - the foes stagger slowly and blindly whilst you take full advantage of their disarray."
+	},
+	"96": {
+		"name": "Grombrindal Has No Fear",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"recharge": "135",
+		"uses-per-battle": "1",
+		"duration": "31 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "Unbreakable"
+		},
+		"desc": "As battle-hardened as he is ancient, the White Dwarf will always stand his ground, no matter the pandemonium unfolding around him."
+	},
+	"97": {
+		"name": "Rune Helm of Zhufbar",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"disabled-if": "Hit Points greater than 50%",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+16 Leadership"
+		},
+		"desc": "Long thought lost to time and conflict, Grombrindal's awesome helm inspires already-courageous Dwarfen hearts to even greater acts of bravery."
+	},
+	"98": {
+		"name": "Rune Axe of Grombrindal",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "32 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+40% Armour-Piercing Damage"
+		},
+		"Imbued": "Discouraged! (10 seconds) | -16 Leadership",
+		"desc": "Mentioned in several sagas and legends, could the White Dwarf's mighty weapon be the fabled rune axe wielded by Grimnir at the dawn of history?"
+	},
+	"99": {
+		"name": "Waaagh!",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "90",
+		"duration": "25 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+44 Melee Attack"
+		},
+		"desc": "The Warboss lifts his head and unleashes a mighty 'WAAAGH!' - the boyz echo this terrifying roar as the entire Greenskin horde surges towards the enemy!"
+	},
+	"100": {
+		"name": "Spite of Da Bad Moon",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "90",
+		"duration": "21 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+48 Missile Parry (with shield)",
+			"green2": "Expert Charge Defence"
+		},
+		"desc": "Da Bad Moon offers protection to its weird and disgusting worshippers, shielding them from harm."
+	},
+	"101": {
+		"name": "Tricksy Traps",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "135",
+		"duration": "24 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+24% Speed",
+			"green2": "Stalk",
+			"green3": "Spotted only at very close range"
+		},
+		"desc": "The Night Goblins are delighted and emboldened by Skarsnik's sly, furtive plans and fiendish machinations."
+	},
+	"102": {
+		"name": "Skarsnik's Prodder",
+		"atype": "Weapon",
+		"type": "Magic Missile",
+		"recharge": "135",
+		"uses-per-battle": "2",
+		"target": "Enemy",
+		"range": "200m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"projectile-range": "200m",
+		"effects": {
+			"green1": "Shoots shrapnel on impact",
+			"green2": "Powerful explosion",
+			"green3": "Effective at long range",
+			"green4": "Strong vs. multiple combatants",
+			"red1": "Weak vs. multiple units"
+		},
+		"desc": "Skarsnik's pointed staff, pulsating with magical energy, channels the might of Gork (or Mork) to lance out with weird, terrifying power."
+	},
+	"103": {
+		"name": "Get Back 'Ere!",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "45",
+		"duration": "10 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+16 Leadership"
+		},
+		"desc": "Da Boss ain't ready to run an' so expects da boyz to stay put too!"
+	},
+	"104": {
+		"name": "Potion of Strength",
+		"atype": "Item",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "31 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+40% Armour-Piercing Damage",
+			"green2": "+40% Weapon Damage"
+		},
+		"desc": "The sludgy black liquor in this stern glass flask is a Potion of Strength, allowing the drinker to cause devastating damage."
+	},
+	"105": {
+		"name": "Evasion",
+		"atype": "Character ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "+5 Melee Defence",
+			"green2": "+6% Speed"
+		},
+		"desc": "Those with such skills can evade enemy attacks with ease and break from combat, should they feel that it is tactically important to do so."
+	},
+	"106": {
+		"name": "Scroll of Leeching",
+		"atype": "Item",
+		"type": "Hex of the Winds",
+		"uses-per-battle": "1",
+		"duration": "50 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "Greatly reduced power recharge rate"
+		},
+		"desc": "This tattered and stained scroll should not be held in one's hand for long as it steals all manner of essence, including magical power."
+	},
+	"107": {
+		"name": "Mad Cap Mushrooms",
+		"atype": "Hero ability",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "50 seconds",
+		"target": "Self",
+		"miscast-chance": "25%",
+		"effects": {
+			"green1": "-30 Ability Recharge (seconds)"
+		},
+		"desc": "Night Goblin Shamans brew a pungent fungus potion that, when drunk, will send the Fanatics into a spinning, whirling cyclone of death!"
+	},
+	"108": {
+		"name": "Wind of Jet",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"recharge": "45",
+		"uses-per-battle": "1",
+		"duration": "57 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Increase to power reserves",
+			"green2": "Improved power recharge rate"
+		},
+		"desc": "The bearer of this black wand, flecked in glowing jade, can increase the Winds and more quickly power his spells."
+	},
+	"109": {
+		"name": "Skull Wand of Kaloth",
+		"atype": "Item",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "24 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+50% Weapon Damage"
+		},
+		"imbued": "Discouraged! (10 seconds) | -16 Leadership",
+		"desc": "Originally captured from the Necromancer Kaloth by the Gobbo Shaman Kazgi, the Skull Wand talks in a forgotten dread language and any who hear its words are doomed."
+	},
+	"110": {
+		"name": "Gitsnik",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "34 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+40% Armour-Piercing Damage"
+		},
+		"desc": "Shaped in the Daemon-forges of Zharr-Nagrond, Grimgor's mighty axe, Gitsnik, has never grown dull despite its constant use."
+	},
+	"111": {
+		"name": "Get on Wiv it!",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+8% Charge Bonus"
+		},
+		"desc": "Azhag has no tolerance for infighting, when he issues an order the boyz must 'get on wiv it' or pay with a particularly grisly death."
+	},
+	"112": {
+		"name": "Scroll of Power",
+		"atype": "Item",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "67 seconds",
+		"target": "Self",
+		"miscast-chance": "100%",
+		"effects": {
+			"green1": "-90 Ability Recharge (seconds)"
+		},
+		"desc": "Scrawled upon the Power Scroll are runes to boost the power of a single spell. Use it wisely..."
+	},
+	"113": {
+		"name": "Warpaint of Wurrzag",
+		"atype": "Lord ability",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+11% Physical Resistance"
+		},
+		"desc": "The terrifying visage painted upon Wurrzag affects enemies' concentration, allowing him to take full advantage of their confusion!"
+	},
+	"114": {
+		"name": "Wurrzag's Revenge",
+		"atype": "Lord ability",
+		"type": "Hex",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "+50% Miscast Chance"
+		},
+		"desc": "Wurrzag inflicts a cloud of confusion upon his enemies, whose words ring hallow and spells fly false."
+	},
+	"115": {
+		"name": "'Effagee' of da Git",
+		"atype": "Character ability",
+		"type": "Direct Damage",
+		"recharge": "135",
+		"uses-per-battle": "2",
+		"duration": "15 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. a single combatant",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. multiple combatants",
+			"red3": "Cannot move"
+		},
+		"desc": "Recently, Wurrzag has taken to carrying a doll or 'effagee' of his foes and sticking pins in them to 'stop da gitz from gettin' away'."
+	},
+	"116": {
+		"name": "Squiggly Beast",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Improved power recharge rate",
+			"green2": "Increase to power reserves"
+		},
+		"desc": "Once a Shaman, now a beast transformed by Wurrzag and retained as an example of Da Great Green Prophet's might."
+	},
+	"117": {
+		"name": "Bonewood Staff",
+		"atype": "Weapon",
+		"type": "Augment (Area)",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "Triggers when casting spell",
+			"green2": "Bonewood Staff (17 seconds)",
+			"green3": "+13 Melee Attack",
+			"green4": "+18% Charge Bonus"
+		},
+		"desc": "Covered in magical glyphs, this staff protects Wurrzag from the many magical machinations ranged against him."
+	},
+	"118": {
+		"name": "Gaze of Malice",
+		"atype": "Lord ability",
+		"type": "Breath",
+		"recharge": "45",
+		"uses-per-battle": "4",
+		"duration": "8 seconds",
+		"target": "Ground",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Can disrupt unit formation",
+			"green3": "Short, wide, expanding, tear-shaped attack",
+			"green4": "Strong vs. multiple units",
+			"red1": "Weak against armour"
+		},
+		"desc": "If looks could kill... Oh wait, it turns out that they can..."
+	},
+	"119": {
+		"name": "Supreme Spellshield",
+		"atype": "Item",
+		"type": "Hex of the Winds",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "Effect increases proportional to the number of enemy units in range",
+			"red2": "Decrease to power reserves"
+		},
+		"desc": "This shield has a reflection so dark that it absorbs hostile magic and reflects it back at the foe."
+	},
+	"120": {
+		"name": "Circlet of Iron",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"target-if": "Unit is a Lord or Hero",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "+50% Miscast Chance"
+		},
+		"desc": "The Circlet of Iron, said to be older than the Elven race, is a potent source of arcane power."
+	},
+	"121": {
+		"name": "Destroyer",
+		"atype": "Weapon",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "Destroyer (45 seconds)",
+			"red2": "+45 Ability Recharge (seconds)"
+		},
+		"desc": "Forged by the Witch King, the blade's merest touch can unmake enchantments and wither minds."
+	},
+	"122": {
+		"name": "Enchanting Beauty",
+		"atype": "Lord ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-9 Melee Attack",
+			"red2": "-8% Charge Bonus"
+		},
+		"desc": "Morathi's strange, magical allure enchants opponents, making them question their loyalties and allegiances."
+	},
+	"123": {
+		"name": "Heartrender & the Darksword",
+		"atype": "Weapon",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "In melee",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-9 Melee Defence",
+			"red2": "-9 Melee Attack"
+		},
+		"desc": "The paired weapons of Morathi make the Hag Sorceress extremely deadly in combat."
+	},
+	"124": {
+		"name": "Wand of the Kharaidon",
+		"atype": "Bound spell",
+		"type": "Bombardment",
+		"recharge": "135",
+		"uses-per-battle": "2",
+		"duration": "7 seconds",
+		"target": "Enemy",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Medium strike area",
+			"green3": "Strong vs. a single combatant",
+			"green4": "Strong vs. a single unit"
+		},
+		"desc": "The sky opens and a bolt of burning, pure Chaos black lightning hurtles towards the foe."
+	},
+	"125": {
+		"name": "Loose!",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+10 Reload Skill"
+		},
+		"desc": "The authorisation to loose arrows without adherence to drill makes for an irregular - and therefore far deadlier - hail of pointed death."
+	},
+	"126": {
+		"name": "Volley of Dark Arrows",
+		"atype": "Character ability",
+		"type": "Magic Missiles",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"target": "Enemy",
+		"range": "200m",
+		"projectile-range": "200m",
+		"effects": {
+			"green1": "Causes armour-piercing damage",
+			"green2": "Effective at long range",
+			"green3": "Good penetration"
+		},
+		"desc": "By which an unexpected shower of pointy death rains down upon the unfortunate targets. Ouch!"
+	},
+	"127": {
+		"name": "The Guiding Eye",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "45",
+		"duration": "18 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+20% Armour-Piercing Missile Damage"
+		},
+		"desc": "Wrought in black iron with an oval ruby at its centre, the Guiding Eye grants mystical sight to its wearer."
+	},
+	"128": {
+		"name": "Pearl of Infinite Bleakness",
+		"atype": "Item",
+		"type": "Augment",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "45",
+		"duration": "28 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "Immune to Psychology"
+		},
+		"desc": "This peal of blackest jets soaks up dread, fear and self-doubt, leaving its wearer stronger within."
+	},
+	"129": {
+		"name": "Strength Through Spite",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+5 Melee Attack"
+		},
+		"desc": "Hatred is an energy source just like any other, to be harnessed and directed at will."
+	},
+	"130": {
+		"name": "Shield of Ghrond",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "In melee",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-12% Weapon Damage"
+		},
+		"desc": "Shaped into the leering face of an Ice Daemon, this shield is imbued with the north wind, robbing attacks of their force."
+	},
+	"131": {
+		"name": "Hydra Blade",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "30 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+40% Armour-Piercing Damage",
+			"green2": "+40% Weapon Damage"
+		},
+		"desc": "The Hydra Blade was carved from a single fang of Akholrak, first and greatest of the War Hydras broken by Malekith."
+	},
+	"132": {
+		"name": "Assassin's Trophy",
+		"atype": "Character ability",
+		"type": "Hex",
+		"recharge": "45",
+		"duration": "40 seconds",
+		"target": "Enemy",
+		"range": "150m",
+		"target-if": "Unit is a Lord or Hero",
+		"effects": {
+			"red1": "-27 Melee Defence",
+			"red2": "-26 Melee Attack"
+		},
+		"desc": "It should be no great surprise that those already adept in the art of silent death continue to improve with time and practice."
+	},
+	"133": {
+		"name": "Black Lotus",
+		"atype": "Character ability",
+		"type": "Augment",
+		"recharge": "45",
+		"uses-per-battle": "1",
+		"duration": "50 seconds",
+		"target": "Self",
+		"imbues": "Black Lotus",
+		"imbued": "Discouraged! (10 seconds) | -16 Leadership",
+		"desc": "This poison contains a powerful narcotic and drives its victims to delusional insanity."
+	},
+	"134": {
+		"name": "Dark Venom",
+		"atype": "Character ability",
+		"type": "Augment",
+		"recharge": "45",
+		"uses-per-battle": "1",
+		"duration": "36 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+75% Weapon Damage"
+		},
+		"desc": "A victim of Dark Venom knows only a drawn-out and agonising death."
+	},
+	"135": {
+		"name": "Web of Shadows",
+		"atype": "Weapon",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"uses-per-battle": "1",
+		"duration": "17 seconds",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. a single combatant",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. multiple combatants",
+			"red3": "-24% Speed"
+		},
+		"desc": "Woven from the hair of Witch Elves and studded with Harpy fangs; a victim caught in the Web will be ripped apart."
+	},
+	"136": {
+		"name": "Black Dragon Egg",
+		"atype": "Item",
+		"type": "Breath",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "16 seconds",
+		"target": "Ground",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Long, thin, expanding, tear-shaped attack",
+			"green3": "Good against armour",
+			"green4": "Strong vs. multiple units"
+		},
+		"desc": "In Naggaroth, Black Dragon eggs are often consumed so that their devourers might take a portion of Dragon-strength."
+	},
+	"137": {
+		"name": "Witchbrew",
+		"atype": "Character ability",
+		"type": "Augment",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "42 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+50% Weapon Damage",
+			"red1": "Rampage!"
+		},
+		"desc": "Distilled from the blood of Hag Queens, this evil brew drives imbibers into an ecstasy of destruction."
+	},
+	"138": {
+		"name": "Chillblade",
+		"atype": "Weapon",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-5 Melee Attack",
+			"red2": "-12% Speed"
+		},
+		"desc": "From the scattered shards of Har Kaldra was the Chillblade forged. Its touch can freeze body and the soul within."
+	},
+	"139": {
+		"name": "Darkstar Cloak",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Improved power recharge rate"
+		},
+		"desc": "Woven into the fabric of this cloak is the essence of a star stolen from the night sky of Nagarythe."
+	},
+	"140": {
+		"name": "Feint & Riposte",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "31 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+27 Melee Defence",
+			"green2": "+22% Physical Resistance",
+			"green3": "+26 Melee Attack"
+		},
+		"desc": "Quite literally the cut-and-thrust of the Elven way of battle; every stroke is precisely made and finds its mark perfectly."
+	},
+	"141": {
+		"name": "Heart of Avelorn",
+		"atype": "Item",
+		"type": "Regeneration",
+		"uses-per-battle": "1",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit Points greater than 10%",
+		"effects": {
+			"green1": "Burst of life-saving hit points",
+			"green2": "Heart of Avelorn (1 seconds)"
+		},
+		"desc": "Though seemingly fragile, this well-worn heirloom has seen a thousand battles and will see many more."
+	},
+	"142": {
+		"name": "Sunfang",
+		"atype": "Weapon",
+		"type": "Breath",
+		"recharge": "135",
+		"duration": "17 seconds",
+		"target": "Ground",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "On a wall",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "Causes major magical & fire damage",
+			"green2": "Can disrupt unit formation",
+			"green3": "Expanding tear-shaped attack",
+			"green4": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant",
+			"red2": "Weak against armour"
+		},
+		"desc": "This ancient sword, forged to slay Daemons in the earliest days of Aenarion's rule, burns with the captured fire of the sun."
+	},
+	"143": {
+		"name": "Potion of Charoi",
+		"atype": "Lord ability",
+		"type": "Regeneration",
+		"recharge": "45",
+		"duration": "9 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"green2": "+44% Damage Resistance",
+			"red1": "+30 Ability Recharge (seconds)"
+		},
+		"desc": "Like Teclis before them, the deepest blue of night imbues the drinker with the stamina and strength they need to face down the foe."
+	},
+	"144": {
+		"name": "Bound Fiery Convocation",
+		"atype": "Bound spell",
+		"type": "Wind",
+		"recharge": "135",
+		"uses-per-battle": "2",
+		"duration": "10 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-target-if": "Climbing, On a wall",
+		"effects": {
+			"green1": "Causes major magical & fire damage",
+			"green2": "Medium, forward-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"green4": "Good against armour",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "The caster utters words of power and a phoenix of pure fire manifests to swoop upon the enemy, bathing them in cleansing flame."
+	},
+	"145": {
+		"name": "Scroll of Hoeth",
+		"atype": "Item",
+		"type": "Hex of the Winds",
+		"recharge": "135",
+		"duration": "32 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "Greatly reduced power recharge rate",
+			"red2": "+30 Ability Recharge (seconds)"
+		},
+		"desc": "Though seemingly fragile, this well-worn heirloom has seen a thousand battles and will see many more."
+	},
+	"146": {
+		"name": "Sword of Teclis",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "41 seconds",
+		"target": "Self",
+		"recharge-if": "Out of melee",
+		"effects": {
+			"green1": "+60% Weapon Damage",
+			"green2": "+44 Melee Attack",
+			"green3": "+60% Armour-Piercing Damage"
+		},
+		"desc": "This sword, created by Teclis, is charged with crackling energy that rends apart those struck by its shining blade."
+	},
+	"147": {
+		"name": "Volley of High Arrows",
+		"atype": "Character ability",
+		"type": "Magic Missiles",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"target": "Enemy",
+		"range": "200m",
+		"projectile-range": "200m",
+		"effects": {
+			"green1": "Causes armour-piercing damage",
+			"green2": "Effective at long range",
+			"green3": "Good penetration"
+		},
+		"desc": "By which an unexpected shower of pointy death rains down upon the unfortunate targets. Ouch!"
+	},
+	"148": {
+		"name": "Talisman of Loec",
+		"atype": "Item",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "57 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+25% Weapon Damage"
+		},
+		"desc": "Loec the Trickster's aid comes at a price. His talisman is strange - a bracelet of two interlocking halves."
+	},
+	"149": {
+		"name": "Dragonhorn",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"uses-per-battle": "1",
+		"duration": "29 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+25% Missile Damage",
+			"green2": "+25% Weapon Damage"
+		},
+		"desc": "Enchanted by the dying flames of an ancient firedrake, the Dragonhorn hardens resolve."
+	},
+	"150": {
+		"name": "The Bane Shield",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"uses-per-battle": "1",
+		"duration": "50 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+30 Armour",
+			"green2": "+24 Missile Parry (with shield)"
+		},
+		"desc": "A magnificent shield emblazoned with a coiled serpent, allowing its wielder to benefit from even greater protection."
+	},
+	"151": {
+		"name": "Blade of Bel-Korhadris",
+		"atype": "Item",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "36 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+20% Armour-Piercing Damage"
+		},
+		"desc": "The sword of the beloved Scholar-King is a renowned wyrm-slayer."
+	},
+	"152": {
+		"name": "Sacred Incense",
+		"atype": "Item",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+12% Missile Resistance"
+		},
+		"desc": "This bundle of incense sticks is blessed by the wardens of Asuryan, wreathing the bearers in scented smoke when lit."
+	},
+	"153": {
+		"name": "Armour of the Stars",
+		"atype": "Item",
+		"type": "Hiding",
+		"recharge": "90",
+		"duration": "38 seconds",
+		"target": "Self",
+		"cannot-use-if": "Climbing, Manning equipment, Engaged in melee",
+		"effects": {
+			"green1": "Target is hidden",
+			"green2": "Effective when flanking",
+			"green3": "Stalk",
+			"green4": "Spotted only at very close range"
+		},
+		"desc": "The Armour of the Stars is a wonder, mage-forged plate decorated with gems over a deep-blue lacquer."
+	},
+	"154": {
+		"name": "Book of Hoeth",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"recharge": "90",
+		"duration": "36 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Greatly improved power recharge rate"
+		},
+		"desc": "This tome has been studied throughout the ages, yet its covers remain as blue and pristine as the day it was bound."
+	},
+	"155": {
+		"name": "Starwood Staff",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"recharge": "90",
+		"duration": "44 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Great increase to power reserves"
+		},
+		"desc": "This gnarled staff looks out of place among the refined possession of the Elves. However, looks are oft deceiving..."
+	},
+	"156": {
+		"name": "Loremaster's Cloak",
+		"atype": "Item",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+22% Magic Resistance"
+		},
+		"desc": "Wrapped in a cloak of grey, the wearer becomes insubstantial and highly-protected against magical attacks."
+	},
+	"157": {
+		"name": "Blessed Tome",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+8 Leadership"
+		},
+		"desc": "Tales of ancient valour, glory, and self-sacrifice are bound to inspire those of noble heart to greater deeds."
+	},
+	"158": {
+		"name": "Sunburst Standard of Hexoatl",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+12% Missile Resistance",
+			"green2": "+9 Melee Defence"
+		},
+		"desc": "This radiant golden totem generates a golden globe of power that shields those within from harm."
+	},
+	"159": {
+		"name": "Hand of Gods",
+		"atype": "Bound spell",
+		"type": "Magic Missiles",
+		"recharge": "135",
+		"uses-per-battle": "2",
+		"target": "Enemy",
+		"range": "250m",
+		"projectile-range": "250m",
+		"effects": {
+			"green1": "Causes major magical & fire damage",
+			"green2": "Good against armour",
+			"green3": "Strong vs. a single combatant",
+			"green4": "Good from a high angle",
+			"green5": "Good against large combatants"
+		},
+		"desc": "Bolts of cleansing energy fly from the spellcaster's hands, searing evil wherever they strike."
+	},
+	"160": {
+		"name": "Amulet of Itzl",
+		"atype": "Item",
+		"type": "Ward Save",
+		"uses-per-battle": "1",
+		"duration": "21 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+66% Damage Resistance"
+		},
+		"desc": "The amulet explodes into a million crystal shards if the wearer is struck, greatly improving their resistance to damage for a short time."
+	},
+	"161": {
+		"name": "The Horn of Kygor",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"recharge": "90",
+		"duration": "18 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+18% Charge Bonus",
+			"green2": "+25 Melee Attack",
+			"green3": "+8 Leadership"
+		},
+		"desc": "It is said that the lengendary Kygor, the first owner of the horn, was a warrior who could stare down a Carnosaur!"
+	},
+	"162": {
+		"name": "Blood Statuette of Spite",
+		"atype": "Item",
+		"type": "Direct Damage",
+		"recharge": "45",
+		"uses-per-battle": "4",
+		"duration": "14 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant"
+		},
+		"desc": "This statuette is carved in a likeness of Xapati, and is frequently bathed in offerings of blood."
+	},
+	"163": {
+		"name": "Aura of Quetzl",
+		"atype": "Item",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "47 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+27 Melee Defence",
+			"green2": "+30 Armour"
+		},
+		"desc": "This string of beaded shells, feathers and bones is a charm that surrounds the warrior in a miasma of colour."
+	},
+	"164": {
+		"name": "War Drum of Xahutec",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"disabled-if": "Engaged in melee",
+		"effects": {
+			"green1": "+4 Leadership",
+			"green2": "+4% Charge Bonus",
+			"green3": "+6% Speed"
+		},
+		"desc": "The drum echoes the beating heart of the jungle itself. As the Lizardmen march to war, the thundering booms quicken."
+	},
+	"165": {
+		"name": "Plaque of Dominion",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "45",
+		"duration": "20 seconds",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "30m",
+		"effects": {
+			"red1": "-8 Leadership"
+		},
+		"desc": "Formed into the image of a grimacing face, this plaque causes the unwary to go mad just by looking upon it."
+	},
+	"166": {
+		"name": "Curse-Charm of Tepok",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "55m",
+		"effects": {
+			"red1": "+25% Miscast Chance"
+		},
+		"desc": "Crafted in the form of a grotesque face, this charm forces its visage into the minds of enemy Sorcerers."
+	},
+	"167": {
+		"name": "Cube of Darkness",
+		"atype": "Item",
+		"type": "Hex of the Winds",
+		"recharge": "45",
+		"duration": "18 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "Greatly reduced power recharge rate"
+		},
+		"desc": "This small black cube contains millions of tiny pin-pricks of light circling around a sphere of pure darkness."
+	},
+	"168": {
+		"name": "Hold the Line!",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+4 Leadership",
+			"green2": "+100% Charge Resistance"
+		},
+		"desc": "Those in command of the ranks will issue their orders with a ferocious bark, expecting instant obeisance."
+	},
+	"169": {
+		"name": "Crush the Weak",
+		"atype": "Lord ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"cannot-target-if": "Leadership is higher than 50%",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-5 Melee Defence",
+			"red2": "-4 Leadership",
+			"red3": "-5 Melee Attack"
+		},
+		"desc": "When caught within radius of Todbringer, those enemies whose morale is already weak must face further penalties to their melee abilities."
+	},
+	"170": {
+		"name": "The White Cloak of Ulric",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-9 Melee Attack",
+			"red2": "-6% Speed"
+		},
+		"desc": "Made from the pelt of a Middenland wolf and blessed by the High Priest of Ulric, a deadly hoarfrost surrounds the cloak, freezing the wearer's foes."
+	},
+	"171": {
+		"name": "The Middenland Runefang",
+		"atype": "Weapon",
+		"type": "Regeneration",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "One of twelve magical swords belonging to the Empire's Elector Counts, 'Legbiter' enables its bearer to recover more quickly if wounded."
+	},
+	"172": {
+		"name": "Runefang",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "30 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+40% Weapon Damage",
+			"green2": "+32% Splash Attack Power",
+			"green3": "+40% Armour-Piercing Damage"
+		},
+		"desc": "The Runefangs are held by the Elector Counts as symbols of their stately office. They are immensely powerful blades of unsurpassed power that only Ghal Maraz could rival."
+	},
+	"173": {
+		"name": "Accusation",
+		"atype": "Hero ability",
+		"type": "Direct Damage",
+		"recharge": "90",
+		"duration": "20 seconds",
+		"target": "Enemy",
+		"range": "75m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. a single combatant",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. multiple combatants"
+		},
+		"desc": "The Witch Hunter levels his finger across the battlefield and accuses one of the enemy of arch-heresy!"
+	},
+	"174": {
+		"name": "Skull of Katam",
+		"atype": "Item",
+		"type": "Hex of the Winds",
+		"recharge": "45",
+		"duration": "36 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "Reduced power recharge rate"
+		},
+		"desc": "The skull of the late daemonologist, Katam, continues to jibber in secrets that could drive the listener insane. It knows how to suck the Winds from the enemy."
+	},
+	"175": {
+		"name": "The Reikland Runefang",
+		"atype": "Weapon",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "135",
+		"duration": "33 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+8 Leadership",
+			"green2": "+26 Melee Attack"
+		},
+		"desc": "The Reikland Runefang is the symbol of the Elector Count of this province. It is currently owned by the Prince of Altdorf, Karl Franz."
+	},
+	"176": {
+		"name": "Ghal Maraz",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "36 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+16 Bonus vs. Large",
+			"green2": "+40% Armour-Piercing Damage"
+		},
+		"desc": "Ghal Maraz is the lengendary hammer of Sigmar. This rune-encrusted weapon is not only the symbol of the Emperor's mantle, but one of the most potent artefacts in the world."
+	},
+	"177": {
+		"name": "Staff of Volans",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"recharge": "135",
+		"duration": "24 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Great increase to power reserves",
+			"green2": "Greatly improved power recharge rate"
+		},
+		"desc": "Volans was the first Supreme Patriarch, his staff is a symbol of office to any Wizard that now holds that mantle. It also allows the wielder to bend the Winds to his will."
+	},
+	"178": {
+		"name": "Benediction",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+8 Leadership"
+		},
+		"desc": "The Warrior Priest passes the blessings of the Heldenhammer to the brave men around him."
+	},
+	"179": {
+		"name": "Divine Power",
+		"atype": "Hero ability",
+		"type": "Hex",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "55m",
+		"effects": {
+			"red1": "+50% Miscast Chance"
+		},
+		"desc": "Such is the strength of Sigmar's favour that enemies fail to act in the presence of such brilliance."
+	},
+	"180": {
+		"name": "Jade Griffon",
+		"atype": "Item",
+		"type": "Regeneration",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "This small idol shimmers with an eerie green light, bestowing unnatural regenerative powers upon the wearer."
+	},
+	"181": {
+		"name": "Mace of Helsturm",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "39 seconds",
+		"target": "Self",
+		"imbues": "Fire Damage",
+		"effects": {
+			"green1": "+50% Weapon Damage"
+		},
+		"desc": "Used by Johann Helsturm, the first Grand Theogonist. When wielded by a warrior whose devotion is beyond reproach the head of the mace glows so brightly it bursts into flame."
+	},
+	"182": {
+		"name": "Banner of Eternal Flame",
+		"atype": "Banner",
+		"type": "Augment",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"imbues": "Fire Damage",
+		"effects": {
+			"green1": "+6% Weapon Damage"
+		},
+		"desc": "This banner burns with a fire that can never be quenched, imbuing its bearers with flaming weapons and fiery eyes."
+	},
+	"183": {
+		"name": "The Hunger",
+		"atype": "Lord ability",
+		"type": "Regeneration",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "In melee",
+		"disabled-if": "Leadership is broken",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "As the Vampires rip apart their victims they feast on the blood that spills forth - gaining in strength and lost stamina."
+	},
+	"184": {
+		"name": "El Syf",
+		"atype": "Weapon",
+		"type": "Hex",
+		"recharge": "90",
+		"duration": "32 seconds",
+		"target": "Enemy",
+		"range": "200m",
+		"target-if": "Unit is a Lord or Hero",
+		"effects": {
+			"red1": "-48% Speed",
+			"red2": "-22% Physical Resistance",
+			"red3": "-45 Melee Defence"
+		},
+		"desc": "The so-called 'Northern Sword' fears no duel; anyone who dares confront him will surely meet their death!"
+	},
+	"185": {
+		"name": "Master of the Dead",
+		"atype": "Character ability",
+		"type": "Regeneration (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"target-if": "Undead",
+		"disabled-if": "Leadership is broken, Engaged in melee",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "Necromancers can not only marshal the dead, but leech the power from any souls fleeing their mortal remains."
+	},
+	"186": {
+		"name": "Magical Animus",
+		"atype": "Character ability",
+		"type": "Augment",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "45",
+		"duration": "18 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+16 Leadership"
+		},
+		"desc": "With an arcane cry, all around rally to fight in battle once more."
+	},
+	"187": {
+		"name": "Wand of Jet",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"recharge": "45",
+		"uses-per-battle": "1",
+		"duration": "57 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Increase to power reserves",
+			"green2": "Improved power recharge rate"
+		},
+		"desc": "The bearer of this black wand, flecked in glowing jade, can increase the Winds and more quickly power his spells."
+	},
+	"188": {
+		"name": "Undeath Resurgent",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "90",
+		"duration": "15 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+16 Leadership",
+			"green2": "+27 Melee Defence"
+		},
+		"desc": "Arise! Do not falter! Do not crumble! Back to life once more!"
+	},
+	"189": {
+		"name": "Skabscrath",
+		"atype": "Weapon",
+		"type": "Breath",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "17 seconds",
+		"target": "Ground",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes major magical & fire damage",
+			"green2": "Long, thin, expanding, tear-shaped attacks",
+			"green3": "Strong vs. multiple units",
+			"red1": "Weak against armour"
+		},
+		"desc": "The lengendary sword of an Undead mercenary, it is said the blade cannot be sheathed without first taking a life and will emit a terrifying squeal until it does."
+	},
+	"190": {
+		"name": "The Screaming Banner",
+		"atype": "Banner",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+4 Leadership"
+		},
+		"desc": "The squalling wails emanating from the folds of this tattered standard recall untold horrors. Foes who hear it beg for the release of their tormented souls."
+	},
+	"191": {
+		"name": "Forbidden Rod",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"recharge": "90",
+		"duration": "40 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Great increase to power reserves",
+			"green2": "Greatly improved power recharge rate",
+			"red1": "Causes damage to self"
+		},
+		"desc": "This marble and golden-laced artefact can summon the Winds of Magic, but at a cost to the user."
+	},
+	"192": {
+		"name": "Dark Benediction",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+8 Leadership"
+		},
+		"desc": "Dark Blessings given freely from long-dead souls follow in the Wight Kings wake. And so the dead strive for Unlife..."
+	},
+	"193": {
+		"name": "Immortal Will",
+		"atype": "Character ability",
+		"type": "Regeneration",
+		"recharge": "45",
+		"duration": "13 seconds",
+		"target": "Self",
+		"cannot-use-if": "Leadership is broken",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "Immortal spirits will refuse to leave the bounds of the mortal plane, and so cannot be put to rest with ease."
+	},
+	"194": {
+		"name": "Master of the Black Arts",
+		"atype": "Lord ability",
+		"type": "Augment of the Winds",
+		"recharge": "45",
+		"duration": "20 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Increase to power reserves",
+			"green2": "Improved power recharge rate"
+		},
+		"desc": "The Winds of Magic themselves present little challenge to von Carstein, so matchless is he in his magical prowess."
+	},
+	"195": {
+		"name": "Sword of Unholy Power",
+		"atype": "Weapon",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "In melee",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "Improved power recharge rate",
+			"green2": "Increase to power reserves"
+		},
+		"desc": "Whenever this blade tastes blood, its wielder seems to exert greater control over the Winds of Magic."
+	},
+	"196": {
+		"name": "Lord of Undeath",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"recharge": "135",
+		"uses-per-battle": "1",
+		"target": "Ground",
+		"range": "60m",
+		"cannot-use-if": "Army is full, Climbing",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Spawns Krell",
+			"red1": "Summoned units degrade over time"
+		},
+		"desc": "The Lichemaster raises the ancient Wight to do his bidding, but Krell serves Nagash first and foremost..."
+	},
+	"197": {
+		"name": "Chaos Tomb Blade",
+		"atype": "Weapon",
+		"type": "Regeneration (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"active-if": "In melee",
+		"disabled-if": "Leadership is broken",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Resurrects dead combatants",
+			"green2": "Replenishes hit points of combatants",
+			"green3": "Heals injured before ressurecting",
+			"green4": "+5 Melee Attack"
+		},
+		"desc": "This evil weapon entraps the souls of those in cleaves, binding their fleshless remains in servitude."
+	},
+	"198": {
+		"name": "Cloak of Mists & Shadows",
+		"atype": "Item",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "24 seconds",
+		"target": "Self",
+		"imbues": "Magical Damage",
+		"effects": {
+			"green1": "+80% Physical Resistance",
+			"green2": "Strider"
+		},
+		"desc": "Kemmler is surrounded by a dark cloak that swirls and twists with a life of its own."
+	},
+	"199": {
+		"name": "The Liber Noctus",
+		"atype": "Item",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "27 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Great increase to power reserves",
+			"green2": "Greatly improved power recharge rate",
+			"red1": "Causes damage to self",
+			"green3": "-60 Ability Recharge (seconds)"
+		},
+		"desc": "This decrepit tome bristles with dark secrets and eldritch powers. Reading from it summons dark thoughts and grim deeds."
+	},
+	"200": {
+		"name": "Aura of Dark Grandeur",
+		"atype": "Lord ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-4 Leadership"
+		},
+		"desc": "Vlad motivates his devoted followers with his majestic presence; the Lord of Undeath is without peer."
+	},
+	"201": {
+		"name": "Master of Beguilement",
+		"atype": "Lord ability",
+		"type": "Hex",
+		"duration": "44 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "-44 Melee Attack"
+		},
+		"desc": "This Vampire Lord feints and shades, confounding their enemy into missteps and errors."
+	},
+	"202": {
+		"name": "Blood Drinker",
+		"atype": "Weapon",
+		"type": "Regeneration",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "This accursed blade drinks deep of its victim's blood, restoring vigour and strength to the one who brandishes it."
+	},
+	"203": {
+		"name": "The Carstein Ring",
+		"atype": "Item",
+		"type": "Ward Save",
+		"uses-per-battle": "1",
+		"duration": "30 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+90% Damage Resistance"
+		},
+		"desc": "An ancestral ring, set with a gem of deep, sanguine claret, that has granted the von Carsteins everlasting Undeath."
+	},
+	"204": {
+		"name": "Red Fury",
+		"atype": "Character ability",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "26 seconds",
+		"target": "Self, Ally",
+		"range": "100m",
+		"effects": {
+			"green1": "+20% Armour-Piercing Damage",
+			"green2": "+18% Charge Bonus",
+			"green3": "+18% Vigour"
+		},
+		"desc": "Vampires have long had a savage and unstoppable bloodlust. They will continue to slaughter until their enemies lie dead at their feet, or have been turned to Undeath."
+	},
+	"205": {
+		"name": "Blood Chalice of Bathori",
+		"atype": "Item",
+		"type": "Regeneration",
+		"recharge": "135",
+		"duration": "26 seconds",
+		"target": "Self, Ally",
+		"range": "60m",
+		"target-if": "Unit is a Lord or Hero",
+		"effects": {
+			"green1": "Greatly replenishes hit points of combatants",
+			"green2": "+36% Vigour"
+		},
+		"desc": "The life essence of many wretched, innocent smallfolk ensures that those who drink from this cursed cup thrive with newfound power."
+	},
+	"206": {
+		"name": "Verminous Valour",
+		"atype": "Character ability",
+		"type": "Augment",
+		"recharge": "45",
+		"duration": "14 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Explosion does not affect friendly troops",
+			"green2": "Allows chance to escape melee",
+			"red1": "Poor against large combatants",
+			"green3": "+24% Speed",
+			"green4": "+8 Leadership"
+		},
+		"desc": "There is a sense in which the Skaven's natural cowardice can appear to be the very pinnacle of honourable conduct."
+	},
+	"207": {
+		"name": "Trophy Rack",
+		"atype": "Lord ability",
+		"type": "Hex",
+		"recharge": "90",
+		"duration": "47 seconds",
+		"target": "Enemy",
+		"range": "150m",
+		"target-if": "Unit is a Lord or Hero",
+		"effects": {
+			"red1": "-45 Melee Defence",
+			"red2": "-26 Melee Attack"
+		},
+		"desc": "Oft-times, killers retain the heads of their victims as prizes or reminders of dark deeds done."
+	},
+	"208": {
+		"name": "Warp-Shard Armour",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-18 Armour"
+		},
+		"desc": "The Warpstone-infused armour plates of Queek Headtaker are as spiteful as their owner."
+	},
+	"209": {
+		"name": "Dwarf Gouger",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "46 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+40% Armour-Piercing Damage"
+		},
+		"desc": "A weapon created to kill the Dwarf-things, it perfectly suits Queek's furious windmill style of attack."
+	},
+	"210": {
+		"name": "Aura of Pestilence",
+		"atype": "Character ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-5 Melee Attack"
+		},
+		"desc": "All around are caught in a deadly miasma of virulent disease that rips through their bodies with vile momentum."
+	},
+	"211": {
+		"name": "Rod of Corruption",
+		"atype": "Item",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "135",
+		"duration": "11 seconds",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant"
+		},
+		"desc": "The flail of Skrolk is a rusted, pitted ball of miasma that spreads poxes as it is swung."
+	},
+	"212": {
+		"name": "The Liber Bubonicus",
+		"atype": "Item",
+		"type": "Direct Damage",
+		"recharge": "135",
+		"uses-per-battle": "2",
+		"duration": "15 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. a single combatant",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. multiple combatants"
+		},
+		"desc": "The vile cantrips written within the mouldering pages of the Liber Bubonicus are powerful indeed."
+	},
+	"213": {
+		"name": "Shield of Distraction",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"range": "30m",
+		"effects": {
+			"red1": "-5 Melee Attack"
+		},
+		"desc": "Grimy and ill-kept, this shield bears tainted hides, grisly trophies, and runes that are painful to look upon."
+	},
+	"214": {
+		"name": "World's Edge Armour",
+		"atype": "Item",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "67 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+60 Armour"
+		},
+		"desc": "Many suits of Dwarfen Gromril have fallen into the clutches of the Skaven. Then they are remade to the ratmen's liking."
+	},
+	"215": {
+		"name": "Portents of Verminous Doom",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "In melee",
+		"effects": {
+			"red1": "-4 Leadership"
+		},
+		"desc": "Portents of doom most often take the form of black banners festooned with skulls, clan symbols and hated runes."
+	},
+	"216": {
+		"name": "Warpstone Scroll",
+		"atype": "Item",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"uses-per-battle": "1",
+		"duration": "33 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "100m",
+		"target-if": "Flying unit",
+		"effect-range": "55m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant",
+			"red3": "-48% Speed"
+		},
+		"desc": "As the words of this scroll are read aloud, the heavens darken and lightning splits the skies, making flying impossible."
+	},
+	"217": {
+		"name": "Concealment Bombs",
+		"atype": "Unit ability",
+		"type": "Hiding",
+		"duration": "36 seconds",
+		"target": "Self",
+		"cannot-use-if": "Climbing, Manning equipment, Engaged in melee",
+		"effects": {
+			"green1": "Target is hidden",
+			"green2": "Effective when flanking",
+			"green3": "Stalk",
+			"green4": "Spotted only at very close range"
+		},
+		"desc": "When a bomb is smashed, a dark smoke curls out, concealing those who wish to hide and choking everyone else."
+	},
+	"218": {
+		"name": "Rival Hide Talisman",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"uses-per-battle": "1",
+		"duration": "33 seconds",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-44 Melee Attack"
+		},
+		"desc": "Wearing the stitched hides of enemies slain through treachery is believed to attract the favour of the Horned Rat."
+	},
+	"219": {
+		"name": "Skavenbrew",
+		"atype": "Item",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "53 seconds",
+		"target": "Self, Ally",
+		"range": "100m",
+		"effects": {
+			"green1": "+44 Melee Attack",
+			"green2": "+25% Weapon Damage",
+			"red1": "-30 Armour",
+			"green3": "Immune to Psychology"
+		},
+		"desc": "This concoction is made of Warpstone and the blood of many creatures. Its effects are devastating."
+	},
+	"220": {
+		"name": "Doomrocket",
+		"atype": "Hero ability",
+		"type": "Magic Missile",
+		"recharge": "90",
+		"uses-per-battle": "1",
+		"target": "Enemy",
+		"range": "200m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"projectile-range": "200m",
+		"effects": {
+			"green1": "Splits into multiple projectiles mid-air",
+			"green2": "Causes magical & fire damage",
+			"green3": "Effective at long range",
+			"green4": "Strong vs. multiple combatants",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "Built with secrets stolen from the mysterious east, Warlock Engineers seek to improve the propulsion and payload of these devastating weapons."
+	},
+	"221": {
+		"name": "Shadow Magnet Trinket",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"cannot-use-if": "Engaged in melee",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+12 Missile Parry (with shield)"
+		},
+		"desc": "Warpstone-contaminated ore develops the strange property of absorbing light. Thusly, darkness forms around the trinket."
+	},
+	"222": {
+		"name": "Warpstone Armour",
+		"atype": "Item",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "In melee",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant"
+		},
+		"desc": "Wrought within the great Warpforges beneath Skavenblight, this armour radiates an evil aura."
+	},
+	"223": {
+		"name": "Pipes of Piebald",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"disabled-if": "Engaged in melee",
+		"effect-range": "55m",
+		"effects": {
+			"red1": "-4% Charge Speed",
+			"red2": "-8% Charge Bonus"
+		},
+		"desc": "Piebald's strange helmet has pipes connected which allow a form of mind-control; the foe is mesmerised on approach."
+	},
+	"224": {
+		"name": "Scrying Stone",
+		"atype": "Item",
+		"type": "Augment",
+		"recharge": "45",
+		"duration": "14 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+22% Damage Resistance",
+			"green2": "+8 Leadership"
+		},
+		"desc": "An orb made of the polished gallstones from the dreaded Blindwyrm is said to be able to glimpse the future."
+	},
+	"225": {
+		"name": "Stand or Die!",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "90",
+		"duration": "15 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+16 Leadership",
+			"green2": "+27 Melee Defence"
+		},
+		"desc": "Tyrants and Lords whose word is law ensure their troops will not run by issuing this dread order."
+	},
+	"226": {
+		"name": "The Crown of Domination",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+4 Leadership",
+			"green2": "Immune to Psychology"
+		},
+		"desc": "An ancient battle-helm dating back to the time of Morkar, it exudes an aura of raw malice to cow the servants of Chaos."
+	},
+	"227": {
+		"name": "The Slayer of Kings",
+		"atype": "Weapon",
+		"type": "Augment",
+		"duration": "34 seconds",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "+60% Weapon Damage",
+			"green2": "+60% Armour-Piercing Damage",
+			"green3": "+32% Splash Attack Power"
+		},
+		"desc": "The Second Everchosen, Vangel, trapped the Greater Daemon U'zuhl inside this regicidal blade."
+	},
+	"228": {
+		"name": "Lord of the Storm",
+		"atype": "Lord ability",
+		"type": "Bombardment",
+		"duration": "11 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"effects": {
+			"green1": "Causes magical damage",
+			"green2": "Small strike area",
+			"green3": "Strong vs. multiple combatants",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "The ancient Shaggoth summons forth lightning to strike down his prey."
+	},
+	"229": {
+		"name": "Starcrusher",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "135",
+		"duration": "46 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+32% Splash Attack Power",
+			"green2": "+40% Armour-Piercing Damage"
+		},
+		"desc": "The gigantic warhammer known as Starcrusher was forged in the raging heart of a volcano. Kholek wields this enormous weapon with staggering brutality and skill despite its size."
+	},
+	"230": {
+		"name": "Auric Armour",
+		"atype": "Weapon",
+		"type": "Regeneration",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is broken",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "The Auric Armour is a sculpted suit forged from ensorcelled gold. Tendrils of dark energy caress the skin of the wearer, closing his wounds with a tender touch."
+	},
+	"231": {
+		"name": "Filth Mace",
+		"atype": "Weapon",
+		"type": "Augment",
+		"duration": "35 seconds",
+		"recharge": "90",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "+25% Weapon Damage",
+			"green2": "Can Cause Terror"
+		},
+		"imbued": "Poison! (10 seconds)",
+		"desc": "This rusted mace drips with Nurgle's choicest plagues and bears an enchantment that ensnares the souls of those crushed beneath its filth-encrusted mass."
+	},
+	"232": {
+		"name": "Pendant of Slaanesh",
+		"atype": "Item",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "42 seconds",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "+44 Melee Attack",
+			"green2": "+24% Speed"
+		},
+		"desc": "This pendant was crafted from the crystallised soul of the very first man to have been seduced by Slaanesh."
+	},
+	"233": {
+		"name": "Blasted Standard",
+		"atype": "Banner",
+		"type": "Augment",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+12 Missile Parry (with shield)"
+		},
+		"desc": "Woven from threads of pure magic, this standard is inscribed with runes that constantly writhe, while surrounded by coruscating fires of change."
+	},
+	"234": {
+		"name": "Mark of Khorne",
+		"atype": "Mark of Chaos",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is lower than 50%",
+		"effects": {
+			"green1": "+8% Charge Bonus",
+			"green2": "+8 Melee Attack",
+			"green3": "+12% Weapon Damage",
+			"green4": "Immune to Psychology"
+		},
+		"desc": "Those who bear the Mark of Khorne are consumed with a violent rage and the constant need to shed the blood of their foes."
+	},
+	"235": {
+		"name": "Hellfire Sword",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "47 seconds",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"imbues": "Fire Damage",
+		"effects": {
+			"green1": "+20% Weapon Damage",
+			"green2": "+20% Armour-Piercing Damage"
+		},
+		"desc": "This blade was made from a single, searing flame that was hammered into material form and quenched in the body of a fire-djinn."
+	},
+	"236": {
+		"name": "Another Takes its Place",
+		"atype": "Unit ability",
+		"type": "Regeneration",
+		"recharge": "60",
+		"uses-per-battle": "4",
+		"duration": "Constant",
+		"target": "Self",
+		"recharge-if": "Hit Points less than 50% base",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"green2": "Another Takes Its Place (1 second)"
+		},
+		"desc": "The titanic, deadly Hydras are notoriously difficult to kill; their broken bodies regenerate, rising up again to devour anew."
+	},
+	"237": {
+		"name": "Fiery Breath",
+		"atype": "Unit ability",
+		"type": "Magic Missiles",
+		"recharge": "60",
+		"uses-per-battle": "3",
+		"target": "Enemy",
+		"range": "90m",
+		"cannot-use-if": "Engaged in melee",
+		"projectile-range": "90m",
+		"effects": {
+			"green1": "Causes fire damage",
+			"green2": "Powerful explosion",
+			"green3": "Strong vs. a single unit",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "Just give the order and the Hydra's heads will spew forth their fiery breath, each competing for the brightest flame."
+	},
+	"238": {
+		"name": "Bloodroar",
+		"atype": "Mount ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "In melee",
+		"effect-range": "30m",
+		"effects": {
+			"red1": "-8 Leadership"
+		},
+		"desc": "The mighty griffon lets out a blood-curdling roar, chilling his enemies."
+	},
+	"239": {
+		"name": "Revivification Crystal",
+		"atype": "Unit ability",
+		"type": "Regeneration",
+		"uses-per-battle": "7",
+		"recharge": "60",
+		"duration": "26 seconds",
+		"target": "Ally",
+		"range": "100m",
+		"cannot-use-if": "Leadership is broken, On a wall",
+		"target-if": "Lizardmen",
+		"effects": {
+			"green1": "Resurrects dead combatants",
+			"green2": "Replenishes hit points of combatants",
+			"green3": "Heals injured before ressurecting"
+		},
+		"desc": "The crystal protects those who worship the Serpent God, healing wounds and brining supplicants back from the point of death."
+	},
+	"240": {
+		"name": "Tretch's Raiders",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self, Affects allies in range",
+		"disabled-if": "Losing melee combat",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+10% Weapon Damage",
+			"green2": "+9 Melee Attack",
+			"green3": "+10% Armour-Piercing Damage"
+		},
+		"desc": "A master of exploiting others' weaknesses, Tretch and his band are never where you expect them and always where they can do most damage."
+	},
+	"241": {
+		"name": "Stay Here, I'll Get Help!",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"uses-per-battle": "3",
+		"recharge": "90",
+		"duration": "31 seconds",
+		"target": "Self, Ground, Ally, Affects allies in range",
+		"range": "60m",
+		"cannot-use-if": "Engaged in melee",
+		"effect-range": "40m",
+		"miscast-chance": "100%",
+		"effects": {
+			"green1": "Tretch receives Stalk and Unspottable",
+			"green2": "+16 Leadership"
+		},
+		"desc": "It's not running away. It's knowing when and where to be to secure the best advantage."
+	},
+	"242": {
+		"name": "Lucky Skullhelm",
+		"atype": "Item",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Winning melee combat",
+		"effects": {
+			"green1": "Lucky Skullhelm (17 seconds)",
+			"green2": "+33% Damage Resistance",
+			"green3": "+24% Speed"
+		},
+		"desc": "This charmed helmet, fashioned from the skulls of fallen enemies, wards Tretch against magical attack."
+	},
+	"243": {
+		"name": "Cold-Blooded",
+		"atype": "Character ability",
+		"type": "Regeneration",
+		"duration": "40 seconds",
+		"uses-per-battle": "1",
+		"target": "Self, Ally",
+		"range": "200m",
+		"target-if": "Lizardmen",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"red1": "-24% Speed",
+			"red2": "-27 Melee Defence",
+			"red3": "-26 Melee Attack"
+		},
+		"desc": "While Lizardmen may be slow to react due to their cold-blooded nature, this also makes them stoic in battle."
+	},
+	"244": {
+		"name": "Hawkish Precision",
+		"atype": "Hero ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "No enemy presence in ability range",
+		"effects": {
+			"green1": "Ability range 70m",
+			"green2": "+15% Armour-Piercing Missile Damage"
+		},
+		"desc": "The truly hawk-eyed always hit their targets. Always."
+	},
+	"245": {
+		"name": "Lance",
+		"atype": "Unit ability",
+		"type": "Formation",
+		"target": "Self",
+		"effects": {
+			"green1": "+50% Deceleration",
+			"green2": "+50% Acceleration",
+			"green3": "+36% Charge Bonus",
+			"green4": "+24% Charge Speed"
+		},
+		"desc": "Forming a wedge before the charge enables mounted Knights to smash through enemy lines, causing great disarray among their ranks."
+	},
+	"246": {
+		"name": "Crumbling",
+		"atype": "Unit ability",
+		"type": "Direct Damage",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Battle outcome decided, Leadership is above zero",
+		"desc": "In the blasted desert of deepest Nehekhara, the dead rarely remain so. Those dragged back to screaming, clanking Unlife are bound forever to the Tomb King whose will they exist only to serve."
+	},
+	"247": {
+		"name": "Disintegrating",
+		"atype": "Unit ability",
+		"type": "Direct Damage",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is above shattered, Battle outcome decided",
+		"desc": "The Dark Magic that holds these subjects together has failed. As the necromantic energy flows out of them, nothing is left but a pile of iron and bones in the sand."
+	},
+	"248": {
+		"name": "The Curse",
+		"atype": "Lord ability",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"duration": "15 seconds",
+		"uses-per-battle": "1",
+		"target": "Around self, Affects enemies in range",
+		"disabled-if": "Hit points greater than 50%",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Activates automatically when conditions are met",
+			"green3": "Strong vs. multiple combatants",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "Like an insect sting at the point of death, striking out at the killer, sapping their strength as if shot by a thousand arrows."
+	},
+	"249": {
+		"name": "Unyielding Will",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self, Affects allies in range",
+		"effect-range": "55m",
+		"effects": {
+			"green1": "+5 Melee Attack",
+			"green2": "+5 Melee Defence"
+		},
+		"desc": "Inalienable and unassailable in all things, Settra's strength is such that he never needs to return to his sarcophagus."
+	},
+	"250": {
+		"name": "Wrath of Ptra",
+		"atype": "Lord ability",
+		"type": "Explosion",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "3 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Explosion does not affect friendly troops",
+			"green2": "Causes moderate magical & fire damage",
+			"green3": "Large explosion area",
+			"green4": "Can disrupt unit formation",
+			"red1": "Weak against armour"
+		},
+		"desc": "The heavenly fire of Ptra's rage, directed at those who dare stand against his servants."
+	},
+	"251": {
+		"name": "The Crown of Nehekhara",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self, Affects allies in range",
+		"effect-range": "55m",
+		"effects": {
+			"green1": "+10% Armour-Piercing Damage",
+			"green2": "+10% Weapon Damage",
+			"green3": "+8% Charge Bonus"
+		},
+		"desc": "In Undeath, Settra's crown transcends its original ceremonial purpose to imbue nearby warriors with the Imperishable's all-pervading, unalterable will."
+	},
+	"252": {
+		"name": "The Blessed Blade of Ptra",
+		"atype": "Weapon",
+		"type": "Augment",
+		"duration": "43 seconds",
+		"recharge": "120",
+		"target": "Self",
+		"imbues": "Fire Damage",
+		"imbued": {
+			"red1": "Blinded! (10 seconds)",
+			"red2": "-26 Melee Attack",
+			"red3": "-40% Accuracy",
+			"red4": "-27 Melee Defence"
+		},
+		"desc": "This blade, blessed by Ptra the Sun God, channels the baking heat of the unforgiving Nehekharan desert into each deadly blow it makes."
+	},
+	"253": {
+		"name": "My Will Be Done",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects allies in range",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+5 Melee Defence",
+			"green2": "+5 Melee Attack"
+		},
+		"desc": "Death is no obstacle to those with unalterable, unassailable determination."
+	},
+	"254": {
+		"name": "The Liber Mortis",
+		"atype": "Lord ability",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "20 seconds",
+		"target": "Self, Ground, Ally. Affects allies in range",
+		"range": "150m",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+44% Physical Resistance"
+		},
+		"desc": "One of the fabled nine Books of Nagash, this tome is one of the most potent sources of necromantic magic in existence."
+	},
+	"255": {
+		"name": "Staff of Nagash",
+		"atype": "Character ability",
+		"type": "Augment of the Winds",
+		"recharge": "120",
+		"duration": "33 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Improved power recharge rate",
+			"green2": "-30 Ability Recharge (seconds)"
+		},
+		"desc": "This magical staff was plucked from the clutches of the Vampire Mandregan; it enables its bearer to channel the Winds of Magic to his whim."
+	},
+	"256": {
+		"name": "The Tomb Blade of Arkhan",
+		"atype": "Weapon",
+		"type": "Regeneration (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "120",
+		"duration": "23 seconds",
+		"target": "Self. Affects allies in range",
+		"can-use-if": "In melee",
+		"recharge-if": "Engaged in melee",
+		"effect-range": "30m",
+		"imbues": "Fire Damage",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"green2": "Heals injured before ressurecting"
+		},
+		"desc": "Those struck by Arkhan's deadly blade are charred to skeletons and then bound to his will forever."
+	},
+	"257": {
+		"name": "Sandstorm",
+		"atype": "Lord ability",
+		"type": "Vortex",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "14 seconds",
+		"target": "Ground",
+		"range": "100m",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Huge, randomly-moving area of effect",
+			"green3": "Good against armour"
+		},
+		"desc": "A violent vortex that whips up a cloud of razor-sharp desert sand to lacerate and consume the foe."
+	},
+	"258": {
+		"name": "The Liche Staff",
+		"atype": "Weapon",
+		"type": "Hex",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "The Liche Staff (15 seconds)",
+			"green2": "+15 Ability Recharge (seconds)"
+		},
+		"desc": "The inscriptions on this ancient staff name Nehekhara's many gods and goddesses, whose quiescent power is contained within its copper shaft."
+	},
+	"259": {
+		"name": "Covenant of Power",
+		"atype": "Unit ability",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Great increase to power reserves"
+		},
+		"desc": "The magical power surrounding the Casket of Souls allows the Liche Priests to infuse their incantations with a portion of its energy."
+	},
+	"260": {
+		"name": "Blessing of Asaph",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+15% Missile Damage",
+			"green2": "+15 Reload Skill",
+			"green3": "+15% Armour-Piercing Missile Damage"
+		},
+		"desc": "The Asp Goddess healing touch floods Khalida's body, permeating the husk of her corpse and snapping her back to vital, vengeful Unlife."
+	},
+	"261": {
+		"name": "Venom Wave",
+		"atype": "Lord ability",
+		"type": "Explosion",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "3 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Explosion does not affect friendly troops",
+			"green2": "Causes moderate magical damage",
+			"green3": "Large explosion area",
+			"green4": "Can disrupt unit formation",
+			"green5": "Strong vs. a single unit"
+		},
+		"Contact": {
+			"red1": "Poison! (10 seconds)",
+			"red2": "-20% Armour-Piercing Missile Damage",
+			"red3": "-24% Speed",
+			"red4": "-20% Weapon Damage",
+			"red5": "-20% Armour-Piercing Damage",
+			"red6": "-20% Missile Damage"
+		},
+		"desc": "Even if you survive the explosion, a surge of noxious fumes follows in its deadly wake."
+	},
+	"262": {
+		"name": "Tombstrike",
+		"atype": "Character ability",
+		"type": "Augment",
+		"duration": "23 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+25% Weapon Damage",
+			"green3": "Can Cause Terror"
+		},
+		"desc": "He whose will transcends death can strike out from beyond the grave, to devastating effect."
+	},
+	"263": {
+		"name": "The Venom Staff",
+		"atype": "Weapon",
+		"type": "Magic Missiles",
+		"recharge": "120",
+		"uses-per-battle": "2",
+		"target": "Enemy",
+		"range": "200m",
+		"projectile-range": "200m",
+		"effects": {
+			"green1": "Shoots shrapnel on impact",
+			"green2": "Strong vs. multiple units",
+			"green3": "Effective at long range",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "This staff channels Asaph's spiteful anger into a deadly beam that spews forth onto the foe."
+	},
+	"264": {
+		"name": "Reanimate",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "60",
+		"duration": "14 seconds",
+		"target": "Self. Affects allies in range",
+		"projectile-range": "40m",
+		"effects": {
+			"green1": "+16 Leadership"
+		},
+		"desc": "It takes an iron will and unnatural - supernatural - strength to rally bound troops routed by magical means."
+	},
+	"265": {
+		"name": "Scorpion Armour",
+		"atype": "Item",
+		"type": "Ward Save",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit points greater than 50%",
+		"effects": {
+			"green1": "+22% Damage Resistance"
+		},
+		"desc": "These ornate armour plates are decorated with the likeness of the Scorpion God; his protective energies pervade the very metal used, offering additional protection to the wearer."
+	},
+	"266": {
+		"name": "Amulet of Pha-Stah",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "120",
+		"duration": "22 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "100m",
+		"projectile-range": "55m",
+		"effects": {
+			"red1": "-30 Armour",
+			"red2": "-48 Missile Parry (with shield)"
+		},
+		"desc": "This moon-shaped amulet projects a disruptive magical energy onto the enemy's defences."
+	},
+	"267": {
+		"name": "Wrath of the Creator",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"target-if": "Unit is construct",
+		"effects": {
+			"green1": "+5% Armour-Piercing Damage",
+			"green2": "+5 Melee Attack"
+		},
+		"desc": "Hatred this strong is infectious, contagious, and inescapable."
+	},
+	"268": {
+		"name": "Stone Shaper",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"target-if": "Unit is construct",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+10 Armour",
+			"green2": "+10% Missile Resistance"
+		},
+		"desc": "The strength at the base of the pillar; a near-immovable force."
+	},
+	"269": {
+		"name": "Restore",
+		"atype": "Character ability",
+		"type": "Regeneration",
+		"recharge": "60",
+		"uses-per-battle": "2",
+		"duration": "20 seconds",
+		"target": "Ally",
+		"range": "100m",
+		"target-if": "Unit is construct",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "Reaching behind the wall of death to bring back the soul and bind it to you takes skill, but like anything, practice makes perfect!"
+	},
+	"270": {
+		"name": "Vambraces of the Sun",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self, Affects enemies in range",
+		"disabled-if": "Leadership is broken",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-22% Flame Resistance",
+			"red2": "-9 Melee Attack"
+		},
+		"desc": "Infused with the sun's dazzling intensity, the power harnessed within gleams brilliantly, blinding the wearer's opponents."
+	},
+	"271": {
+		"name": "Elixir of Might",
+		"atype": "Item",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "36 seconds",
+		"target": "Ally",
+		"range": "100m",
+		"effects": {
+			"green1": "+50% Weapon Damage",
+			"green2": "+26 Melee Attack"
+		},
+		"desc": "One sip of the elixir fills the body of its drinker with the strength of many powerful, elite warriors."
+	},
+	"272": {
+		"name": "Guardian",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self, affects allies in range.",
+		"target-if": "Unit is a Lord or Hero",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+22% Physical Resistance"
+		},
+		"desc": "In the midst of a bloodbath it's good to know that someone has your back."
+	},
+	"273": {
+		"name": "Curse of Djaf",
+		"atype": "Character ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"uses-per-battle": "1",
+		"duration": "22 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "100m",
+		"cannot-use-if": "Hit Points greater than 50%",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-26 Melee Attack",
+			"red2": "Rampage!"
+		},
+		"desc": "The essence of the Jackal-headed God imbues the bearer's weapons with an insatiable hunger for the souls of the living."
+	},
+	"274": {
+		"name": "Cloak of the Dunes",
+		"atype": "Item",
+		"type": "Hiding",
+		"recharge": "90",
+		"duration": "44 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Stalk",
+			"green2": "Spotted only at very close range"
+		},
+		"desc": "The desert itself shall by your coat... and the foe's undoing."
+	},
+	"275": {
+		"name": "Blade of Setep",
+		"atype": "Weapon",
+		"type": "Hex",
+		"recharge": "90",
+		"duration": "44 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "-30 Armour",
+			"red2": "-22% Physical Resistance"
+		},
+		"desc": "The very late King Setep's ornate, curved sword shimmers with a blue hue that shatters the foe's armour."
+	},
+	"276": {
+		"name": "Curse of Khsar",
+		"atype": "Character ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"uses-per-battle": "1",
+		"duration": "25 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "100m",
+		"cannot-use-if": "Hit Points greater than 50%",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-60 Armour"
+		},
+		"desc": "The harsh, howling desert winds cut through everything, be it armour or clothing or raw flesh."
+	},
+	"277": {
+		"name": "Neferra's Scrolls of Mighty Incantations",
+		"atype": "Item",
+		"type": "Augment of the Winds (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "90",
+		"duration": "11 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "Effect increases proportional to the number of friendly units in range",
+			"green2": "Improved power recharge rate",
+			"green3": "Increase to power reserves"
+		},
+		"desc": "These eight magical scrolls, containing the sum total of Neferra's lifetime of learning, can whip up an unstoppable hurricane of power to crush the foe."
+	},
+	"278": {
+		"name": "Enkhil's Kanopi",
+		"atype": "Item",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "120",
+		"duration": "24 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+66% Magic Resistance"
+		},
+		"desc": "The simple clay vessel may not look like much, but the High Priest's Undying essence within can thwart sorcery and strengthen incantations."
+	},
+	"279": {
+		"name": "Realm of Souls Tier 1",
+		"atype": "Faction",
+		"type": "Regeneration",
+		"uses-per-battle": "1",
+		"duration": "7 seconds",
+		"target": "Self",
+		"active-if": "Realm of Souls Tier 1 is reached",
+		"disabled-if": "Leadership is broken",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"green2": "Heals injured before ressurecting"
+		},
+		"desc": "From within the Realm of Souls - Nehekhara's revered afterlife - deceased warriors are called forth and bound to mortal remains, to find purpose once again through war."
+	},
+	"280": {
+		"name": "Realm of Souls Tier 2",
+		"atype": "Faction",
+		"type": "Regeneration",
+		"uses-per-battle": "1",
+		"duration": "14 seconds",
+		"target": "Self",
+		"active-if": "Realm of Souls Tier 2 is reached",
+		"disabled-if": "Leadership is broken",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"green2": "Heals injured before ressurecting"
+		},
+		"desc": "The spirits of warriors slain can be summoned from the Realm of Souls and bound to corporeal bodies, so that they may fight for the Tomb Kings as they did in life."
+	},
+	"281": {
+		"name": "Realm of Souls Tier 3",
+		"atype": "Faction",
+		"type": "Regeneration",
+		"uses-per-battle": "1",
+		"duration": "21 seconds",
+		"target": "Self",
+		"active-if": "Realm of Souls Tier 3 is reached",
+		"disabled-if": "Leadership is broken",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"green2": "Heals injured before ressurecting"
+		},
+		"desc": "The Liche Priests use the very breath of Nehekhara's gods to reach into the Realm of Souls, retrieving the spirits of dead soldiers for binding and eternal service to their Tomb King's will."
+	},
+	"282": {
+		"name": "Regeneration",
+		"atype": "Unit ability",
+		"type": "Regeneration",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"red1": "+25% Weaknesses to Fire Damage"
+		},
+		"desc": "These are beings and creatures that can mend bone and knit flesh at an incredible rate. A mighty boon, but one stunted by fire."
+	},
+	"283": {
+		"name": "Spirit Conduit",
+		"atype": "Unit ability",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Increase to power reserves",
+			"green2": "Improved power recharge rate"
+		},
+		"desc": "As a channel between the mortal world and the Realm of Souls, a Hierotitan amplifies the Liche Priest's incantations."
+	},
+	"284": {
+		"name": "The Shadow's Coil",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "30",
+		"duration": "30 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+27 Melee Defence",
+			"red1": "-26 Melee Attack"
+		},
+		"desc": "The wending and twisting of the Wardancers hardens their spirits and their bodies against would-be attackers."
+	},
+	"285": {
+		"name": "Woven Mist",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "30",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "+44% Missile Resistance",
+			"red1": "-27 Melee Defence"
+		},
+		"desc": "The Wardancer threads and loops, contorting to create an ethereal fabric that turns aside arrows and bolts."
+	},
+	"286": {
+		"name": "Guardians of the Wildwood",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Unit is not in forest",
+		"effects": {
+			"green1": "+12 Bonus vs. Large",
+			"green2": "Charge Defence vs. Large"
+		},
+		"desc": "The minds of these warriors are turned over entirely to the defence of the Wildwood; nothing else affects them."
+	},
+	"287": {
+		"name": "Frenzy",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is lower than 50%",
+		"effects": {
+			"green1": "+12% Weapon Damage",
+			"green2": "+8% Charge Bonus",
+			"green3": "+8 Melee Attack",
+			"green4": "Immune to Psychology"
+		},
+		"desc": "Some warriors care not for their own personal safety and so work themselves into a whirlwind of destruction and mindless violence!"
+	},
+	"288": {
+		"name": "Shield of Thorns",
+		"atype": "Bound spell",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"uses-per-battle": "3",
+		"recharge": "90",
+		"duration": "25 seconds",
+		"target": "Self, Ground, Ally. Affects allies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+25% Weapon Damage",
+			"green2": "+22% Missile Resistance"
+		},
+		"desc": "Prickly gorse bursts from the ground around the caster's allies, protecting them from attack like a spikey living shield."
+	},
+	"289": {
+		"name": "The Curse of Anraheir",
+		"atype": "Bound spell",
+		"type": "Hex",
+		"typeDesc": "Instantly affects targets in area",
+		"uses-per-battle": "2",
+		"recharge": "120",
+		"duration": "33 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-26 Melee Attack",
+			"red2": "-24% Speed",
+			"red3": "-60% Accuracy"
+		},
+		"desc": "At the spellcaster's command, nebulous nature spirits assail the foe, clawing with hands not nearly as insubstantial as they first appear."
+	},
+	"290": {
+		"name": "Soporific Breath",
+		"atype": "Unit ability",
+		"type": "Magic Missiles",
+		"uses-per-battle": "3",
+		"recharge": "60",
+		"target": "Enemy",
+		"range": "80m",
+		"can-use-if": "Flying",
+		"cannot-use-if": "Engaged in melee",
+		"projectile-range": "90m",
+		"effects": {
+			"green1": "Powerful explosion",
+			"green2": "Good against large combatants",
+			"green3": "Strong vs. a single unit"
+		},
+		"desc": "Some Dragons breathe noxious fumes that have a long-lasting effect on their target's coordination - if it survived the attack in the first place."
+	},
+	"291": {
+		"name": "Primal Fury",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is lower than 50%",
+		"effects": {
+			"green1": "+8% Charge Bonus",
+			"green2": "+5 Melee Attack",
+			"green3": "+12% Speed",
+			"green4": "Immune to Psychology"
+		},
+		"desc": "Goaded by Chieftains and enraged by intruders on their blood-grounds, Beastmen become consumed by a savage furore!"
+	},
+	"292": {
+		"name": "Rowdy",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is wavering",
+		"effects": {
+			"green1": "+4 Leadership",
+			"green2": "Perfect Vigour"
+		},
+		"desc": "Centigors are emboldened when fighting, drinking and feasting together, although such 'bravery' is only temporary at best."
+	},
+	"293": {
+		"name": "Bloodgreed",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "Enemy presence in ability range.",
+		"disabled-if": "Leadership is broken",
+		"effects": {
+			"green1": "Ability range 70m",
+			"green2": "+12 Leadership",
+			"green3": "+12% Speed",
+			"green4": "Immune to Psychology"
+		},
+		"desc": "Minotaurs become more savage and frenzied the greater the scent and sight of blood."
+	},
+	"294": {
+		"name": "Soul Eater",
+		"atype": "Unit ability",
+		"type": "Hex (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "+25% Miscast Chance"
+		},
+		"desc": "Cygors crave the souls of enemy Wizards more than anything else."
+	},
+	"295": {
+		"name": "The Blessing of the Lady",
+		"atype": "Lord ability",
+		"type": "Ward Save",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is broken",
+		"effects": {
+			"green1": "+20% Physical Resistance"
+		},
+		"desc": "The Lady's blessing is a wondrous gift freely graced upon all Bretonnian subjects, should they but kneel and utter their devotion."
+	},
+	"296": {
+		"name": "Icon of Devotion",
+		"atype": "Unit ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+12 Leadership",
+			"green2": "Immune to Psychology"
+		},
+		"desc": "Far more than allegiance or loyalty, true dedication to Lady and kingdom further empowers her Knights on the field."
+	},
+	"297": {
+		"name": "Murderous Prowess",
+		"atype": "Faction",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "90 seconds",
+		"target": "Self",
+		"disabled-if": "Unit has not exceeded the murderous prowess value, Leadership is broken",
+		"effects": {
+			"green1": "+15 Leadership",
+			"green2": "+25% Melee Attack",
+			"green3": "+25% Charge Bonus",
+			"green4": "+20% Armour-Piercing Missile Damage",
+			"green5": "+18% Vigour"
+		},
+		"desc": "Slaughter! There is no greater glorification of Khaine, the God of Murder, and no more popular form of worship amongst the Dark Elves. It is through killing that Dark Elves rise above other beings. Once engulfed in enough bloodshed, they will often feel their murderous prowess increase, as if Khaine himself was guiding the blades of his disciples."
+	},
+	"298": {
+		"name": "Murderous Mastery",
+		"atype": "Faction",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "120 seconds",
+		"target": "Self",
+		"disabled-if": "Unit has not exceeded the murderous prowess value, Leadership is broken",
+		"effects": {
+			"green1": "+25% Charge Bonus",
+			"green2": "+15 Leadership",
+			"green3": "+25% Melee Attack",
+			"green4": "+18% Vigour",
+			"green5": "Can Cause Fear"
+		},
+		"desc": "Slaughter! There is no greater glorification of Khaine, the God of Murder, and no more popular form of worship amongst the Dark Elves. It is through killing that Dark Elves rise above other beings. Once engulfed in enough bloodshed, they will often feel their murderous prowess increase, as if Khaine himself was guiding the blades of his disciples."
+	},
+	"299": {
+		"name": "Noxious Breath",
+		"atype": "Unit ability",
+		"type": "Magic Missiles",
+		"uses-per-battle": "3",
+		"recharge": "60",
+		"can-use-if": "Flying",
+		"cannot-use-if": "Engaged in melee",
+		"projectile-range": "90m",
+		"effects": {
+			"green1": "Powerful explosion",
+			"green2": "Strong vs. a single unit"
+		},
+		"desc": "Some Dragons breathe noxious fumes that have a long-lasting effect on their target's coordination - if it survived the attack in the first place."
+	},
+	"300": {
+		"name": "The Old Grumblers",
+		"atype": "Unit ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "25",
+		"duration": "5 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+9% Vigour"
+		},
+		"desc": "Age, beard-length, and the courage that binds them; motivation, if any were needed, to fight on to the end."
+	},
+	"301": {
+		"name": "Power of the Dragonback",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "In melee",
+		"effects": {
+			"green1": "+22% Flame Resistance"
+		},
+		"Imbued": {
+			"red1": "Flammable! (10 seconds)",
+			"red2": "+22% Weakness to Fire Damage",
+			"red3": "-36% Speed"
+		},
+		"desc": "Strong and tenacious, the Dawi's hardy, passionate nature can be put to lethally good use on the battlefield."
+	},
+	"302": {
+		"name": "Liquid Fortification",
+		"atype": "Unit ability",
+		"type": "Regeneration",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is wavering",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "A touch of Bugman's Courage can keep a Dawi standing and fighting, a touch unsteadily, on their feet."
+	},
+	"303": {
+		"name": "Marked by Ulthar",
+		"atype": "Unit ability",
+		"type": "Hex",
+		"recharge": "120",
+		"duration": "28 seconds",
+		"target": "Enemy",
+		"range": "150m",
+		"effects": {
+			"red1": "-24 Missile Parry (with shield)",
+			"red2": "-22% Missile Resistance",
+			"red3": "-30 Armour"
+		},
+		"desc": "Those marked for death by the mighty Ranger or his crew may find their armour and shield of little practical use..."
+	},
+	"304": {
+		"name": "Gyrocopter Bomb",
+		"atype": "Unit ability",
+		"type": "Bombardment",
+		"uses-per-battle": "2",
+		"recharge": "0",
+		"target": "Around self",
+		"can-use-if": "Flying",
+		"cannot-use-if": "Climbing, Being deployed",
+		"effects": {
+			"green1": "Small strike area",
+			"green2": "Powerful explosion",
+			"green3": "Strong vs. multiple combatants",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "As the Gyrocopter speed over the heads of the enemy, their pilots release wing-mounted bombs onto targets below. A click on this button instantly releases one bomb per Gyrocopter."
+	},
+	"305": {
+		"name": "Gyrobomber Bomb",
+		"atype": "Unit ability",
+		"type": "Bombardment",
+		"uses-per-battle": "11",
+		"recharge": "0",
+		"target": "Around self",
+		"can-use-if": "Flying",
+		"cannot-use-if": "Climbing, Being deployed",
+		"effects": {
+			"green1": "Small strike area",
+			"green2": "Powerful explosion",
+			"green3": "Strong vs. multiple combatants",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "The Gyrobomber is fitted with much larger ordance than the Gyrocopter. Should the multiple payloads hit their intended target the results will be quite spectacular!"
+	},
+	"306": {
+		"name": "Spinning Loons",
+		"atype": "Unit ability",
+		"type": "Vortex",
+		"uses-per-battle": "3",
+		"recharge": "90",
+		"duration": "12 seconds",
+		"target": "Ground",
+		"range": "60m",
+		"cannot-use-if": "Climbing, On a wall",
+		"cannot-target-if": "Climbing, Flying, On a wall",
+		"effects": {
+			"green1": "Causes armour-piercing damage",
+			"green2": "Small moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"red1": "Unpredictable release from unit",
+			"red2": "Weak vs. a single combatant"
+		},
+		"desc": "Sent mad by drinking fungus brew, Night Goblin Fanatics are released from their mobs as a twirling cyclone of destruction armed with a large ball and chain!"
+	},
+	"307": {
+		"name": "Martial Prowess",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit Points less than 50% base",
+		"effects": {
+			"green1": "+12 Melee Defence",
+			"green2": "+2 Melee Attack"
+		},
+		"desc": "High Elves excel as warriors, having trained in martial disciplines for the equivalent of many men's lifetimes."
+	},
+	"308": {
+		"name": "Martial Mastery",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit Points less than 50% base",
+		"effects": {
+			"green1": "+8 Melee Attack",
+			"green2": "+12 Melee Defence"
+		},
+		"desc": "While all High Elves have excellent martial prowess, those that continue upon the path of the warrior will further excel in armed combat."
+	},
+	"309": {
+		"name": "Attuned to Magic",
+		"atype": "Unit ability",
+		"type": "Ward Save",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Mana less than 50%",
+		"imbues": "Magical Damage",
+		"effects": {
+			"green1": "+12% Damage Resistance"
+		},
+		"desc": "Some creatures, such as the Phoenix, are infused with magic and use the arcane Winds to fly upon and immerse themselves in."
+	},
+	"310": {
+		"name": "Rebirth",
+		"atype": "Unit ability",
+		"type": "Regeneration",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit Points greater than 10%",
+		"miscast-chance": "50%",
+		"effects": {
+			"green1": "Chance of unit gaining hit points",
+			"green2": "Rebirth (2 seconds)",
+			"red1": "Chance of unit instantly dying"
+		},
+		"desc": "With strange aeons even death may die..."
+	},
+	"311": {
+		"name": "Wake of Fire",
+		"atype": "Unit ability",
+		"type": "Bombardment",
+		"uses-per-battle": "10",
+		"recharge": "0",
+		"target": "Around self",
+		"cannot-use-if": "Engaged in melee",
+		"effects": {
+			"green1": "Powerful explosion",
+			"green2": "Small strike area",
+			"green3": "Strong vs. multiple combatants",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "As the Flamespyre swoops, wreathes of fire squall off its wings in the bird's wake."
+	},
+	"312": {
+		"name": "Blizzard Aura",
+		"atype": "Unit ability",
+		"type": "Hex (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "30m",
+		"effects": {
+			"red1": "-9 Melee Attack",
+			"red2": "-10% Armour-Piercing Damage"
+		},
+		"desc": "The Frostheart is surrounded by icy shards and biting winds with every great flap of its mighty wings."
+	},
+	"313": {
+		"name": "Sun Dragon's Breath",
+		"atype": "Unit ability",
+		"type": "Magic Missiles",
+		"uses-per-battle": "3",
+		"recharge": "60",
+		"target": "Enemy",
+		"range": "80m",
+		"can-use-if": "Flying",
+		"cannot-use-if": "Engaged in melee",
+		"projectile-range": "90m",
+		"effects": {
+			"green1": "Causes fire damage",
+			"green2": "Powerful explosion",
+			"green3": "Strong vs. a single unit",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "The youngest Dragons have a warm hue to their scales and a fiery temper, with scorching breath to match."
+	},
+	"314": {
+		"name": "Moon Dragon's Breath",
+		"atype": "Unit ability",
+		"type": "Magic Missiles",
+		"uses-per-battle": "3",
+		"recharge": "60",
+		"target": "Enemy",
+		"range": "80m",
+		"can-use-if": "Flying",
+		"cannot-use-if": "Engaged in melee",
+		"projectile-range": "90m",
+		"effects": {
+			"green1": "Causes fire damage",
+			"green2": "Powerful explosion",
+			"green3": "Strong vs. a single unit",
+			"green4": "Good against large combatants"
+		},
+		"desc": "No one wants to be on the receiving end of these Dragons' fiery breath attack, which surpasses that of their younger kin in both might and enlightenment."
+	},
+	"315": {
+		"name": "Star Dragon's Breath",
+		"atype": "Unit ability",
+		"type": "Magic Missiles",
+		"uses-per-battle": "3",
+		"recharge": "60",
+		"target": "Enemy",
+		"range": "80m",
+		"can-use-if": "Flying",
+		"cannot-use-if": "Engaged in melee",
+		"projectile-range": "90m",
+		"effects": {
+			"green1": "Causes fire damage",
+			"green2": "Powerful explosion",
+			"green3": "Good against armour",
+			"green4": "Good against large combatants"
+		},
+		"desc": "The eldest, most powerful Dragons can destroy entire units with a molten blast of their white-hot breath."
+	},
+	"316": {
+		"name": "Opportunist Murderer",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "3",
+		"duration": "15 seconds",
+		"target": "Self",
+		"active-if": "In melee",
+		"recharge-if": "Winning melee combat",
+		"effects": {
+			"green1": "+13 Melee Attack",
+			"green2": "+40% Armour-Piercing Damage"
+		},
+		"desc": "Greenskins are never gracious in victory. Whenever they can press an unfair advantage, they will!"
+	},
+	"317": {
+		"name": "Smoke Bomb",
+		"atype": "Unit ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "90",
+		"duration": "21 seconds",
+		"target": "Around self. Affects enemies in range",
+		"disabled-if": "Manning equipment",
+		"effect-range": "30m",
+		"effects": {
+			"red": "-76% Charge Speed",
+			"red2": "-76% Speed"
+		},
+		"desc": "Clogging the senses with acrid, stinging smoke leaves an enemy completely vulnerable."
+	},
+	"318": {
+		"name": "The Loons of Eight Peaks",
+		"atype": "Unit ability",
+		"type": "Vortex",
+		"uses-per-battle": "3",
+		"recharge": "90",
+		"duration": "12 seconds",
+		"target": "Ground",
+		"range": "90m",
+		"cannot-use-if": "Climbing, On a wall",
+		"cannot-target-if": "Climbing, Flying, On a wall",
+		"effects": {
+			"green1": "Causes armour-piercing damage",
+			"green2": "Small moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant",
+			"red2": "Unpredictable release from unit"
+		},
+		"desc": "The Goblin Fanatics of Karak Eight Peaks eschew the use of balls with their chains, favouring shaved Dwarfs instead!"
+	},
+	"319": {
+		"name": "Squigs Go Wild",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "Enemy presence in ability range",
+		"effects": {
+			"green1": "Ability range 30m",
+			"green2": "+12 Leadership"
+		},
+		"desc": "If a squig is not told what to bite, it will bite anything. Me, you, itself - anything!"
+	},
+	"320": {
+		"name": "Maternal Instinct",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"uses-per-battle": "5",
+		"recharge": "60",
+		"target": "Ground",
+		"range": "60m",
+		"cannot-use-if": "Army is full",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Spawns a unit of Spider Hatchlings",
+			"green2": "Good at defending the summoner",
+			"red1": "Summoned units degrade over time"
+		},
+		"desc": "Somewhat surprisingly, even the deadlist Arachnarok feels protective of her brood, and can draw them to her at will."
+	},
+	"321": {
+		"name": "Primal Instincts",
+		"atype": "Unit ability",
+		"type": "Hex",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit Points greater than 50% base",
+		"effects": {
+			"red1": "Rampage!"
+		},
+		"desc": "When under pressure, the primal instincts of these natural predators take over - they may then go on a rampage against nearby enemy units, attacking the closest one and ignoring any orders given."
+	},
+	"322": {
+		"name": "Drop Rocks",
+		"atype": "Unit ability",
+		"type": "Bombardment",
+		"uses-per-battle": "1",
+		"recharge": "5",
+		"target": "Around self",
+		"cannot-use-if": "Engaged in melee",
+		"effects": {
+			"green1": "Small strike area",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "Crude though it may be, swiftly swooping in low to pepper the foe with rocks remains a most effective tactic."
+	},
+	"323": {
+		"name": "Strength in Numbers",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit Points less than 50% base",
+		"effects": {
+			"green1": "+6 Leadership",
+			"green2": "+8 Melee Defence",
+			"red1": "-12% Speed"
+		},
+		"desc": "Skaven are craven by nature but take courage when in packs of their own kind, where they move slower but enjoy the safety of numbers."
+	},
+	"324": {
+		"name": "Scurry Away!",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is high",
+		"effects": {
+			"green1": "+12% Speed"
+		},
+		"desc": "'He who runs away lives to fight another day!' - so the foul, craven adage goes."
+	},
+	"325": {
+		"name": "Snare-Net",
+		"atype": "Unit ability",
+		"type": "Hex",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"cannot-target-if": "Climbing, Manning equipment, Flying, On a wall",
+		"effect-range": "45m",
+		"effects": {
+			"red1": "Snare Net (15 seconds)",
+			"red2": "-18% Speed"
+		},
+		"desc": "Snare-nets are lightweight but strong and covered in hooks. They are used by Gutter Runners to capture live prisoners."
+	},
+	"326": {
+		"name": "Too Horrible to Die",
+		"atype": "Unit ability",
+		"type": "Regeneration",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit Points greater than 10%",
+		"miscast-chance": "50%",
+		"effects": {
+			"green1": "Too Horrible to Die (2 seconds)",
+			"green2": "Chance of units gaining hit points",
+			"red1": "Chance of unit instantly dying"
+		},
+		"desc": "With its last, shuddering death throes there is a chance that one or more of the foul beast's many hearts will restart."
+	},
+	"327": {
+		"name": "The Rats Emerge",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"disabled-if": "Unit is alive",
+		"effects": {
+			"green1": "Spawns a unit of Skavenslave Spears"
+		},
+		"desc": "Killing a Hell-Pit Abomination is never a simple matter; when it dies many fresh Skaven spawn to take its place."
+	},
+	"328": {
+		"name": "Strength of the Penitent",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "3",
+		"duration": "15 seconds",
+		"target": "Self",
+		"active-if": "In melee",
+		"recharge-if": "Losing melee combat",
+		"effects": {
+			"green1": "+14 Melee Defence",
+			"green2": "+12% Physical Resistance"
+		},
+		"desc": "As the final battle between good and evil looms, the flagellants ready to embrace death. The time is near; the end is nigh!"
+	},
+	"329": {
+		"name": "Aura of Protection",
+		"atype": "Mount ability",
+		"type": "Ward Save",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+12% Magic Resistance"
+		},
+		"desc": "The Light Magic aura that surrounds the Luminark gives protection to those the Acolyte of Hysh deems worthy."
+	},
+	"330": {
+		"name": "Locus of Hysh",
+		"atype": "Mount ability",
+		"type": "Hex of the Winds",
+		"typeDesc": "Instantly affects targets in area",
+		"duration": "36 seconds",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "55m",
+		"effects": {
+			"green1": "Effect increases proportional to the number of enemy units in range",
+			"red1": "Reduced power recharge rate"
+		},
+		"desc": "As Hysh gathers and swirls around the Luminark, it creates a becalming eddy that other magical winds struggle to penerate."
+	},
+	"331": {
+		"name": "Net of Amyntok",
+		"atype": "Bound spell",
+		"type": "Hex",
+		"uses-per-battle": "3",
+		"recharge": "90",
+		"duration": "20 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "Cannot move"
+		},
+		"desc": "The Wizard casts an arcane net, created to hold the Great Deceiver himself. Any caught in its strands will struggle to act."
+	},
+	"332": {
+		"name": "The Flag of Blood Keep",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Engaged in melee",
+		"effects": {
+			"green1": "+22% Missile Resistance"
+		},
+		"desc": "The Flag of Blood Keep flashes violently; the Blood Knights run their enemies down."
+	},
+	"333": {
+		"name": "The Chilling Aura",
+		"atype": "Unit ability",
+		"type": "Hex",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-36% Speed"
+		},
+		"desc": "As if the enemy were caught in a blizzard or wading through treacle, the ice-cold aura slows any unit when within range to a near-standstill."
+	},
+	"334": {
+		"name": "Vigour Mortis",
+		"atype": "Unit ability",
+		"type": "Augment (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affect allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+5 Melee Defence",
+			"green2": "+5 Melee Attack"
+		},
+		"desc": "The Corpse Cart hardens shattered spirits and emboldens tattered bodies to ever greater acts of violence."
+	},
+	"335": {
+		"name": "Balefire",
+		"atype": "Unit ability",
+		"type": "Hex of the Winds",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affect enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "Effect increases proportional to the number of enemy units in range",
+			"red1": "Reduced power recharge rate"
+		},
+		"desc": "Balefire contains trace elements of Warpstone, so the burning braziers slowly drive mortal men to madness."
+	},
+	"336": {
+		"name": "Unholy Lodestone",
+		"atype": "Unit ability",
+		"type": "Regeneration (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affect allies in range",
+		"target-if": "Undead",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "The ringing of the arcane bell atop the Corpse Cart inspires Undead minions to continue fighting, even when grievously wounded."
+	},
+	"337": {
+		"name": "Black Scythes",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "30",
+		"duration": "Constant",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "+18% Charge Speed",
+			"green2": "+36% Charge Bonus"
+		},
+		"desc": "The Black Coach manifests gleaming scythes, as sharp as the night is dark."
+	},
+	"338": {
+		"name": "Unholy Vigour",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "60",
+		"duration": "Constant",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"imbues": "Fire Damage",
+		"effects": {
+			"green1": "+40% Armour-Piercing Damage"
+		},
+		"desc": "The Cairn Wraith and the skeletal steeds pulling the Black Coach are filled with unholy vigour."
+	},
+	"339": {
+		"name": "Black Nimbus",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "Constant",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "+44% Damage Resistance",
+			"green2": "Strider"
+		},
+		"desc": "A pulsing nimbus of darkness envelops the Black Coach, making it sleeker and more resistant to enemies."
+	},
+	"340": {
+		"name": "Blasphemous Tome",
+		"atype": "Unit ability",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Improved power recharge rate"
+		},
+		"desc": "The unholy, never-to-be spoken words of this ancient grimoire cause the Winds of Magic to blow like a hurricane."
+	},
+	"341": {
+		"name": "The Reliquary Binding",
+		"atype": "Unit ability",
+		"type": "Regeneration (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affect allies in range",
+		"target-if": "Undead",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "Replenishes hit points in combatants"
+		},
+		"desc": "This depraved artefacts, when held aloft, restores energy to those who swear fealty to its vileness."
+	},
+	"342": {
+		"name": "The Reliquary Corruption",
+		"atype": "Unit ability",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affect enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "Causes damage to combatants"
+		},
+		"desc": "Those who dare to stand against this profane monument will suffer from its corrupting influence, to their demise."
+	},
+	"343": {
+		"name": "Death Shriek",
+		"atype": "Unit ability",
+		"type": "Magic Missiles",
+		"uses-per-battle": "3",
+		"recharge": "60",
+		"target": "Enemy",
+		"range": "80m",
+		"cannot-use-if": "Engaged in melee",
+		"projectile-range": "80m",
+		"effects": {
+			"green1": "Causes magical damage",
+			"green2": "Powerful explosion",
+			"green3": "Strong vs. a single unit",
+			"green4": "Good against armour"
+		},
+		"desc": "Unimpeded by armour and flesh, a Terrorgheist's horrible shriek travels through its victims, splintering bones and souls, and erasing all memory of courage."
+	},
+	"344": {
+		"name": "Blooood!",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "60",
+		"duration": "18 seconds",
+		"target": "Self",
+		"can-use-if": "Missile attack possible",
+		"effects": {
+			"green1": "+24% Speed",
+			"green2": "+18% Acceleration",
+			"green3": "+18% Vigour"
+		},
+		"desc": "The Hellcannon breaks its chains and rushes forwards. Increased movement speed."
+	},
+	"345": {
+		"name": "Boom!",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "15 seconds",
+		"target": "Self",
+		"can-use-if": "Missile attack possible",
+		"effects": {
+			"green1": "+25% Explosion",
+			"green2": "+20% Armour-Piercing Explosion"
+		},
+		"desc": "The Hellcannon's blasts are devastating!"
+	}
+}

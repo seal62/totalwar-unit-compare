@@ -1,0 +1,530 @@
+{
+	"1": {
+		"name":"Hide (forest)",
+		"text": "This unit can hide in forests until enemy units get too close."
+	},
+	"2": {
+		"name":"Encourage",
+		"text":"This unit provides a leadership bonus to nearby allies. Units within range of both the Lord's aura and an encouraging unit will receive the larger of the two bonuses."
+	},
+	"3": {
+		"name":"Immune to Psychology",
+		"text":"The unit is immune to psychological attacks (fear and terror)."
+	},
+	"4": {
+		"name":"Shielded",
+		"text":"Shields have a chance of blocking arrows, bolts, rifle shots and similar small arms fire - but only in a forward facing arc."
+	},
+	"5": {
+		"name":"Armoured",
+		"text":"Armoured units can block damage from any source apart from Armour-Piercing damage."
+	},
+	"6": {
+		"name":"Armoured & Shielded",
+		"text":"Armoured units can block damage from any source apart from Shields have a chance of blocking arrows, bolts, rifle shots and similar small arms fire - but only in a forward facing arc."
+	},
+	"7": {
+		"name":"Armour-Piercing",
+		"text":"The damage of armour-piercing weapons mostly ignores the armour of the target, making them the ideal choice against heavily-armoured enemies. They are often heavier and attack at a slower rate though, making them less efficient against poorly-armoured targets."
+	},
+	"8": {
+		"name":"Armour-Piercing Missiles",
+		"text":"The damage of armour-piercing weapons mostly ignores the armour of the target, making them the ideal choice against heavily-armoured enemies. They are often heavier and attack at a slower rate though, making them less efficient against poorly-armoured targets."
+	},
+	"9": {
+		"name":"Duellist",
+		"text":"This unit is best used to attack individual targets such as Heroes. As it can only damage very few individuals at a time, it is not suitable against hordes of weak enemies."
+	},
+	"10": {
+		"name":"Spellcaster",
+		"text":"This unit can cast spells."
+	},
+	"11": {
+		"name":"Causes Fear",
+		"text":"This unit frightens all enemy units, reducing their leadership when nearby. It is also immune to fear. Fear penalties do not stack."
+	},
+	"12": {
+		"name":"Causes Terror",
+		"text":"This unit can cause terror, making its melee target rout for a short time. Units that cause terror are immune to terror and fear themselves."
+	},
+	"13": {
+		"name":"Very Fast",
+		"text":"This unit can run circles around most other units, taunting and harrassing the enemy or evading its missile fire."
+	},
+	"14": {
+		"name":"Battle Prayers",
+		"text":"This unit can learn prayers to support allies and defeat foes in battle."
+	},
+	"15": {
+		"name":"Unbreakable",
+		"text":"This unit does not suffer any form of leadership loss and will never rout."
+	},
+	"16": {
+		"name":"Frenzy",
+		"text":"Units with frenzy cause more damage while their leadership is high."
+	},
+	"17": {
+		"name":"Damage Dealer",
+		"text":"This unit has a strong emphasis on dealing damage. If fighting it, make sure to take it out before it can get into firing or melee range."
+	},
+	"18": {
+		"name":"Anti-Infantry",
+		"text":"Anti-infantry units have an advantage against targets that are smaller than a horse. This advantage can be a damage bonus against small targets, superior weight used to smash through lighter enemies, or an explosive attack from range that effects a large area."
+	},
+	"19": {
+		"name":"Anti-Large",
+		"text":"Anti-large units have an advantage against targets that are at least as large as a horse. This advantage acn be a damage bonus against large targets or an attack that focuses on a very small area. However, some units are simply better against large targets because their attacks are slow and easy to dodge by skilled melee combatants."
+	},
+	"20": {
+		"name":"Decent Melee Combatant",
+		"text":"Despite being primarily a missile unit or spellcaster, this unit can also hold its own ground when fighting in melee."
+	},
+	"21": {
+		"name":"Weak Against Armour",
+		"text":"This unit's attack can hardly punch through armour and is thus wasted on heavily armoured enemies.",
+		"isNegative": true
+	},
+	"22": {
+		"name":"Vanguard Deployment",
+		"text":"This unit can deploy in an expanded deployment area, allowing it to start the battle within striking distance of the enemy - or somewhere unexpected."
+	},
+	"23": {
+		"name":"Good Range",
+		"text":"This unit has a larger range than most other units of the same class. This allows it to take out hostile missile units before they can come into firing range."
+	},
+	"24": {
+		"name":"Charge Defence vs. Large",
+		"text":"When bracing, this unit negates the charge bonus of any large attacker."
+	},
+	"25": {
+		"name":"Fire Whilst Moving",
+		"text":"This unit can fire while on the move."
+	},
+	"26": {
+		"name":"Can't Attack Air",
+		"text":"Some ranged weapons, like grenade launchers, bombs or blasting charges, can't target airborne units.",
+		"isNegative": true
+	},
+	"27": {
+		"name":"Low Rate of Fire",
+		"text":"This unit has a very low rate of missile fire.",
+		"isNegative": true
+	},
+	"28": {
+		"name":"Solheim's Bolt of Illumination",
+		"text":"The Luminark fires a highly-accurate beam over large distances, causing tremendous damage to its target but with a small area of effect, making it a poor choice against weak infantry."
+	},
+	"29": {
+		"name":"Magical Aura",
+		"text":"This unit is surrounded by one or more magical auras that either support nearby friends or harm its foes."
+	},
+	"30": {
+		"name":"Cannot Run",
+		"text":"This unit cannot run and will only move at walking pace.",
+		"isNegative": true
+	},
+	"31": {
+		"name":"Poor Accuracy",
+		"text":"This unit's attacks are prone to go stray.",
+		"isNegative": true
+	},
+	"32": {
+		"name":"Missile Resistance",
+		"text":"** || Damage of missile attacks is reduced by this amount."
+	},
+	"33": {
+		"name":"Siege Attacker",
+		"text":"This unit can attack city gates, allowing you to instantly launch a siege battle without having to wait for towers or battering rams to be built."
+	},
+	"34": {
+		"name":"Magic Resistance",
+		"text":"** || Damage of magical attacks is reduced by this amount."
+	},
+	"35": {
+		"name":"Melee Expert",
+		"text":"Melee Experts might have a very strong melee attack or melee defence, or high values in both. Some also have melee-focused skills like Charge Defence. Use them to counter other strong melee units. When facing them, it is best to take them out before they can enter melee."
+	},
+	"36": {
+		"name": "Stalk",
+		"text": "This unit can move hidden in any terrain."
+	},
+	"37": {
+		"name": "Magical Attacks",
+		"text": "** || This unit inflicts magical attacks which can harm units that are protected from regular physical attacks."
+	},
+	"38": {
+		"name": "Flaming Attacks",
+		"text": "** || This unit inflicts flaming attacks which can do additional damage against units that are vulnerable to fire."
+	},
+	"39": {
+		"name": "Physical Resistance",
+		"text": "** || Damage of non-magical attacks is reduced by this amount."
+	},
+	"40": {
+		"name": "Noxious Breath",
+		"text": "Some Dragons breathe noxious fumes that have a long-lasting effect on their target's coordination - if it survived the attack in the first place."
+	},
+	"41": {
+		"name": "Good Against Gates",
+		"text": "Doors and gates all across the world fear the Khainite Assassin's assortment of lock picks and acid vials."
+	},
+	"42": {
+		"name": "Poison Attacks",
+		"text": "** || The poisonous attacks of this unit weaken the target's speed and damage, whilst reducing its vigour."
+	},
+	"43": {
+		"name": "Sea Dragon Cloak",
+		"text": "The scaled leather of the flightless Sea Dragon provides a very light yet incredibly sturdy material for armour."
+	},
+	"44": {
+		"name": "Madness of Khaine! (15 seconds)",
+		"text": "** || The Witch Elves' venom makes its target susceptible to the Madness of Khaine - forcing it into a mindless, rampaging bloodlust."
+	},
+	"45": {
+		"name": "Murderous Mastery",
+		"text": "Merciless, frenzied agents of slaughter even when unprovoked, this unit takes especially well to Khaine's murderous blessing."
+	},
+	"46": {
+		"name": "Dodge",
+		"text": "This highly dexterous unit dodges blades and missiles with ease; its luck is known to run out quickly when facing magical weapons, however."
+	},
+	"47": {
+		"name": "Primal Instincts",
+		"text": "When under pressure, the primal instincts of these natural predators take over. They then may go on a rampage against nearby enemy units, attacking the closest one and ignoring any orders given.",
+		"isNegative": true
+	},
+	"48": {
+		"name": "Multi-Shot Ammunition",
+		"text": "This unit can switch its ammunition to fire multiple smaller shots instead of one large one. This is not as accurate or effective against large targets, but the spread of missiles can be helpful against hordes."
+	},
+	"49": {
+		"name": "Fiery Breath",
+		"text": "Just give the order and the Hydra's heads will spew forth their fiery breath, each competing for the brightest flame."
+	},
+	"50": {
+		"name": "Scaly Skin",
+		"text": "Scaly skin or hides help to dampen or deflect the damage caused by missile weapons, increasing this unit's Missile Resistance."
+	},
+	"51": {
+		"name": "Regeneration",
+		"text": "Regeneration allows a unit to heal while in battle. Fire is known to harm this healing process, so be warned that flaming attacks will cause more damage to units with Regeneration."
+	},
+	"52": {
+		"name": "Undead",
+		"text": "This unit is Undead (does not rout, immune to terror, becomes unstable when Leadership is low). It will suffer from attrition when moving through territory not owned by the Undead."
+	},
+	"53": {
+		"name": "Ethereal",
+		"text": "Ethereal units ignore most damage done by non-magical weapons. As they have shed most of their physical form, they are not slowed by terrain-based movement penalties either."
+	},
+	"54": {
+		"name": "Meat Shield",
+		"text": "While unimpressive at causing damage, this unit is useful as a 'meat shield', absorbing damage that would otherwise hurt a more useful or precious target."
+	},
+	"55": {
+		"name": "Magic Disruption",
+		"text": "Increases the chance of enemy Wizards miscasting in close vicinity to a Corpse Cart."
+	},
+	"56": {
+		"name": "Mass Regeneration",
+		"text": "Regenerates nearby friendly units' hit points."
+	},
+	"57": {
+		"name": "Evocation of Death",
+		"text": "The Black Coach feeds on magical energy that bolsters its resistance and strengthens its charge."
+	},
+	"58": {
+		"name": "Magic Harvester",
+		"text": "Increases the level of magic power reserves."
+	},
+	"59": {
+		"name": "Poor Leadership",
+		"text": "This unit suffers from poor leadership and will easily rout. Keep its flanks secure and your Lord or other encouraging units nearby.",
+		"isNegative": true
+	},
+	"60": {
+		"name": "Forest Spirit",
+		"text": "The spirits of Athel Loren are able to shrug off most mundane attacks, causing magical damage in turn before melting into the forest from whence they came."
+	},
+	"61": {
+		"name": "Fire Weakness",
+		"text": "** || Damage of flaming attacks is increased by this amount.",
+		"isNegative": true
+	},
+	"62": {
+		"name": "Forest Stalker",
+		"text": "The Elves of Athel Loren gain bonuses to melee defence and accuracy while fighting within the forest."
+	},
+	"63": {
+		"name": "Master Ambusher",
+		"text": "This unit can move whilst hidden in any terrain, firing in any direction even whilst running!"
+	},
+	"64": {
+		"name": "Snipe",
+		"text": "This unit remains hidden while firing."
+	},
+	"65": {
+		"name": "Shadow Dances of Loec",
+		"text": "The servants and worshippers of Loec perform many intricate, swirling, lethal dances in his name."
+	},
+	"66": {
+		"name": "Swift Shiver Shards",
+		"text": "As their enchanted arrows are both light and strong this unit can fire two at a time, but at a cost of range."
+	},
+	"67": {
+		"name": "No Forest Penalty",
+		"text": "Large units do not suffer penalties when moving through forest, simply smashing through the undergrowth instead."
+	},
+	"68": {
+		"name": "Aura of Transmutation",
+		"text": "Morghur's Ruinous, transformative aura protects him from damage most of the time, but he is vulnerable whilst it recharges."
+	},
+	"69": {
+		"name": "Expendable",
+		"text": "Witnessing friendly expendable units rout does not reduce other units' Leadership, unless they are themselves expendable."
+	},
+	"70": {
+		"name": "Rampage",
+		"text": "When this unit gets hurt and enemies are nearby it might go on a rampage, attacking the closest enemy and ignoring any orders given."
+	},
+	"71": {
+		"name": "Special Ranged Weapon",
+		"text": "This unit has a special missile attack with limited ammunition, which can be very useful when initiating attacks."
+	},
+	"72": {
+		"name": "Living Saints",
+		"text": "Knights who have sipped from the Grail are elevated above mere mortals; they truly are what is best in men."
+	},
+	"73": {
+		"name": "Perfect Vigour",
+		"text": "Even when performing the most fatiguing actions, this unit never loses vigour."
+	},
+	"74": {
+		"name": "Expert Charge Defence",
+		"text": "When bracing, this unit negates the charge bonus of any attacker."
+	},
+	"75": {
+		"name": "Runic Magic",
+		"text": "This unit can bind magic into powerful runes which can be activated during battle."
+	},
+	"76": {
+		"name": "Ballistics Expert",
+		"text": "This unit improves all nearby friendly missile units."
+	},
+	"77": {
+		"name": "Old Grumblers",
+		"text": "Respected for their great age, superior courage and the length of their facial hair, Longbeards have an encouraging effect on their allies leadership should the Lord be absent."
+	},
+	"78": {
+		"name": "Fast (for a Dwarf)",
+		"text": "While Dwarfs are generally not the most nimble inhabitants of the Old World, they can move surprisingly fast when not slowed by heavy armour."
+	},
+	"79": {
+		"name": "Deathblow",
+		"text": "Slayers are unbreakable and always fight to the bitter end - sometimes even beyond that! Imminent death only makes them fight harder. When killed in melee, Slayers launch a final attack with their dying breaths."
+	},
+	"80": {
+		"name": "Whirling Axes",
+		"text": "Slayers are armed with two axes, deftly whirling them at high speed to deflect incoming missile fire."
+	},
+	"81": {
+		"name": "Armour-Sundering",
+		"text": "** || The armour-splitting attacks of this unit can significantly weaken the target's armour."
+	},
+	"82": {
+		"name": "Fire Resistance",
+		"text": "** || Damage of flaming attacks is reduced by this amount."
+	},
+	"83": {
+		"name": "Burnt!",
+		"text": "**",
+		"isNegative": true
+	},
+	"84": {
+		"name": "Death from Above",
+		"text": "While airborne, this unit can use a special attack to damage enemies below."
+	},
+	"85": {
+		"name": "Improved Bombing",
+		"text": "Like a rain of mighty hammer-blows from above, this unit drops more than one bomb at the same time."
+	},
+	"86": {
+		"name": "Goblin Mangonel",
+		"text": "A particularly stupid and otherwise useless Goblin prisoner is tied to a boulder and is then fired - screaming all the way - until he smashed into the target. Those hit by this projectile receive a leadership penalty."
+	},
+	"87": {
+		"name": "Discouraged!",
+		"text": "**",
+		"isNegative": true
+	},
+	"88": {
+		"name": "Strider",
+		"text": "Speed and combat penalties caused by terrain are ignored by this unit."
+	},
+	"89": {
+		"name": "Warpaint",
+		"text": "The colourful tattoos on their bare skin grant Savage Orcs Physical Resistance, which reduces the damage from any non-magical attack."
+	},
+	"90": {
+		"name": "Bigger & 'Arder",
+		"text": "The heaviest, strongest and meanest of Orcs, Big 'Uns are eager to prove it against enemies of all sizes."
+	},
+	"91": {
+		"name": "Armed to da Teef",
+		"text": "Wielding an 'eavy choppa in each hand, the Krimson Killerz cleave through several foes with each swing."
+	},
+	"92": {
+		"name": "Guided Projectile",
+		"text": "The projectile fired by this unit can home in on its target. When fired in first-person mode, you can control the projectile yourself."
+	},
+	"93": {
+		"name": "Da Great Green Wallop",
+		"text": "As if smote by mighty Gork himself, this unit's projectile blinds its target on impact, reducing accuracy, melee attack and melee defence capabilities."
+	},
+	"94": {
+		"name": "Blinded!",
+		"text": "**",
+		"isNegative": true
+	},
+	"95": {
+		"name": "Moon Dragon's Breath",
+		"text": "After a Moon Dragon's fiery breath engulfs its victim, scorched armour is often all that remains."
+	},
+	"96": {
+		"name": "Star Dragon's Breath",
+		"text": "The eldest, most powerful Dragons can melt armour and the flesh beneath with a molten blast of their white-hot breath."
+	},
+	"97": {
+		"name": "Sun Dragon's Breath",
+		"text": "The Sun Dragon's scorching breath lacks focus, but hitting a larger area is actually an advantage when fighting infantry groups."
+	},
+	"98": {
+		"name": "Lion Cloak",
+		"text": "White Lion fur is not merely a fashionable status symbol, it also provides protection against regular and magical missile attacks."
+	},
+	"99": {
+		"name": "Forest Strider",
+		"text": "Specialists in forest warfare, this unit gains melee attack and defence advantages when fighting in forests."
+	},
+	"100": {
+		"name": "Deflect Shots",
+		"text": "The art of deflecting arrows with a greatsword is painful to learn; such training is discouraged by Bladelord officers, but no true Swordmaster will let caution best his pride."
+	},
+	"101": {
+		"name": "Reaver Bows",
+		"text": "These enchanted bows, only entrusted to those of noble birth, fire three arrows at once."
+	},
+	"102": {
+		"name": "Dragon Armour",
+		"text": "Fire attacks cannot harm the wearer of this enchanted, volcano-forged armour."
+	},
+	"103": {
+		"name": "Martial Mastery",
+		"text": "A rigorous selection process and relentless training have turned this unit into the perfect fighting machine. This effect is lost, however, if the unit is badly damaged."
+	},
+	"104": {
+		"name": "Rebirth",
+		"text": "When death is imminent, this unit has a chance of regaining some of its health."
+	},
+	"105": {
+		"name": "Attuned to Magic",
+		"text": "This unit has magical attacks and becomes stronger when the winds of magic are in full gale."
+	},
+	"106": {
+		"name": "Predatory Senses",
+		"text": "These units are natural hunters that can sense prey hiding nearby."
+	},
+	"107": {
+		"name": "Aquatic",
+		"text": "Where other units of small stature struggle to fight and move in shallow water, Aquatic units excel."
+	},
+	"108": {
+		"name": "Chameleon",
+		"text": "This unit can move hidden in any terrain and is exceptionally hard to target with missile attacks."
+	},
+	"109": {
+		"name": "Revivification Crystal",
+		"text": "The crystal protects those who worship the Serpent God, healing wounds and bringing supplicants back from the point of death."
+	},
+	"110": {
+		"name": "Beam of Chotec",
+		"text": "An intense, white-hot shaft of light emanates forth, burning and blinding the foe with the wrath of Chotec himself."
+	},
+	"111": {
+		"name": "Plague Censer",
+		"text": "Warpstone dust and vile contagions fill this diabolical censer, exposure to which does horrendous things to bodies and minds alike."
+	},
+	"112": {
+		"name": "Contaminated!",
+		"text": "**",
+		"isNegative": true
+	},
+	"113": {
+		"name": "Weeping Blades",
+		"text": "Weeping Blades devour armour. A couple of slashes is all that's needed for their corrosive venom to eat through even the thickest of plates."
+	},
+	"114": {
+		"name": "Concealment Bombs",
+		"text": "When a bomb is smashed, a dark smoke curls out, concealing those who wish to hide and choking everyone else."
+	},
+	"115": {
+		"name": "Weeping Blade",
+		"text": "**"
+	},
+	"116": {
+		"name": "Warpfire",
+		"text": "After being showered in an unholy flood of odiferous flames, those left fleeing in panic are the lucky ones."
+	},
+	"117": {
+		"name": "Poison Wind Globes",
+		"text": "Misleadingly, and to the horror of anyone exposed to its content, the globes thrown by the Poison Wind Globadiers do not release poison, but a small cloud of lethal Warpstone gas. The larger the target's surface, the more pain it will experience."
+	},
+	"118": {
+		"name": "Snare Net",
+		"text": "Short-range throwing attack that slows the target."
+	},
+	"119": {
+		"name": "Death Globes",
+		"text": "Invented by Clan Skryre, these globes release a magical gas that is more stable than the Warpstone gas used in Poison Wind Globes. Hanging in the air longer and thus spreading further, it is especially lethal against large groups of targets."
+	},
+	"120": {
+		"name": "Too Horrible to Die",
+		"text": "When death is imminent, this unit has a chance of either regaining some of its health or releasing a pack of ravening Skaven instead."
+	},
+	"121": {
+		"name": "Plagueclaw Contagion",
+		"text": "Warpstone dust and vile contagions are amongst the ingredients of this catapult's liquid missiles, exposure to which does horrendous things to bodies and minds alike."
+	},
+	"122": {
+		"name": "Zzzzap!",
+		"text": "The Doomwheel sports fully automatic Warp-lightning rods which discharge bolts in front, and to the left and right."
+	},
+	"123": {
+		"name": "Doomfire",
+		"text": "The Hellcannon transforms the souls of former victims into crackling bolts of energy. Targets hit by this projectile receive a leadership penalty. The daemonic bond between the Hellcannon and its shot also allows minor corrections of the latter's flightpath. When fired in first-person mode, you can control the projectile yourself."
+	},
+	"124": {
+		"name": "Poison!",
+		"text": "**"
+	},
+	"125": {
+		"name": "Light of Death",
+		"text": "The Keeper of the Casket may allow some of the tormented spirits trapped inside to escape; not for mercy, but to let the damned souls rain down upon a loosely-specified area."
+	},
+	"126": {
+		"name": "Construct",
+		"text": "This unit is an animated construct (does not rout, is immune to terror, becomes unstable when Leadership is low). Necrotects can push it to its full combat potential and restore it in battle."
+	},
+	"127": {
+		"name": "Shieldbreaker",
+		"text": "** || (10 seconds) -24 Missile Parry (with shield)"
+	},
+	"128": {
+		"name": "Shieldbreaker",
+		"text": "This unit's shield-breaking attacks can significantly weaken the target's chance of blocking missile attacks."
+	},
+	"129": {
+		"name": "Take cover!",
+		"text": "** || (10 seconds) -8 Leadership"
+	}
+}

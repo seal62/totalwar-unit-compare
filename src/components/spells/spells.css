@@ -1,0 +1,50 @@
+.spell-container .spell-thumb {
+	max-width: 40px;
+	margin: 0;
+}
+
+.spell-popover {
+	max-width: 450px;
+}
+.spell-body .spell-subheader p {
+	vertical-align: text-top;
+	text-align: right;
+}
+
+.spell-subheader h3,
+.spell-subheader p,
+.spell-details .spell-details-left,
+.spell-details .spell-details-right {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	margin-bottom: 0;
+}
+
+.spell-details .spell-details-left {
+	width: 54%;
+}
+
+.spell-details .spell-details-right {
+	width: 40%;
+	margin-left: 6%;
+}
+.spell-details table td {
+	padding-bottom: 5px;
+	vertical-align: top;
+}
+
+.positive {
+	color: green;
+}
+.positive::before {
+	content: '\25b2';
+	padding-right: 5px;
+}
+.negative {
+	color: red;
+}
+.negative::before {
+	content: '\25bc';
+	padding-right: 5px;	
+}

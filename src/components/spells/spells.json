@@ -1,0 +1,2505 @@
+{
+	"1": {
+		"lore": "light",
+		"name": "Exorcism",
+		"subtitle": "Lore attribute",
+		"description": "Light Magic excels at the scourging of the supernatural, be they Daemons and creatures of Chaos, or the unquiet dead.",
+		"type": "Hex (Area)",
+		"cost": null,
+		"recharge": null,
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range.",
+		"target-if": "Undead",
+		"active-if": "casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "Exorcism (25 seconds) -8 Leadership"
+		}
+	},
+	"2": {
+		"lore": "light",
+		"name": "Pha's Protection",
+		"subtitle": "Spell",
+		"description": "The Wizard calls upon the beneficent Guardian of Light to protect his allies from harm.",
+		"type": "Augment",
+		"cost": 5,
+		"recharge": 29,
+		"duration": "24 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "+30 Armour",
+			"green2": "+27 Melee Defence"
+		}
+	},
+	"3": {
+		"lore": "light",
+		"name": "Shem's Burning Gaze",
+		"subtitle": "Spell",
+		"description": "Bolts of cleansing energy fly from the Wizard's hands, searing evil wherever they strike.",
+		"type": "Magic Missiles",
+		"cost": 6,
+		"recharge": 30,
+		"target": "Enemy",
+		"range": "250m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"projectile-range": "250m",
+		"effects": {
+			"green1": "Causes minor magical & fire damage",
+			"green2": "Good against armour",
+			"green3": "Good against large combatants",
+			"green4": "Strong vs. a single combatant",
+			"green5": "Good from a high angle"
+		}
+	},
+	"4": {
+		"lore": "light",
+		"name": "Light of Battle",
+		"subtitle": "Spell",
+		"description": "Reaching into the Wind of Hysh, the Wizard draws forth ennobling energies to steady faint hearts - augmenting allies with courage.",
+		"type": "Augment",
+		"cost": 7,
+		"recharge": 43,
+		"wind-up-time": null,
+		"duration": "30 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "Unbreakable"
+		}
+	},
+	"5": {
+		"lore": "light",
+		"name": "Net of Amyntok",
+		"subtitle": "Spell",
+		"description": "The Wizard casts an arcane net, created to hold the Great Deceiver himself. Any caught in its strands will struggle to act.",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 9,
+		"recharge": 38,
+		"wind-up-time": null,
+		"duration": "20 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "Cannot move"
+		}
+	},
+	"6": {
+		"lore": "light",
+		"name": "Birona's Timewarp",
+		"subtitle": "Spell",
+		"description": "The Wizard infuses his allies with Light Magic, freeing them from the passage of time and speeding up their actions.",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 11,
+		"recharge": 47,
+		"wind-up-time": null,
+		"duration": "41 seconds",
+		"target": "Self, Ground, Ally. Affects allies in range.",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+24% Speed",
+			"green2": "+26 Melee Attack"
+		}
+	},
+	"7": {
+		"lore": "light",
+		"name": "Banishment",
+		"subtitle": "Spell",
+		"description": "Creatures of the dark beware, for the Mage casts a ball of pure light to banish enemies of white wizardry.",
+		"type": "Vortex",
+		"cost": 18,
+		"recharge": 54,
+		"wind-up-time": null,
+		"duration": "18 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Can disrupt unit formation",
+			"green3": "Huge, randomly-moving area of effect",
+			"green4": "Strong vs. multiple units",
+			"green5": "Good against armour"
+		}
+	},
+	"8": {
+		"lore": "heavens",
+		"name": "Harmonic Convergence",
+		"subtitle": "Spell",
+		"description": "Divining auspicious signs, the caster guides the minds of targets, augmenting them with the foresight needed for victory.",
+		"type": "Augment",
+		"cost": 6,
+		"recharge": 30,
+		"wind-up-time": null,
+		"duration": "22 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+27 Melee Defence"
+		}
+	},
+	"9": {
+		"lore": "heavens",
+		"name": "Wind Blast",
+		"subtitle": "Spell",
+		"description": "The Astromancer seizes the winds of the battlefield, directing them against the foe to batter the targets with unhallowed gales.",
+		"type": "Breath",
+		"cost": 8,
+		"recharge": 32,
+		"wind-up-time": null,
+		"duration": "6 seconds",
+		"target": "Ground",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Expanding tear-shaped attack",
+			"green3": "Can disrupt unit formation",
+			"green4": "Strong vs. multiple units",
+			"red1": "Weak against armour"
+		}
+	},
+	"10": {
+		"lore": "heavens",
+		"name": "Urannon's Thunderbolt",
+		"subtitle": "Spell",
+		"description": "The caster calls down a mighty ball of lightning and hurls it - should the foe be struck they will surely be shattered!",
+		"type": "Bombardment",
+		"cost": 6,
+		"recharge": 42,
+		"wind-up-time": null,
+		"duration": "4 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Small strike area",
+			"green3": "Strong vs. multiple units",
+			"green4": "Good against armour",
+			"green5": "Good against artillery pieces"
+		}
+	},
+	"11": {
+		"lore": "heavens",
+		"name": "Curse of the Midnight Wind",
+		"subtitle": "Spell",
+		"description": "The Wizard issues a three word curse, hexing the target unit and blighting their ability to attack and defend.",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 11,
+		"recharge": 38,
+		"wind-up-time": null,
+		"duration": "25 seconds",
+		"target": "Ground, Enemy",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-30 Armour",
+			"red2": "-26 Melee Attack"
+		}
+	},
+	"12": {
+		"lore": "heavens",
+		"name": "Comet of Casandora",
+		"subtitle": "Spell",
+		"description": "Reaching to the highest heavens, the Wizard draws a wandering meteorite down upon the battlefield.",
+		"type": "Bombardment",
+		"cost": 13,
+		"recharge": 49,
+		"wind-up-time": null,
+		"duration": "7 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "Causes massive magical damage",
+			"green2": "Large strike area",
+			"green3": "Huge explosion area",
+			"green4": "Strong vs. multiple units",
+			"green5": "Good against armour"
+		}
+	},
+	"13": {
+		"lore": "heavens",
+		"name": "Chain Lightning",
+		"subtitle": "Spell",
+		"description": "Lightning arcs across the battlefield, leaping from foe-to-foe with crackling fury until there are none left within the storm.",
+		"type": "Vortex",
+		"cost": 14,
+		"recharge": 50,
+		"wind-up-time": null,
+		"duration": "21 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Large, randomly-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"green4": "Good against armour",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"14": {
+		"lore": "fire",
+		"name": "Cascading Fire Cloak",
+		"subtitle": "Spell",
+		"description": "A blazing aura surrounds the Pyromancer's chosen ally, shielding them with protective flame and augmenting their abilities.",
+		"type": "Augment",
+		"cost": 4,
+		"recharge": 28,
+		"wind-up-time": null,
+		"duration": "19 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "+27 Melee Defence",
+			"green2": "+20% Armour-Piercing Damage"
+		}
+	},
+	"15": {
+		"lore": "fire",
+		"name": "Fireball",
+		"subtitle": "Spell",
+		"description": "The Wizard conjures a boiling ball of magical flame and hurls it at a nearby foe.",
+		"type": "Magic Missile",
+		"cost": 5,
+		"recharge": 29,
+		"wind-up-time": null,
+		"target": "Enemy",
+		"range": "300m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"projectile-range": "300m",
+		"effects": {
+			"green1": "Causes moderate magical & fire damage",
+			"green2": "Powerful explosion",
+			"green3": "Strong vs. multiple combatants",
+			"green4": "Effective at long range",
+			"red1": "Weak against armour"
+		}
+	},
+	"16": {
+		"lore": "fire",
+		"name": "Flaming Sword of Rhuin",
+		"subtitle": "Spell",
+		"description": "The Wizard ensorcels allied weapons, making them burn with a savage fire. The targets of the spell are augmented with superior flaming blades.",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 8,
+		"recharge": 44,
+		"wind-up-time": null,
+		"duration": "19 seconds",
+		"target": "Self, Ground, Ally. Affects allies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"imbues": "Magical Damage, Fire Damage",
+		"effects": {
+			"green1": "+25% Weapon Damage",
+			"green2": "+25% Missile Damage"
+		}
+	},
+	"17": {
+		"lore": "fire",
+		"name": "The Burning Head",
+		"subtitle": "Spell",
+		"description": "A cackling, flaming visage appears before the Wizard. With a gleeful screech, it swirls around the battlefield, immolating anything in its way.",
+		"type": "Wind",
+		"cost": 10,
+		"recharge": 37,
+		"wind-up-time": null,
+		"duration": "20 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes major magical & fire damage",
+			"green2": "Small, forward-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"red1": "Weak against armour"
+		},
+		"contact": {"red": "Burnt! (10 seconds) -8 Leadership"}
+	},
+	"18": {
+		"lore": "fire",
+		"name": "Piercing Bolts of Burning",
+		"subtitle": "Spell",
+		"description": "Focusing all his mystical might, the Pyromancer strikes the foe with a flurry of incandescent missiles.",
+		"type": "Bombardment",
+		"cost": 11,
+		"recharge": 47,
+		"wind-up-time": null,
+		"duration": "9 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "Causes major magical & fire damage",
+			"green2": "Medium strike area",
+			"green3": "Strong vs. a single unit",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"19": {
+		"lore": "fire",
+		"name": "Flame Storm",
+		"subtitle": "Spell",
+		"description": "Conjured by a Bright Wizard or Chaos Sorcerer, a column of churning fire erupts from the battlefield, causing much destruction!",
+		"type": "Vortex",
+		"cost": 13,
+		"recharge": 50,
+		"wind-up-time": null,
+		"duration": "27 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Causes major magical & fire damage",
+			"green2": "Medium, randomly-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"red4": "Weak vs. a single combatant"
+		}
+	},
+	"20": {
+		"lore": "death",
+		"name": "Aspect of the Dread Knight",
+		"subtitle": "Spell",
+		"description": "An invisible aura of horror surrounds the Wizard's allies. Only the bravest foes now stand before them.",
+		"type": "Augment",
+		"cost": 4,
+		"recharge": 28,
+		"wind-up-time": null,
+		"duration": "16 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "+8 Leadership",
+			"green2": "Can Cause Terror"
+		}
+	},
+	"21": {
+		"lore": "death",
+		"name": "Spirit Leech",
+		"subtitle": "Spell",
+		"description": "The Wizard extends an ebon hand towards the chosen foe, leeching its spirit through tainted sorcery.",
+		"type": "Direct Damage",
+		"cost": 8,
+		"recharge": 32,
+		"wind-up-time": null,
+		"duration": "13 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. a single combatant",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. multiple combatants"
+		}
+	},
+	"22": {
+		"lore": "death",
+		"name": "Doom & Darkness",
+		"subtitle": "Spell",
+		"description": "Spirits of the departed assail the Wizard's foes, sapping their resolve and causing dread among their numbers.",
+		"type": "Hex",
+		"cost": 7,
+		"recharge": 43,
+		"wind-up-time": null,
+		"duration": "36 seconds",
+		"target": "Enemy",
+		"range": "200m",
+		"effects": {
+			"red1": "-16 Leadership"
+		}
+	},
+	"23": {
+		"lore": "death",
+		"name": "Soulblight",
+		"subtitle": "Spell",
+		"description": "Harnessing the sickly power of Shyish, the Wizard weakens the foe's will to survive the battle.",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 8,
+		"recharge": 45,
+		"wind-up-time": null,
+		"duration": "25 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-30 Armour",
+			"red2": "-25% Weapon Damage"
+		}
+	},
+	"24": {
+		"lore": "death",
+		"name": "The Fate of Bjuna",
+		"subtitle": "Spell",
+		"description": "Following the fate of the unsmiling warrior, Bjuna, the targets of the caster's ire will laugh themselves to death.",
+		"type": "Direct Damage",
+		"cost": 20,
+		"recharge": 52,
+		"wind-up-time": null,
+		"duration": "20 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant"
+		}
+	},
+	"25": {
+		"lore": "death",
+		"name": "The Purple Sun of Xereus",
+		"subtitle": "Spell",
+		"description": "A colossal orb of purple-edged darkness materialises - those who do not escape its crystalline touch are doomed for eternity!",
+		"type": "Vortex",
+		"cost": 18,
+		"recharge": 54,
+		"wind-up-time": null,
+		"duration": "11 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Huge, randomly-moving area of effect",
+			"green3": "Can disrupt unit formation",
+			"green4": "Good against armour",
+			"green5": "Strong vs. multiple units"
+		}
+	},
+	"26": {
+		"lore": "vampires",
+		"name": "Vanhel's Danse Macabre",
+		"subtitle": "Spell",
+		"description": "Friendly targets are filled with magical energy, making them even more aggressive!",
+		"type": "Augment",
+		"cost": 4,
+		"recharge": 28,
+		"wind-up-time": null,
+		"duration": "25 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "+24% Speed",
+			"green2": "+26 Melee Attack"
+		}
+	},
+	"27": {
+		"lore": "vampires",
+		"name": "Invocation of Nehek",
+		"subtitle": "Spell",
+		"description": "The caster intones the dread syllables once uttered by Nagash, restoring friendly targets.",
+		"type": "Regeneration",
+		"cost": 6,
+		"recharge": 30,
+		"wind-up-time": null,
+		"duration": "21 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"cannot-use-if": "Leadership is broken",
+		"target-if": "Undead",
+		"cannot-target-if": "Hit point replenishment cap reached, On a wall",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"green2": "Resurrects dead combatants",
+			"green3": "Heal injured before resurrecting"
+		}
+	},
+	"28": {
+		"lore": "vampires",
+		"name": "Raise Dead",
+		"subtitle": "Spell",
+		"description": "Necromancers can awaken mortal remains to reinforce their Undead legions.",
+		"type": "Augment",
+		"cost": 3,
+		"recharge": 24,
+		"uses-per-battle": 7,
+		"wind-up-time": null,
+		"target": "Ground",
+		"range": "60m",
+		"cannot-use-if": "Army is full, Climbing",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Spawns a unit of Zombies",
+			"green2": "Good at defending spellcaster",
+			"red1": "Summoned units degrade over time"
+		}
+	},
+	"29": {
+		"lore": "vampires",
+		"name": "Gaze of Nagash",
+		"subtitle": "Spell",
+		"description": "Bolts of Dark Magic leap from the caster's eyes, withering flesh and blackening the bone beneath.",
+		"type": "Magic Missiles",
+		"cost": 8,
+		"recharge": 44,
+		"wind-up-time": null,
+		"target": "Enemy",
+		"range": "250m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"projectile-range": "250m",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Good against armour",
+			"green3": "Good against large combatants",
+			"green4": "Good from a high angle",
+			"green5": "Strong vs. a single combatant"
+		}
+	},
+	"30": {
+		"lore": "vampires",
+		"name": "Curse of Years",
+		"subtitle": "Spell",
+		"description": "The Wizard spits out an ancient curse, causing their enemies to age at an incredible rate - their hair turning white and skin shrivelling up.",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 11,
+		"recharge": 47,
+		"wind-up-time": null,
+		"duration": "28 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-24% Speed",
+			"red2": "-26 Melee Attack",
+			"red3": "+15 Ability Recharge (seconds)"
+		}
+	},
+	"31": {
+		"lore": "vampires",
+		"name": "Wind of Death",
+		"subtitle": "Spell",
+		"description": "The Wizard calls forth spectral winds that howl through the enemy ranks, tearing their souls from their bodies.",
+		"type": "Wind",
+		"cost": 20,
+		"recharge": 44,
+		"wind-up-time": null,
+		"duration": "8 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Medium, forward-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"green4": "Good against armour",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"32": {
+		"lore": "vampires",
+		"name": "Command of the Unliving",
+		"subtitle": "Spell",
+		"description": "The once-proud Strigoi now dwell in dank recesses, binding foul, crypt-dwelling scavengers to their inexorable will.",
+		"type": "Augment",
+		"cost": 9,
+		"recharge": 57,
+		"wind-up-time": null,
+		"uses-per-battle": 2,
+		"target": "Ground",
+		"range": "60m",
+		"cannot-use-if": "Army is full",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Spawns a unit of Crypt Ghouls",
+			"green2": "Good at flanking enemies",
+			"red1": "Summoned units degrade over time"
+		}
+	},
+	"33": {
+		"lore": "vampires",
+		"name": "Awaken from the Grave",
+		"subtitle": "Spell",
+		"description": "Helman Ghorst, the maudlin Necromancer, uses his dark knowledge of the black arts to raise the dead and bring them under his control.",
+		"type": "Augment",
+		"cost": 12,
+		"recharge": 48,
+		"wind-up-time": null,
+		"uses-per-battle": 2,
+		"target": "Ground",
+		"range": "60m",
+		"cannot-use-if": "Army is full, Climbing",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Spawns a unit of Grave Guards",
+			"green2": "Good at melee combat",
+			"red1": "Summoned units degrade over time"
+		}
+	},
+	"34": {
+		"lore": "metal",
+		"name": "Plague of Rust",
+		"subtitle": "Spell",
+		"description": "The enemy target's armour begins to rust, disappearing in clouds of tiny flakes and weakening his defensive abilities.",
+		"type": "Hex",
+		"cost": 4,
+		"recharge": 28,
+		"wind-up-time": null,
+		"duration": "44 seconds",
+		"target": "Enemy",
+		"range": "200m",
+		"effects": {
+			"red1": "-30 Armour"
+		}
+	},
+	"35": {
+		"lore": "metal",
+		"name": "Searing Doom",
+		"subtitle": "Spell",
+		"description": "A spray of sizzling silver slivers rain from the sky to impale the caster's enemy.",
+		"type": "Bombardment",
+		"cost": 6,
+		"recharge": 30,
+		"wind-up-time": null,
+		"duration": "9 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Medium strike area",
+			"green3": "Strong vs. a single unit",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"36": {
+		"lore": "metal",
+		"name": "Glittering Robe",
+		"subtitle": "Spell",
+		"description": "The Alchemist conjures a gaudy cloak of shimmering scale to improve his allies' defensive stance.",
+		"type": "Augment",
+		"cost": 6,
+		"recharge": 42,
+		"wind-up-time": null,
+		"duration": "47 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "+30 Armour",
+			"green2": "+8 Leadership"
+		}
+	},
+	"37": {
+		"lore": "metal",
+		"name": "Gehenna's Golden Hounds",
+		"subtitle": "Spell",
+		"description": "Blowing on a glimmering golden whistle, the Wizard summons the spirit of Gehenna's metal hounds to hunt down his prey.",
+		"type": "Vortex",
+		"cost": 9,
+		"recharge": 45,
+		"wind-up-time": null,
+		"duration": "13 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Medium, randomly-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"38": {
+		"lore": "metal",
+		"name": "Transmutation of Lead",
+		"subtitle": "Spell",
+		"description": "The enemies' weapons become heavy, cumbersome, and almost impossible to wield in battle.",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 11,
+		"recharge": 47,
+		"wind-up-time": null,
+		"duration": "38 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-26 Melee Attack",
+			"red2": "-25% Weapon Damage"
+		}
+	},
+	"39": {
+		"lore": "metal",
+		"name": "Final Transmutation",
+		"subtitle": "Spell",
+		"description": "The Wizard unleashes a hail of magical energy, transmuting his foes into Unliving golden statues.",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 18,
+		"recharge": 54,
+		"wind-up-time": null,
+		"duration": "8 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "100m",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. a single combatant",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. a single unit"
+		}
+	},
+	"40": {
+		"lore": "shadows",
+		"name": "Melkoth's Mystifying Miasma",
+		"subtitle": "Spell",
+		"description": "The caster weaves a confounding fog that numbs and deludes enemies, causing them to stumble and stagger.",
+		"type": "Direct Damage",
+		"cost": 5,
+		"recharge": 29,
+		"wind-up-time": null,
+		"duration": "14 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "Weak vs. a single combatant",
+			"red2": "-24% Speed"
+		}
+	},
+	"41": {
+		"lore": "shadows",
+		"name": "The Enfeebling Foe",
+		"subtitle": "Spell",
+		"description": "When cast, this spell enfeebles enemy minds; they feel the crushing weight of reality bearing down upon them.",
+		"type": "Hex",
+		"cost": 6,
+		"recharge": 30,
+		"wind-up-time": null,
+		"duration": "22 seconds",
+		"target": "Enemy",
+		"range": "200m",
+		"effects": {
+			"red1": "-27 Melee Defence",
+			"red2": "-26 Melee Attack"
+		}
+	},
+	"42": {
+		"lore": "shadows",
+		"name": "The Withering",
+		"subtitle": "Spell",
+		"description": "The Wizard destroys the foe from within, corroding their minds with doubt and crisis.",
+		"type": "Hex",
+		"cost": 7,
+		"recharge": 43,
+		"wind-up-time": null,
+		"duration": "40 seconds",
+		"target": "Enemy",
+		"range": "200m",
+		"effects": {
+			"red1": "-30 Armour",
+			"red2": "-8 Leadership"
+		}
+	},
+	"43": {
+		"lore": "shadows",
+		"name": "The Penumbral Pendulum",
+		"subtitle": "Spell",
+		"description": "A spectral pendulum is summoned by the Wizard. On command, it swings, razor sharp and with lethal speed, through the foe.",
+		"type": "Wind",
+		"cost": 13,
+		"recharge": 40,
+		"wind-up-time": null,
+		"duration": "3 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes massive magical damage",
+			"green2": "Small, forward-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"44": {
+		"lore": "shadows",
+		"name": "Okkam's Mindrazor",
+		"subtitle": "Spell",
+		"description": "The supernatural solution is often the best; weapons materialise before the caster's allies, allowing them to slice through flesh, soul, and consciousness.",
+		"type": "Augment",
+		"cost": 10,
+		"recharge": 46,
+		"wind-up-time": null,
+		"duration": "28 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"Imbues": "Magical Damage",
+		"effects": {
+			"green1": "+40% Weapon Damage",
+			"green2": "+40% Armour-Piercing Damage"
+		}
+	},
+	"45": {
+		"lore": "shadows",
+		"name": "Pit of Shades",
+		"subtitle": "Spell",
+		"description": "The spellcaster opens a vortex leading into the Pit. Anything caught within it will be lost forever.",
+		"type": "Vortex",
+		"cost": 13,
+		"recharge": 49,
+		"wind-up-time": null,
+		"duration": "13 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Huge, stationary area of effect",
+			"green3": "Can disrupt unit formation",
+			"green4": "Strong vs. multiple units",
+			"green5": "Good against armour"
+		}
+	},
+	"46": {
+		"lore": "wild",
+		"name": "Bray-Scream",
+		"subtitle": "Spell",
+		"description": "This spell unleashes a howling roar of such intensity that it mashes brains and bursts eyeballs.",
+		"type": "Breath",
+		"cost": 5,
+		"recharge": 29,
+		"wind-up-time": null,
+		"target": "Ground",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Causes minor magical damage",
+			"green2": "Short, wide, expanding, tear-shaped attack",
+			"green3": "Good against armour",
+			"green4": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"47": {
+		"lore": "wild",
+		"name": "Viletide",
+		"subtitle": "Spell",
+		"description": "This spell calls to the creeping things of the undergrowth, sending a swarm of spiders, centipedes and slug-beetles onto the foe.",
+		"type": "Explosion",
+		"cost": 7,
+		"recharge": 31,
+		"wind-up-time": null,
+		"duration": "3 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Large explosion area",
+			"green3": "Strong vs. multiple combatants",
+			"red1": "Weak vs. a single combatant",
+			"red2": "Weak against armour"
+		}
+	},
+	"48": {
+		"lore": "wild",
+		"name": "Devolve",
+		"subtitle": "Spell",
+		"description": "The Bray-Shaman magnifies the savage and animalistic parts of the foe's psyche until they are nothing more than growling beasts.",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"cost": 11,
+		"recharge": 45,
+		"wind-up-time": null,
+		"duration": "11 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "100m",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "High chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant",
+			"red3": "-8 Leadership"
+		}
+	},
+	"49": {
+		"lore": "wild",
+		"name": "Traitor-Kin",
+		"subtitle": "Spell",
+		"description": "The Bray-Shaman drives a spear of wrath into enemy hearts, unlocking the beast within and causing them to turn against their own.",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"cost": 12,
+		"recharge": 39,
+		"wind-up-time": null,
+		"duration": "12 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "100m",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. a single combatant",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. multiple combatants",
+			"red3": "-24% Speed"
+		}
+	},
+	"50": {
+		"lore": "wild",
+		"name": "Mantle of Ghorok",
+		"subtitle": "Spell",
+		"description": "Ghorok was a legendary Minotaur, ferocious as a storm. His spirit-mantle is terrible but dangerous to the bearer.",
+		"type": "Augment",
+		"cost": 11,
+		"recharge": 47,
+		"wind-up-time": null,
+		"duration": "29 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "+44 Melee Attack",
+			"green2": "+40% Armour-Piercing Damage",
+			"green3": "+40% Weapon Damage",
+			"red1": "-30 Armour"
+		}
+	},
+	"51": {
+		"lore": "wild",
+		"name": "Savage Dominion",
+		"subtitle": "Spell",
+		"description": "The Bray-Shaman sends his mind winging into the wilds to possess a Cygor, then summons it to the battlefield.",
+		"type": "Augment",
+		"cost": 26,
+		"recharge": 48,
+		"wind-up-time": null,
+		"uses-per-battle": 2,
+		"target": "Ground",
+		"range": "60m",
+		"cannot-use-if": "Army is full, Climbing",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Spawns a Cygor",
+			"red1": "Summoned units degrade over time"
+		}
+	},
+	"52": {
+		"lore": "beasts",
+		"name": "Wyssan's Wildform",
+		"subtitle": "Spell",
+		"description": "The spellcaster unleashes the beast within, using its fury to transform allies into bestial forms.",
+		"type": "Augment",
+		"cost": 4,
+		"recharge": 28,
+		"wind-up-time": null,
+		"duration": "22 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "+25% Weapon Damage",
+			"green2": "+30 Armour"
+		}
+	},
+	"53": {
+		"lore": "beasts",
+		"name": "Flock of Doom",
+		"subtitle": "Spell",
+		"description": "With a mighty bellow, the spellcaster invokes Corvus the Crow Lord, summoning his servants to peck at the foe's eyes.",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 6,
+		"recharge": 30,
+		"wind-up-time": null,		
+		"duration": "7 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "100m",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. multiple combatants",
+			"red1": "High chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant"
+		}
+	},
+	"54": {
+		"lore": "beasts",
+		"name": "The Amber Spear",
+		"subtitle": "Spell",
+		"description": "Sounding a gnarled horn, the caster summons a glowing amber spear and hurls it at the foe with uncanny accuracy.",
+		"type": "Magic Missile",
+		"cost": 7,
+		"recharge": 43,
+		"wind-up-time": null,
+		"target": "Enemy",
+		"range": "200m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"projectile-range": "200m",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Good against armour",
+			"green3": "Good penetration",
+			"green4": "Effective at all ranges"
+		}
+	},
+	"55": {
+		"lore": "beasts",
+		"name": "Pann's Impenetrable Pelt",
+		"subtitle": "Spell",
+		"description": "Calling upon the beast-spirits of the wild, the caster sheathes vulnerable flesh in unyielding fur and hide.",
+		"type": "Augment",
+		"cost": 7,
+		"recharge": 43,
+		"wind-up-time": null,
+		"duration": "44 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "Good against AP damage",
+			"green2": "+24% Speed",
+			"green3": "+22% Physical Resistance"
+		}
+	},
+	"56": {
+		"lore": "beasts",
+		"name": "The Curse of Anraheir",
+		"subtitle": "Spell",
+		"description": "At the spellcaster's command, nebulous nature spirits assail the foe, clawing with hands not nearly as insubstantial as they first appear.",
+		"type": "Hex",
+		"typeDesc": "Instantly affects targets in area",
+		"cost": 11,
+		"recharge": 47,
+		"wind-up-time": null,
+		"duration": "33 seconds",
+		"target": "Ground, Enemy",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-26 Melee Attack",
+			"red2": "-24% Speed",
+			"red3": "-60% Accuracy"
+		}
+	},
+	"57": {
+		"lore": "beasts",
+		"name": "Transformation of Kadon",
+		"subtitle": "Spell",
+		"description": "Kadon was able to shift his shape to that of any monster, even a Manticore. One day he found he could not change back...",
+		"type": "Augment",
+		"cost": 16,
+		"recharge": 45,
+		"wind-up-time": null,
+		"uses-per-battle": 2,
+		"target": "Self, Ground",
+		"range": "60m",
+		"cannot-use-if": "Army is full, Climbing",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Spawns a Manticore",
+			"green2": "Powerful unit ideal for combat",
+			"red1": "Summoned units degrade over time",
+			"red2": "Spawned unit fights in this battle only"
+		}
+	},
+	"58": {
+		"lore": "life",
+		"name": "Earth Blood",
+		"subtitle": "Spell",
+		"description": "The Wizard draws wholesome energies from the soil, imbuing companions with the natural resilience of the earth.",
+		"type": "Regeneration (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"cost": 6,
+		"recharge": 30,
+		"wind-up-time": null,
+		"duration": "7 seconds",
+		"target": "Self, Ground, Ally. Affects allies in range",
+		"range": "200m",
+		"cannot-target-if": "Hit point replenishment cap reached",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		}
+	},
+	"59": {
+		"lore": "life",
+		"name": "Awakening of the Wood",
+		"subtitle": "Spell",
+		"description": "Trees live for thousands of years and have very long memories. When called to fight, centuries of pent-up wrath are unleashed.",
+		"type": "Explosion",
+		"cost": 7,
+		"recharge": 31,
+		"wind-up-time": null,
+		"duration": "12 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying",
+		"contact": {"red": "-48% Speed"},
+		"effects": {
+			"green1": "Causes minor magical damage",
+			"green2": "Large explosion area",
+			"red1": "Weak against armour"
+		}
+	},
+	"60": {
+		"lore": "life",
+		"name": "Flesh to Stone",
+		"subtitle": "Spell",
+		"description": "This spell temporarily transforms allies' mortal flesh into Unbreakable rock, increasing tenfold their resistance to attack.",
+		"type": "Augment",
+		"cost": 7,
+		"recharge": 43,
+		"wind-up-time": null,
+		"duration": "44 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "+60 Armour"
+		}
+	},
+	"61": {
+		"lore": "life",
+		"name": "Shield of Thorns",
+		"subtitle": "Spell",
+		"description": "Prickly gorse bursts from the ground around the caster's allies, protecting them from attack like a spiky, living shield.",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"cost": 8,
+		"recharge": 44,
+		"wind-up-time": null,
+		"duration": "25 seconds",
+		"target": "Self, Ground, Ally. Affects allies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "Good against AP damage",
+			"green2": "+25% Weapon Damage",
+			"green3": "+22% Missile Resistance"
+		}
+	},
+	"62": {
+		"lore": "life",
+		"name": "Regrowth",
+		"subtitle": "Spell",
+		"description": "By speaking Druthandor's name the Wizard is able to heal allies' injuries much faster than by natural means.",
+		"type": "Regeneration",
+		"cost": 13,
+		"recharge": 48,
+		"wind-up-time": null,
+		"duration": "29 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"cannot-target-if": "Hit point replenishment cap reached",
+		"effects": {
+			"green1": "Good against AP damage",
+			"green2": "Replenishes hit points of combatants",
+			"green3": "+22% Physical Resistance"
+		}
+	},
+	"63": {
+		"lore": "life",
+		"name": "The Dwellers Below",
+		"subtitle": "Spell",
+		"description": "This spell causes gnarled, fibrous hands to emerge from beneath the ground, dragging the foe to a claustrophobic, suffocating end.",
+		"type": "Direct Damage",
+		"cost": 18,
+		"recharge": 45,
+		"wind-up-time": null,
+		"duration": "15 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-target-if": "Flying, On a wall",
+		"contact": {
+			"red": "Dwellers Below (2 seconds) -24% Speed"
+		},
+		"effects": {
+			"green1": "Causes severe damage to combatants",
+			"green2": "Huge, stationary area of effect",
+			"green3": "Strong vs. multiple combatants",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant"
+		}
+	},
+	"64": {
+		"lore": "high magic",
+		"name": "Hand of Glory",
+		"subtitle": "Spell",
+		"description": "The spirits of ancient warriors are summoned and lend their might to allies in the present.",
+		"type": "Augment",
+		"cost": 4,
+		"recharge": 28,
+		"wind-up-time": null,
+		"duration": "22 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "+40 Reload Skill",
+			"green2": "+26 Melee Attack"
+		}
+	},
+	"65": {
+		"lore": "high magic",
+		"name": "Apotheosis",
+		"subtitle": "Spell",
+		"description": "Waves of pure High Magic infuse the target, radiating within the body, returning vigour and life.",
+		"type": "Regeneration",
+		"cost": 5,
+		"recharge": 29,
+		"wind-up-time": null,
+		"duration": "10 seconds",
+		"target": "Ally",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"green2": "Can Cause Fear"
+		}
+	},
+	"66": {
+		"lore": "high magic",
+		"name": "Soul Quench",
+		"subtitle": "Spell",
+		"description": "White light bursts forth, quenching the spirit of the foe as a mortal might smother a spark.",
+		"type": "Magic Missile",
+		"cost": 7,
+		"recharge": 43,
+		"wind-up-time": null,
+		"target": "Enemy",
+		"range": "250m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"projectile-range": "300m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Causes moderate magical damage",
+			"green3": "Powerful explosion",
+			"green4": "Strong vs. multiple combatants",
+			"green5": "Effective at long range"
+		}
+	},
+	"67": {
+		"lore": "high magic",
+		"name": "Tempest",
+		"subtitle": "Spell",
+		"description": "Without warning, a conflagration of the eight arcane Winds forms on the foe, creating a devastating tempest.",
+		"type": "Vortex",
+		"cost": 8,
+		"recharge": 44,
+		"wind-up-time": null,
+		"duration": "11 seconds",
+		"target": "Enemy. Affects enemies in range",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"target-if": "Flying",
+		"effect-range": "20m",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Huge, randomly-moving area of effect",
+			"green3": "Good against flying",
+			"green4": "Strong vs. a single combatant",
+			"red1": "Caught in the Tempest (11 seconds)",
+			"red2": "-72% Speed"
+		}
+	},
+	"68": {
+		"lore": "high magic",
+		"name": "Arcane Unforging",
+		"subtitle": "Spell",
+		"description": "Fingers of light seep into enemy armour, attacking its wearers.",
+		"type": "Direct Damage",
+		"cost": 16,
+		"recharge": 52,
+		"wind-up-time": null,
+		"duration": "22 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "Strong vs. a single combatant",
+			"red1": "Chance opponent will resist damage",
+			"red2": "Weak vs. multiple combatants",
+			"red3": "+30 Ability Recharge (seconds)"
+		}
+	},
+	"69": {
+		"lore": "high magic",
+		"name": "Fiery Convocation",
+		"subtitle": "Spell",
+		"description": "The caster utters words of power and a phoenix of pure fire manifests to swoop upon the enmey, bathing them in cleansing flame.",
+		"type": "Wind",
+		"cost": 15,
+		"recharge": 52,
+		"wind-up-time": null,
+		"duration": "10 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Climbing, On a wall",
+		"effects": {
+			"green1": "Causes major magical & fire damage",
+			"green2": "Medium, forward-moving area of effect",
+			"green3": "Good against armour",
+			"green4": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"70": {
+		"lore": "dark magic",
+		"name": "Power of Darkness",
+		"subtitle": "Spell",
+		"description": "The caster draws on unstable power from the Realm of Chaos to charge their spells.",
+		"type": "Augment of the Winds",
+		"cost": 4,
+		"recharge": 28,
+		"wind-up-time": null,
+		"uses-per-battle": 3,
+		"duration": "30 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "Great increase to power reserves",
+			"green2": "Greatly improved power recharge rate",
+			"red1": "Causes damage to self"
+		}
+	},
+	"71": {
+		"lore": "dark magic",
+		"name": "Chillwind",
+		"subtitle": "Spell",
+		"description": "A freezing gale is conjured and sent to assail the target with ice and hail.",
+		"type": "Wind",
+		"cost": 5,
+		"recharge": 29,
+		"wind-up-time": null,
+		"duration": "3 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Climbing, On a wall",
+		"effects": {
+			"green1": "Causes minor magical damage",
+			"green2": "Small, forward-moving area of effect",
+			"green3": "Good against armour",
+			"green4": "Strong vs. multiple units"
+		},
+		"contact": {
+			"red1": "Frostbite (20 seconds) -24% Speed"
+		}
+	},
+	"72": {
+		"lore": "dark magic",
+		"name": "Word of Pain",
+		"subtitle": "Spell",
+		"description": "As the caster utters a forbidden name, their enemies are wracked with waves of agony.",
+		"type": "Hex",
+		"cost": 8,
+		"recharge": 44,
+		"wind-up-time": null,
+		"duration": "40 seconds",
+		"target": "Enemy",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"red1": "-44 Melee Attack",
+			"red2": "-60% Accuracy"
+		}
+	},
+	"73": {
+		"lore": "dark magic",
+		"name": "Bladewind",
+		"subtitle": "Spell",
+		"description": "A swirling maelstrom of swords spin and slash their way across the battlefield in search of blood.",
+		"type": "Vortex",
+		"cost": 11,
+		"recharge": 38,
+		"wind-up-time": null,
+		"duration": "7 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Climbing, On a wall",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "large, randomly-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"red4": "Weak against armour"
+		}
+	},
+	"74": {
+		"lore": "dark magic",
+		"name": "Doombolt",
+		"subtitle": "Spell",
+		"description": "The sky opens and a bolt of burning, pure Chaos black lightning hurtles towards the foe.",
+		"type": "Bombardment",
+		"cost": 11,
+		"recharge": 47,
+		"wind-up-time": null,
+		"duration": "7 seconds",
+		"target": "Enemy",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Medium strike area",
+			"green3": "Strong vs. a single combatant",
+			"green4": "Good against armour",
+			"green5": "Strong vs. a single unit"
+		}
+	},
+	"75": {
+		"lore": "dark magic",
+		"name": "Soul Stealer",
+		"subtitle": "Spell",
+		"description": "Tendrils of solidified darkness writhe outwards, draining the lifeforce from foes and renewing the caster's own vigour.",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"cost": 18,
+		"recharge": 54,
+		"wind-up-time": null,
+		"duration": "12 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"effect-range": "30m",
+		"miscast-chance": "100%",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Absorbs hitpoints from enemies",
+			"green3": "Strong vs. a single combatant",
+			"red1": "Weak vs. multiple combatants"
+		}
+	},
+	"76": {
+		"lore": "little waaagh!",
+		"name": "Sneaky Stabbin'",
+		"subtitle": "Spell",
+		"description": "The targets of this spell are driven to go right after 'hurty bitz' or sneak up on opponents at unexpected angles.",
+		"type": "Augment",
+		"cost": 4,
+		"recharge": 28,
+		"wind-up-time": null,
+		"duration": "19 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "+20% Armour-Piercing Damage",
+			"green2": "+26 Melee Attack"
+		}
+	},
+	"77": {
+		"lore": "little waaagh!",
+		"name": "Vindictive Glare",
+		"subtitle": "Spell",
+		"description": "Green bolts of purest spite burst forth from the Shaman and streak towards the enemy.",
+		"type": "Magic Missiles",
+		"cost": 5,
+		"recharge": 29,
+		"wind-up-time": null,
+		"target": "Enemy",
+		"range": "250m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"projectile-range": "250m",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Good from a high angle",
+			"green3": "Strong vs. a single unit",
+			"green4": "Good against large combatants",
+			"red1": "Weak against armour"
+		}
+	},
+	"78": {
+		"lore": "little waaagh!",
+		"name": "Gork'll Fix It",
+		"subtitle": "Spell",
+		"description": "The Shaman points a bony finger at a nearby enemy, cursing them in the name of Gork.",
+		"type": "Hex",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 7,
+		"recharge": 43,
+		"wind-up-time": null,
+		"duration": "21 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-18% Charge Bonus",
+			"red2": "-24% Speed",
+			"red3": "-18% Vigour"
+		}
+	},
+	"79": {
+		"lore": "little waaagh!",
+		"name": "Itchy Nuisance",
+		"subtitle": "Spell",
+		"description": "By vigorously scratching his armpits - cackling maniacally as he does so - the Shaman projects painful chafing onto a nearby foe.",
+		"type": "Hex",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 8,
+		"recharge": 44,
+		"wind-up-time": null,
+		"duration": "25 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-25% Weapon Damage",
+			"red2": "-26 Melee Attack"
+		}
+	},
+	"80": {
+		"lore": "little waaagh!",
+		"name": "Night Shroud",
+		"subtitle": "Spell",
+		"description": "The Shaman throws a black-capped nightshade mushroom into the air, which bursts into a cloud of murky darkness.",
+		"type": "Hiding",
+		"cost": 9,
+		"recharge": 48,
+		"wind-up-time": null,
+		"duration": "75 seconds",
+		"target": "Self, Ally",
+		"range": "300m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "Stalk",
+			"green2": "Spotted only at a very close range"
+		}
+	},
+	"81": {
+		"lore": "little waaagh!",
+		"name": "Curse of Da Bad Moon",
+		"subtitle": "Spell",
+		"description": "With a chilling howl, the Shaman summons a great pale moon with a leering goblinoid face and large, tusk-like fangs.",
+		"type": "Vortex",
+		"cost": 11,
+		"recharge": 47,
+		"wind-up-time": null,
+		"duration": "22 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Can disrupt unit formation",
+			"green3": "Medium, randomly-moving area of effect",
+			"green4": "Strong vs. multiple units",
+			"red1": "Weak against armour"
+		},
+		"contact": {
+			"red1": "Da Nasty Curse! (22 seconds)",
+			"red2": "-24% Speed",
+			"red3": "-30 Armour",
+			"red4": "-26 Melee Attack"
+		}
+	},
+	"82": {
+		"lore": "big waaagh!",
+		"name": "Gaze of Mork",
+		"subtitle": "Spell",
+		"description": "Mork gives the Shaman the ability to project beams of coruscating energy from his eyes.",
+		"type": "Magic Missiles",
+		"cost": 5,
+		"recharge": 29,
+		"wind-up-time": null,
+		"target": "Enemy",
+		"range": "250m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"projectile-range": "250m",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Good from a high angle",
+			"green3": "Strong vs. a single combatant",
+			"green4": "Good against large combatants",
+			"red1": "Weak against armour"
+		}
+	},
+	"83": {
+		"lore": "big waaagh!",
+		"name": "Brain Bursta",
+		"subtitle": "Spell",
+		"description": "Projecting violence in a mental wave, the Shaman glowers at his target and lets loose a bolt of brain-melting force.",
+		"type": "Explosion",
+		"cost": 7,
+		"recharge": 31,
+		"wind-up-time": null,
+		"duration": "14 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Large explosion area",
+			"green3": "Strong vs. a single unit",
+			"red1": "Weak vs. a single combatant",
+			"red2": "Weak against armour"
+		}
+	},
+	"84": {
+		"lore": "big waaagh!",
+		"name": "Fists of Gork",
+		"subtitle": "Spell",
+		"description": "In a fit of fighting fury the target unit becomes harder than iron, increasing both its attack and defence capabilities.",
+		"type": "Augment",
+		"cost": 7,
+		"recharge": 43,
+		"wind-up-time": null,
+		"duration": "28 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"imbues": "Magical Damage",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+27 Melee Defence"
+		}
+	},
+	"85": {
+		"lore": "big waaagh!",
+		"name": "'Eadbutt'",
+		"subtitle": "Spell",
+		"description": "A wave of green energy emanates outwards, forming a shockwave of power that assaults any unfortunate foe.",
+		"type": "Breath",
+		"cost": 9,
+		"recharge": 45,
+		"wind-up-time": null,
+		"duration": "18 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Can disrupt unit formation",
+			"green3": "Short, wide, expanding, tear-shaped attack",
+			"green4": "Strong vs. a single unit",
+			"red1": "Weak against armour"
+		}
+	},
+	"86": {
+		"lore": "big waaagh!",
+		"name": "'Ere We Go'",
+		"subtitle": "Spell",
+		"description": "As the Shaman chants, he leaks fighty-energy, boosting the fierceness and prowess of friendly units nearby.",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 11,
+		"recharge": 47,
+		"wind-up-time": null,
+		"duration": "38 seconds",
+		"target": "Self, Ally. Affects allies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+44 Melee Attack"
+		}
+	},
+	"87": {
+		"lore": "big waaagh!",
+		"name": "Foot of Gork",
+		"subtitle": "Spell",
+		"description": "The Shaman implores the sky with wild gesticulations. The almighty green foot of the Orc god descends to crush the foe!",
+		"type": "Explosion",
+		"cost": 18,
+		"recharge": 54,
+		"wind-up-time": null,
+		"duration": "8 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying",
+		"effects": {
+			"green1": "Causes massive magical damage",
+			"green2": "Can disrupt unit formation",
+			"green3": "Huge explosion area",
+			"green4": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"88": {
+		"lore": "ruin",
+		"name": "Warp Lightning",
+		"subtitle": "Spell",
+		"description": "Dire greenish-black lightning strikes at the Skaven's chittered command.",
+		"type": "Bombardment",
+		"cost": 5,
+		"recharge": 30,
+		"wind-up-time": null,
+		"duration": "5 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Medium strike area",
+			"green3": "Good against armour",
+			"green4": "Strong vs. multiple combatants",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"89": {
+		"lore": "ruin",
+		"name": "Howling Warpgale",
+		"subtitle": "Spell",
+		"description": "The caster gestures twitchingly to the skies and fierce gales swirl about, making flight impossible.",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 5,
+		"recharge": 30,
+		"wind-up-time": null,
+		"duration": "14 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"target-if": "Flying unit",
+		"effect-range": "55m",
+		"effects": {
+			"red1": "Cannot move"
+		}
+	},
+	"90": {
+		"lore": "ruin",
+		"name": "Death Frenzy",
+		"subtitle": "Spell",
+		"description": "Gesticulating wildly, the caster gifts an allied unit with a rabid, frothing need to attack and consume the foe!",
+		"type": "Augment",
+		"cost": 6,
+		"recharge": 43,
+		"wind-up-time": null,
+		"duration": "21 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+25% Weapon Damage",
+			"green3": "Immune to Psychology"
+		}
+	},
+	"91": {
+		"lore": "ruin",
+		"name": "Scorch",
+		"subtitle": "Spell",
+		"description": "The Sorcerer thrusts his paws into the ground summoning forth a great gout of green flame.",
+		"type": "Breath",
+		"cost": 8,
+		"recharge": 44,
+		"wind-up-time": null,
+		"duration": "12 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Causes major magical & fire damage",
+			"green2": "Long, thin, expanding, tear-shaped attack",
+			"green3": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant",
+			"red2": "Weak against armour"
+		}
+	},
+	"92": {
+		"lore": "ruin",
+		"name": "Skitterclap",
+		"subtitle": "Spell",
+		"description": "The Skaven caster disappers in a puff of greenish smoke, only to reappear elsewhere on the battlefield.",
+		"type": "Hiding",
+		"cost": 9,
+		"recharge": 48,
+		"wind-up-time": null,
+		"duration": "75 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"effects": {
+			"green1": "Target is hidden",
+			"green2": "Effective when flanking",
+			"green3": "+24% Speed",
+			"green4": "Stalk",
+			"green5": "Spotted only at very close range"
+		}
+	},
+	"93": {
+		"lore": "ruin",
+		"name": "Crack's Call",
+		"subtitle": "Spell",
+		"description": "With the incantation invoked, the Skaven stamps his horrible, rattish foot, causing the very ground to split asunder.",
+		"type": "Wind",
+		"cost": 15,
+		"recharge": 52,
+		"wind-up-time": null,
+		"duration": "10 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Medium, forward-moving area of effect",
+			"green3": "Good against armour",
+			"green4": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"94": {
+		"lore": "ruin",
+		"name": "The Dreaded Thirteenth Spell",
+		"subtitle": "Spell",
+		"description": "The Curse of the Horned Rat is the dreaded 13th spell - the fabric of reality is torn and the Horned One's children spill forth!",
+		"type": "Explosion",
+		"cost": 25,
+		"recharge": 52,
+		"wind-up-time": null,
+		"uses-per-battle": 2,
+		"duration": "13 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Spawns a unit of Stormvermin",
+			"green2": "Huge explosion area",
+			"green3": "Can disrupt unit formation",
+			"green4": "Strong vs. multiple units",
+			"red1": "Summoned units degrade over time"
+		}
+	},
+	"95": {
+		"lore": "plague",
+		"name": "Bless with Filth",
+		"subtitle": "Spell",
+		"description": "A foul mist wraps around the weapons of an allied pack, their blades dripping with noxious filth.",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"cost": 5,
+		"recharge": 29,
+		"wind-up-time": null,
+		"duration": "22 seconds",
+		"target": "Self, Ground, Ally. Affects allies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"imbues": {
+			"red1": "Poison! (10 seconds)",
+			"red2": "-20% Armour-Piercing Missile Damage",
+			"red3": "-24% Speed",
+			"red4": "-20% Weapon Damage",
+			"red5": "-20% Armour-Piercing Damage",
+			"red6": "-20% Missile Damage"
+		}
+	},
+	"96": {
+		"lore": "plague",
+		"name": "Pestilent Breath",
+		"subtitle": "Spell",
+		"description": "The Skaven utters a vile phrase and belches forth an impossibly foul cloud.",
+		"type": "Breath",
+		"cost": 8,
+		"recharge": 32,
+		"wind-up-time": null,
+		"duration": "8 seconds",
+		"target": "Ground",
+		"range": "100m",
+		"cannot-use-if": "Climbing, On a wall",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Expanding tear-shaped attack",
+			"green3": "Can disrupt unit formation",
+			"green4": "Strong vs. multiple units",
+			"red1": "Weak against armour"
+		}
+	},
+	"97": {
+		"lore": "plague",
+		"name": "Vermintide",
+		"subtitle": "Spell",
+		"description": "Behold the Vermintide; the Wizard calls and the rats will answer!",
+		"type": "Augment",
+		"cost": 5,
+		"recharge": 41,
+		"wind-up-time": null,
+		"uses-per-battle": 6,
+		"target": "Ground",
+		"range": "60m",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Spawns a unit of Clanrats",
+			"green2": "Good at defending spellcaster",
+			"red1": "Summoned units degrade over time"
+		}
+	},
+	"98": {
+		"lore": "plague",
+		"name": "Wither",
+		"subtitle": "Spell",
+		"description": "Chanting passages from the Liber Bubonicus, the Wizard casts a hex of wasting and corrosion.",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 10,
+		"recharge": 37,
+		"wind-up-time": null,
+		"duration": "50 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-30 Armour"
+		}
+	},
+	"99": {
+		"lore": "plague",
+		"name": "Plague",
+		"subtitle": "Spell",
+		"description": "The caster unleashes a vile disease that scours the battlefield in search of victims to infect and instantly petrify.",
+		"type": "Vortex",
+		"cost": 11,
+		"recharge": 50,
+		"wind-up-time": null,
+		"duration": "20 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Large, expanding area of effect",
+			"green3": "Good against armour",
+			"green4": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"100": {
+		"lore": "plague",
+		"name": "Pestilent Birth",
+		"subtitle": "Spell",
+		"description": "Like a pregnant boil bursting forth, the ground bursts open and pus-coated Plague Monks emerge to do battle at the verminous summoner's bidding.",
+		"type": "Augment",
+		"cost": 12,
+		"recharge": 48,
+		"wind-up-time": null,
+		"uses-per-battle": 2,
+		"target": "Ground",
+		"range": "60m",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Spawns a unit of Plague Monks",
+			"green2": "Good at flanking enemies",
+			"red1": "Summoned units degrade over time"
+		}
+	},
+	"101": {
+		"lore": "beasts",
+		"name": "Wild Heart",
+		"subtitle": "Lore attribute",
+		"description": "Amber is the colour of beasts. Such magic can ensnare and entrap animals much more easily than so-called 'intelligent' species.",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "Casting",
+		"effects": {
+			"green1": "Wild Heart (29 seconds)",
+			"green2": "Increase to power reserves",
+			"green3": "Improved power recharge rate"
+		}
+	},
+	"102": {
+		"lore": "death",
+		"name": "Life Leeching",
+		"subtitle": "Lore attribute",
+		"description": "spellcasters who practise Death Magic can channel the life force of foes into their spells",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "Casting",
+		"effects": {
+			"green1": "Life Leeching (25 seconds)",
+			"green2": "Improved power recharge rate"
+		}
+	},
+	"103": {
+		"lore": "shadows",
+		"name": "Smoke & Mirrors",
+		"subtitle": "Lore attribute",
+		"description": "A conjured shadow is just as obfuscating as a real one - the Shadow Wizard is master or mistress of the 'concealing' arts.",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "Smoke & Mirrors (24 seconds)",
+			"green2": "+12% Speed"
+		}
+	},
+	"104": {
+		"lore": "wild",
+		"name": "Bestial Surge",
+		"subtitle": "Lore attribute",
+		"description": "The Bray-Shaman inflames the Beastmen's urge to rend the foe, causing them to surge forward in a roaringm bellowing mass.",
+		"type": "Augment (Area)",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "Bestial Surge (9 seconds)",
+			"green2": "+18% Charge Bonus",
+			"green3": "+9% Vigour"
+		}
+	},
+	"105": {
+		"lore": "life",
+		"name": "Life Bloom",
+		"subtitle": "Lore attribute",
+		"description": "Even the simplest of spells can bring forth the full bloom of renewal, reinvigorating and healing the broken and bleeding.",
+		"type": "Regeneration (Area)",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "Life Bloom (5 seconds)",
+			"green2": "Triggers when casting spell",
+			"green3": "Replenishes hit points of combatants"
+		}
+	},
+	"106": {
+		"lore": "heavens",
+		"name": "Roiling Skies",
+		"subtitle": "Lore attribute",
+		"description": "Spells from the Lore of Heavens manipulate the ethers of the skies, buffeting and pummelling winged creatures.",
+		"type": "Hex (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"target-if": "Flying",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "Roiling Skies (25 seconds)",
+			"red2": "-24% Speed",
+			"red3": "-22 Melee Defence"
+		}
+	},
+	"107": {
+		"lore": "little waaagh!",
+		"name": "Sneaky Stealin'",
+		"subtitle": "Lore attribute",
+		"description": "Goblin Shamans are sneaky and will steal away the power from the enemy Wizard, cackling maniacally while doing so!",
+		"type": "Hex of the Winds",
+		"duration": "Constant",
+		"target": "Around self",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "Sneaky Stealing (25 seconds)",
+			"red2": "Reduced power recharge rate"
+		}
+	},
+	"108": {
+		"lore": "big waaagh!",
+		"name": "Power of da Waaagh!",
+		"subtitle": "Lore attribute",
+		"description": "Boosted by the positive energies of fightin' Greenskins, all Spells of Da Big Waaagh increase in power.",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "Casting",
+		"effects": {
+			"green1": "Power of Da Waaagh! (25 seconds)",
+			"green2": "Improved power recharge rate"
+		}
+	},
+	"109": {
+		"lore": "dark",
+		"name": "Spiteful Conjuration",
+		"subtitle": "Lore attribute",
+		"description": "As the spellcaster summons Dark Magic, black darts of malice will flit through the air to pierce the victims of the Dark Elf's spite.",
+		"type": "Hex (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "Spiteful Conjuration (18 seconds)",
+			"red2": "-15 Armour"
+		}
+	},
+	"110": {
+		"lore": "fire",
+		"name": "Kindleflame",
+		"subtitle": "Lore attribute",
+		"description": "Fire feeds fire, two blazes together are stronger and hotter than two apart. The Kindleflame intensifies such fire.",
+		"type": "Ward Save Hex (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "Kindleflame (15 seconds)",
+			"red2": "+22% Weakness to Fire Damage"
+		}
+	},
+	"111": {
+		"lore": "high",
+		"name": "Shield of Saphery",
+		"subtitle": "Lore attribute",
+		"description": "As the High Magic is channelled into the caster, its preserving energies form a dome of protection around them.",
+		"type": "Ward Save (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects allies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "Shield of Saphery (9 seconds)",
+			"red2": "+11% Damage Resistance"
+		}
+	},
+	"112": {
+		"lore": "high magic",
+		"name": "Bound Fiery Convocation",
+		"subtitle": "Bound spell",
+		"description": "The caster utters words of power and a phoenix of pure fire manifests to swoop upon the enmey, bathing them in cleansing flame.",
+		"type": "Wind",
+		"recharge": 135,
+		"wind-up-time": null,
+		"uses-per-battle": 2,
+		"duration": "10 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-target-if": "Climbing, On a wall",
+		"effects": {
+			"green1": "Causes major magical & fire damage",
+			"green2": "Medium, forward-moving area of effect",
+			"green3": "Good against armour",
+			"green4": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"113": {
+		"lore": "light",
+		"name": "Banishment",
+		"subtitle": "Bound spell",
+		"description": "Creatures of the dark beware, for the Mage casts a ball of pure light to banish enemies of white wizardry.",
+		"type": "Vortex",
+		"recharge": 135,
+		"wind-up-time": null,
+		"uses-per-battle": 2,
+		"duration": "18 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Can disrupt unit formation",
+			"green3": "Huge, randomly-moving area of effect",
+			"green4": "Strong vs. multiple units",
+			"green5": "Good against armour"
+		}
+	},
+	"114": {
+		"lore": "vampires",
+		"name": "The Curse of Undeath",
+		"subtitle": "Lore attribute",
+		"description": "As the powers of Dark Magic are wielded for the purpose of Necromancy, its unwholesome energies invigorate the Undead.",
+		"type": "Regeneration (Area)",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"target-if": "Undead",
+		"active-if": "Casting",
+		"disabled-if": "Leadership is broken",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "Curse of Undeath (7 seconds)",
+			"green2": "Resurrects dead combatants",
+			"green3": "Heals injured before resurrecting",
+			"green4": "Greatly replenishes hit points of combatants"
+		}
+	},
+	"115": {
+		"lore": "plague",
+		"name": "Plague Rash",
+		"subtitle": "Lore attribute",
+		"description": "Itchy, nasty buboes are spread as the spells of Plague are cast, infecting the enemy populace with sickness.",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "Plague Rash (10 seconds)",
+			"red2": "-12% Speed",
+			"red3": "-9% Vigour"
+		}
+	},
+	"116": {
+		"lore": "ruin",
+		"name": "Musk of Fear",
+		"subtitle": "Lore attribute",
+		"description": "As the Lore of Ruin siphons the Winds of Magic, an unholy despair takes hold on the surface dwellers... the rats lurk in the shadows.",
+		"type": "Hex (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"red1": "Musk of Fear (8 seconds)",
+			"red2": "-4 Leadership",
+			"red3": "-13 Melee Attack"
+		}
+	},
+	"117": {
+		"lore": "metal",
+		"name": "Metalshifting",
+		"subtitle": "Lore attribute",
+		"description": "Armour is little defence against a skilled alchemist, under his command metal turns into an arcane lightning rod, attracting hostile magic.",
+		"type": "Augment (Area)",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "Metalshifting (13 seconds)",
+			"green2": "+10% Armour-Piercing Damage",
+			"green3": "+10% Weapon Damage"
+		}
+	},
+	"118": {
+		"lore": "",
+		"name": "Grand Hammer of Sigmar",
+		"subtitle": "Bound spell",
+		"description": "The Warrior Priest implores Sigmar to imbue him with a modicum of divine strength, and now his hammer glows bright with power!",
+		"type": "Augment",
+		"typeDesc": "Instantly affects targets in area",
+		"duration": "44 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"blue1": "Added effect area",
+			"green1": "Battle Prayer",
+			"green2": "+26 Melee Attack"
+		}
+	},
+	"119": {
+		"lore": "",
+		"name": "Grand Shield of Faith",
+		"subtitle": "Bound spell",
+		"description": "The Warrior Priest's faith manifests in the form of a shield as hard as castle-forged steel.",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "26 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "55m",
+		"effects": {
+			"blue1": "Increased effect area",
+			"green1": "Battle Prayer",
+			"green2": "+22% Damage Resistance"
+		}
+	},
+	"120": {
+		"lore": "",
+		"name": "Grand Soulfire",
+		"subtitle": "Bound spell",
+		"description": "A battle prayer that bathes the Warrior Priest in white, holy fire, sears Sigmar's foes but leaves the supplicant unharmed.",
+		"type": "Bombardment",
+		"typeDesc": "Instantly affects targets in area",
+		"duration": "7 seconds",
+		"target": "Self. Affects allies in range",
+		"cannot-use-if": "Climbing",
+		"effect-range": "30m",
+		"effects": {
+			"blue1": "Increased effect area",
+			"blue2": "Increased number of missiles",
+			"green1": "Battle Prayer",
+			"green2": "Causes moderate magical damage",
+			"green3": "Large strike area",
+			"red1": "Weak vs. a single combatant",
+			"green4": "+90% Magic Resistance"
+		}
+	},
+	"121": {
+		"lore": "",
+		"name": "Hammer of Sigmar",
+		"subtitle": "Bound spell",
+		"description": "The Warrior Priest implores Sigmar to imbue him with a modicum of divine strength, and now his hammer glows bright with power!",
+		"type": "Augment",
+		"duration": "44 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Battle Prayer",
+			"green2": "+26 Melee Attack"
+		}
+	},
+	"122": {
+		"lore": "",
+		"name": "Shield of Faith",
+		"subtitle": "Bound spell",
+		"description": "The Warrior Priest's faith manifests in the form of a shield as hard as castle-forged steel.",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "21 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green3": "Good against AP damage",
+			"green1": "Battle Prayer",
+			"green2": "+22% Damage Resistance"
+		}
+	},
+	"123": {
+		"lore": "",
+		"name": "Soulfire",
+		"subtitle": "Bound spell",
+		"description": "A battle prayer that bathes the Warrior Priest in white, holy fire, sears Sigmar's foes but leaves the supplicant unharmed.",
+		"type": "Bombardment",
+		"typeDesc": "Instantly affects targets in area",
+		"duration": "7 seconds",
+		"target": "Self. Affects allies in range",
+		"cannot-use-if": "Climbing",
+		"effect-range": "15m",
+		"effects": {
+			"green1": "Battle Prayer",
+			"green2": "Causes moderate magical damage",
+			"green3": "Large strike area",
+			"red1": "Weak vs. a single combatant",
+			"green4": "+90% Magic Resistance"
+		}
+	},
+	"124": {
+		"lore": "nehekhara",
+		"name": "The Restless Dead",
+		"subtitle": "Lore attribute",
+		"description": "By which the dead don't stay that way for long, springing back into jerking, clanking Unlife.",
+		"type": "Augment (Area)",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"target-if": "Undead",
+		"active-if": "Casting",
+		"disabled-if": "Leadership is broken",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "Resurrects dead combatants",
+			"green2": "Greatly replenishes hit points of combatants",
+			"green3": "Heals injured before resurrecting",
+			"green4": "The Restless Dead (7 seconds)"
+		}
+	},
+	"125": {
+		"lore": "nehekhara",
+		"name": "Djaf's Incantation of Cursed Blades",
+		"subtitle": "Spell",
+		"description": "Imbued with the essence of the God of Death, the Nehekharan's blades strike with supernatural force to harvest souls for Djaf.",
+		"type": "Augment",
+		"cost": 4,
+		"recharge": 28,
+		"wind-up-time": null,
+		"duration": "25 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"effects": {
+			"green1": "+20% Weapon Damage",
+			"green2": "+20% Armour-Piercing Damage"
+		}
+	},
+	"126": {
+		"lore": "nehekhara",
+		"name": "Neru's Incantation of Protection",
+		"subtitle": "Spell",
+		"description": "Sword-blows are mysteriously turned away as Ptra's wife reaches out to shield Nehekhara's warriors from evil.",
+		"type": "Ward Save",
+		"cost": 6,
+		"recharge": 30,
+		"wind-up-time": null,
+		"duration": "18 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"effects": {
+			"green1": "+44% Physical Resistance"
+		}
+	},
+	"127": {
+		"lore": "nehekhara",
+		"name": "Ptra's Incantation of Righteous Smiting",
+		"subtitle": "Spell",
+		"description": "When the verses are spoken, a fierce light emanates from the Undead's empty eye-sockets, enabling them to strike with supernatural speed and fury.",
+		"type": "Augment",
+		"cost": 7,
+		"recharge": 43,
+		"wind-up-time": null,
+		"duration": "32 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"target-if": "Missile attack possible",
+		"effects": {
+			"green1": "+40% Armour-Piercing Missile Damage",
+			"green2": "+40% Missile Damage"
+		}
+	},
+	"128": {
+		"lore": "nehekhara",
+		"name": "Usirian's Incantation of Vengeance",
+		"subtitle": "Spell",
+		"description": "As the names of Usirian are invoked, skeletal hands burst forth from beneath the sand to drag the foe to their graves.",
+		"type": "Direct Damage",
+		"cost": 11,
+		"recharge": 38,
+		"wind-up-time": null,
+		"duration": "24 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"red1": "High chance opponent will resist damage",
+			"red2": "Weak vs. a single combatant",
+			"red3": "-24% Speed"
+		}
+	},
+	"129": {
+		"lore": "nehekhara",
+		"name": "Sakhmet's Incantation of the Skullstorm",
+		"subtitle": "Spell",
+		"description": "A whirlwind of skulls tears across the battlefield, devouring all in its path in the Goddess of the Green Moon's bitter, vindictive name.",
+		"type": "Vortex",
+		"cost": 12,
+		"recharge": 49,
+		"wind-up-time": null,
+		"duration": "27 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Medium, randomly-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
+		}
+	},
+	"130": {
+		"lore": "nehekhara",
+		"name": "Usekhp's Incantation of Desiccation",
+		"subtitle": "Spell",
+		"description": "Every syllable strips moisture and saps vitality from the bodies of Usekhp's unfortunate victims.",
+		"type": "Hex (Area)",
+		"cost": 15,
+		"recharge": 51,
+		"wind-up-time": null,
+		"duration": "38 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "200m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-26 Melee Attack",
+			"red2": "-27 Melee Defence"
+		}
+	}
+}

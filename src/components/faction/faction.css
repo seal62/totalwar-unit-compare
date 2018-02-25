@@ -1,0 +1,175 @@
+/* factions */
+.factions-container a {
+	color: #444;
+}
+.factions-container li {
+	margin-bottom: 5px;
+}
+
+/* Unit page */
+
+section.faction-container {
+	width: 90%;
+	margin: 0 auto;
+}
+section.faction-container h2 {
+	margin-bottom: 30px;
+	text-align: center; 
+}
+section.faction-container img {
+	max-width: 50px;
+	margin-right: 10px;
+}
+
+.unit-list-container {
+	width: 100%;
+	margin-top: -8px;
+}
+
+.unit-list-container ul {
+	list-style: none;
+	margin: 0 0 20px;
+	padding: 0;
+}
+
+.unit-list-container h4 { 
+	cursor: pointer;
+}
+.unit-list-container ul li {
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.unit-stats td {
+	width: 20%;
+	padding-bottom: 5px;
+}
+.unit-stats td div {
+	display: inline-block;
+	width: 40%;
+}
+.unit-stats td div.sp-container {
+	width: 60%;
+}
+.unit-stats td div.fullWidth {
+	width: 100%;
+}
+.unit-stats .special-attack-container {
+	text-align: right;
+}
+.unit-stats .special-attack {
+	max-width: 20px;
+	margin: 0;
+}
+.unit-stats .unit-substats {
+	width: 100%;
+}
+.unit-stats .unit-substats td {
+	font-size: 0.8em;
+	font-style: italic;
+}
+.unit-stats .unit-substats td:first-of-type {
+	padding-left: 10px;
+}
+.unit-stats .unit-substats tr:first-of-type td {
+	padding-left: 0;
+	font-size: 1em;
+	font-style: normal;
+}
+
+.unit-container .attributes-container,
+.unit-container .spell-container {
+	margin: 20px 0;
+}
+.unit-container .attributes-container img {
+	max-width: 25px;
+	margin: 0 5px;
+}
+
+.unit-container .multi-control {
+	margin-bottom: 0.5em;
+}
+.unit-container .multi-control h3 {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+	.unit-container,
+	.unit-list-container {
+		float: left;
+	}
+	.unit-list-container {
+		width: 25%;
+		margin-right: 5%;
+		border-right: solid 1px #ccc;
+	}
+	.unit-container {
+		width: 70%;
+	}
+	.compare-container .unit-container {
+		width: 90%;
+	}
+	.unit-stats tr td:last-child,
+	.unit-stats .unit-substats tr:first-of-type td:last-of-type {
+		padding-left: 10px;
+	}
+	.compare-container .unit-substats tr:first-of-type td:last-of-type,
+	.compare-container .unit-substats tr td:last-of-type {
+		padding-left: 20px;
+	}
+	.unit-stats .sub-container {
+		padding-left: 0!important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.compare-container .unit-substats tr:first-of-type td:last-of-type,
+	.compare-container .unit-substats tr td:last-of-type {
+		padding-left: 10px;
+	}
+}
+
+/* mounts */
+.mounts-container label input {
+	visibility: hidden;
+	position: absolute;
+}
+.mounts-container label input + img {
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+.mounts-container label input:checked + img {
+	border: 2px solid #a26e00;
+	border-radius: 50%;
+}
+
+.mounts-container .btn-group > label.btn {
+	background: none;
+	border: none;
+	appearance: none;
+	padding: 0;
+}
+.mounts-container .btn-group > label.btn img {
+	margin-right: 0;
+	padding: 2px;
+}
+.mounts-container [type="radio"] {
+	appearance: none;
+}
+.mounts-container .btn.active,
+.mounts-container .btn:active {
+	box-shadow: none;
+}
+.mounts-container .btn:active img {
+	border: 2px solid #a26e0073;
+	border-radius: 50%;
+}
+
+.mounts-container .radio {
+	display: inline-block;
+	width: 20%;
+}
+.mounts-container .radio img {
+	width: 100%;
+}

@@ -1,0 +1,31 @@
+section.factions {
+	width: 90%;
+	margin: 0 auto;
+}
+
+section.factions h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.factions-container {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.factions-container li {
+	padding: 0;
+	width: 25%;
+	text-align: center;
+}
+
+.factions-container li img {
+	width: 60px;
+
+}
+
+.ability-container img {
+	width: 28px;
+}
