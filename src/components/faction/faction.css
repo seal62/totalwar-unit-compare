@@ -107,9 +107,6 @@ section.faction-container img {
 	.unit-container {
 		width: 70%;
 	}
-	.compare-container .unit-container {
-		width: 90%;
-	}
 	.unit-stats tr td:last-child,
 	.unit-stats .unit-substats tr:first-of-type td:last-of-type {
 		padding-left: 10px;

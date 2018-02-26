@@ -1,5 +1,5 @@
 section.compare-container {
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
     font-size: 90%;
 }
@@ -41,8 +41,26 @@ section.compare-container {
 	background-color: red;
 }
 
+.compare-container .unit-container {
+    font-size: 11px;
+}
+.compare-container .unit-container .positive-number {
+    color: green;
+}
+.compare-container .unit-container .negative-number {
+    color: red;
+}
+
 @media (min-width: 768px) {
     section.compare-container {
         font-size: 100%;
+    }
+    .compare-container .unit-container {
+        width: 90%;
+        font-size: 16px;
+    }
+    .compare-container .unit-container .positive-number,
+    .compare-container .unit-container .negative-number {
+        color: #212529;
     }
 }

@@ -60,6 +60,14 @@ export default ({data, isMounted, mount, forCompare, comparedTo}) => {
 					}
 				}
 
+				const mobileCompareClass = () => {
+					console.log( compareTag )
+					const {valueOne, valueTwo} = compareTag.props;
+					if ( valueOne > valueTwo ) return 'positive-number'
+						else if ( valueOne < valueTwo ) return 'negative-number'
+						else return '';
+				}
+
 				return (
 					<tr key={key} className={hideOnZero()}>
 						<td>
@@ -68,7 +76,7 @@ export default ({data, isMounted, mount, forCompare, comparedTo}) => {
 							</div>
 							{specialAttackIcon(key)}
 						</td>
-						<td>{compValue}{compareTag}</td>
+						<td className={forCompare && compareTag ? mobileCompareClass() : ''}>{compValue}{compareTag}</td>
 					</tr>
 				)
 				
@@ -76,11 +84,23 @@ export default ({data, isMounted, mount, forCompare, comparedTo}) => {
 
 				const totalsVal = renderTotals(key, value)
 				const compareTag = forCompare ? renderCompareTag(value, key) : ''
+
+				const mobileCompareClass = () => {
+					console.log( compareTag )
+					const {valueOne, valueTwo} = compareTag.props;
+					if ( valueOne > valueTwo ) return 'positive-number'
+						else if ( valueOne < valueTwo ) return 'negative-number'
+						else return '';
+				}
+
 				return (
 					<tr key={key} className={totalsVal <= 0 ? 'hidden' : null}>
 						<td className="sub-container" colSpan="2">
 						<table className="unit-substats"><tbody>
-							<tr><td>{formatTitle(key)}</td><td>{totalsVal}{compareTag}</td></tr>
+							<tr>
+								<td>{formatTitle(key)}</td>
+								<td className={forCompare && compareTag ? mobileCompareClass() : ''}>{totalsVal}{compareTag}</td>
+							</tr>
 							{renderSubStats(value, key)}
 					</tbody></table></td></tr>
 				);
