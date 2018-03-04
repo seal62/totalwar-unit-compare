@@ -19,7 +19,7 @@ class Spells extends Component {
 				<Popover id={`popoverSpell${spellKey}`} bsClass="spell-popover popover" >{popoverContent}</Popover>
 			);
 
-			const imageSrc = spell.name.replace(/[() .]/g, '-')
+			const imageSrc = spell.name.replace(/[() .]/g, '-').toLowerCase();
 			// console.log(imageSrc)
 			return ( //return img with overlaytrigger for popover
 				<OverlayTrigger key={`spell-${spellKey}`} trigger={['hover','click']} placement="top" overlay={popover}>

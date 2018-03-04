@@ -27,7 +27,8 @@ export default ({data, isMounted, mount, forCompare, comparedTo}) => {
 
 					let images;
 					const spAttackAttributes = ["37","38","124","81","83","87","94","112","115","127","129"] //attribute indeces to match
-					const unitAttributes = isMounted ? mount.attributes : data.attributes
+					const unitAttributes = isMounted ? mount.attributes : data.attributes;
+					const armouredShielded = ["4","5","6"];
 
 					if (type === 'melee-attack') {
 						images = _.map(unitAttributes, (value, index) => {
@@ -47,6 +48,19 @@ export default ({data, isMounted, mount, forCompare, comparedTo}) => {
 							if (spAttackAttributes.includes(index) && (attriValue === 'Ranged' || attriValue === 'Melee & Ranged')) {
 								let attribute = Attributes[`${index}`]
 								return <SpecialAttack key={index} image={index} content={value} attribute={attribute} />
+							}
+						})
+					} else if ( type === 'armour') {
+						images = _.map(armouredShielded, (value, index) => {
+							if ( unitAttributes.hasOwnProperty(value) && value !== "6" ) {
+								return <SpecialAttack key={index} image={value} content={value} attribute='armour' />
+							} else if ( unitAttributes.hasOwnProperty(value) && value === "6" ) {
+								return (
+									<div>
+										<SpecialAttack key="armoured" image="4" content={value} attribute='armour' />
+										<SpecialAttack key="shielded" image="5" content={value} attribute='armour' />
+									</div>
+								)
 							}
 						})
 					}
@@ -71,7 +85,8 @@ export default ({data, isMounted, mount, forCompare, comparedTo}) => {
 				return (
 					<tr key={key} className={hideOnZero()}>
 						<td>
-							<div className={key !== 'melee-attack' && key !== 'ammunition' ? 'fullWidth' : 'sp-container'}>
+							<div className={key !== 'melee-attack' && key !== 'ammunition' 
+								&& key !== 'armour' ? 'fullWidth' : 'sp-container'}>
 								{formatTitle(key)}
 							</div>
 							{specialAttackIcon(key)}

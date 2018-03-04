@@ -1535,7 +1535,7 @@
 		"desc": "Night Goblin Shamans brew a pungent fungus potion that, when drunk, will send the Fanatics into a spinning, whirling cyclone of death!"
 	},
 	"108": {
-		"name": "Wind of Jet",
+		"name": "Wand of Jet",
 		"atype": "Item",
 		"type": "Augment of the Winds",
 		"recharge": "45",
@@ -2945,7 +2945,7 @@
 		"desc": "There is a sense in which the Skaven's natural cowardice can appear to be the very pinnacle of honourable conduct."
 	},
 	"207": {
-		"name": "Trophy Rack",
+		"name": "Trophy Heads",
 		"atype": "Lord ability",
 		"type": "Hex",
 		"recharge": "90",

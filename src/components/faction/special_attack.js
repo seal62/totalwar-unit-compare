@@ -11,7 +11,7 @@ const SpecialAttack = ({image, attribute, content}) => {
 			<div>{attriValue}</div>
 		</Tooltip>
 	);
-
+	console.log( image )
 	return (
 		<OverlayTrigger placement="top" trigger={['hover', 'click']} overlay={tooltip}>
 			<img

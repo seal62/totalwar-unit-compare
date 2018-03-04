@@ -1809,7 +1809,7 @@
 				"2": null,
 				"1": null
 			},
-			"abilities": [46,1,2,47,48],
+			"abilities": [46,1,2,47,48,293],
 			"hasMounts": false,
 			"mounts": {}
 		},
@@ -30487,7 +30487,7 @@
 			}
 		},
 		"vampire": {
-			"name": "Vampire (Shadows)",
+			"name": "Vampire",
 			"type": 3,
 			"units": {
 				"Shadows": {
@@ -40797,7 +40797,7 @@
 			}
 		},
 		"vampire": {
-			"name": "Vampire (Shadows)",
+			"name": "Vampire",
 			"type": 3,
 			"units": {
 				"Shadows": {
@@ -42489,7 +42489,7 @@
 			}
 		},
 		"vampire": {
-			"name": "Vampire (Shadows)",
+			"name": "Vampire",
 			"type": 3,
 			"units": {
 				"Shadows": {
@@ -43946,7 +43946,7 @@
 				"2": null,
 				"1": null
 			},
-			"abilities": [46,1,2,47,48],
+			"abilities": [46,1,2,47,48,293],
 			"hasMounts": false,
 			"mounts": {}
 		},

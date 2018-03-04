@@ -1,6 +1,6 @@
 .spell-container .spell-thumb {
-	max-width: 40px;
-	margin: 0;
+	max-width: 25px;
+	margin: 0 5px;
 }
 
 .spell-popover {

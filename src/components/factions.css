@@ -27,5 +27,7 @@ section.factions h2 {
 }
 
 .ability-container img {
-	width: 28px;
+	width: 25px;
+	margin: 0 5px;
+	margin-right: 5px !important;
 }
