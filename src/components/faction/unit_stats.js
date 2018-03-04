@@ -34,6 +34,7 @@ export default ({data, isMounted, mount, forCompare, comparedTo}) => {
 						images = _.map(unitAttributes, (value, index) => {
 							let attriValue = value ? value.split('|')[0] : null
 							attriValue = attriValue && attriValue.charAt(attriValue.length-1) === ' ' ? attriValue.slice(0, -1) : attriValue
+
 							if (spAttackAttributes.includes(index) && (attriValue === 'Melee' || attriValue === 'Melee & Ranged')) {
 								let attribute = Attributes[`${index}`]
 								return <SpecialAttack key={index} image={index} content={value} attribute={attribute} />
@@ -50,20 +51,21 @@ export default ({data, isMounted, mount, forCompare, comparedTo}) => {
 								return <SpecialAttack key={index} image={index} content={value} attribute={attribute} />
 							}
 						})
-					} else if ( type === 'armour') {
-						images = _.map(armouredShielded, (value, index) => {
-							if ( unitAttributes.hasOwnProperty(value) && value !== "6" ) {
-								return <SpecialAttack key={index} image={value} content={value} attribute='armour' />
-							} else if ( unitAttributes.hasOwnProperty(value) && value === "6" ) {
-								return (
-									<div>
-										<SpecialAttack key="armoured" image="4" content={value} attribute='armour' />
-										<SpecialAttack key="shielded" image="5" content={value} attribute='armour' />
-									</div>
-								)
-							}
-						})
 					}
+					// else if ( type === 'armour') {
+					// 	images = _.map(armouredShielded, (value, index) => {
+					// 		if ( unitAttributes.hasOwnProperty(value) && value !== "6" ) {
+					// 			return <SpecialAttack key={index} image={value} content={value} attribute='armour' />
+					// 		} else if ( unitAttributes.hasOwnProperty(value) && value === "6" ) {
+					// 			return (
+					// 				<React.Fragment key={value}>
+					// 					<SpecialAttack image="4" content={value} attribute='armour' />
+					// 					<SpecialAttack image="5" content={value} attribute='armour' />
+					// 				</React.Fragment>
+					// 			)
+					// 		}
+					// 	})
+					// }
 
 					if ((typeof images) !== 'undefined') {
 						return (
@@ -75,7 +77,6 @@ export default ({data, isMounted, mount, forCompare, comparedTo}) => {
 				}
 
 				const mobileCompareClass = () => {
-					console.log( compareTag )
 					const {valueOne, valueTwo} = compareTag.props;
 					if ( valueOne > valueTwo ) return 'positive-number'
 						else if ( valueOne < valueTwo ) return 'negative-number'
@@ -101,7 +102,6 @@ export default ({data, isMounted, mount, forCompare, comparedTo}) => {
 				const compareTag = forCompare ? renderCompareTag(value, key) : ''
 
 				const mobileCompareClass = () => {
-					console.log( compareTag )
 					const {valueOne, valueTwo} = compareTag.props;
 					if ( valueOne > valueTwo ) return 'positive-number'
 						else if ( valueOne < valueTwo ) return 'negative-number'

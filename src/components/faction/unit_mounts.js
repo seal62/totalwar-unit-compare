@@ -16,18 +16,27 @@ class UnitMounts extends Component {
 
 			const imageName = unformatTitle(key)
 			const imgSrc = images[`${imageName}.png`]
-
+			// console.log(imageName)
 			const tooltip = (
 				<Tooltip id={`tooltip${key}`}>{key}</Tooltip>
 			);
 
-			return (
-				<ToggleButton key={key} name={groupName} value={key} onChange={() => loadMount(true, mount)} >
-					<OverlayTrigger placement="bottom" overlay={tooltip}>
-						<img src={imgSrc} alt={key}/>
-					</OverlayTrigger>
-				</ToggleButton>
-			);
+			if ( imgSrc ) {
+				return (
+					<ToggleButton key={key} name={groupName} value={key} onChange={() => loadMount(true, mount)} >
+						<OverlayTrigger placement="bottom" overlay={tooltip}>
+							<img src={imgSrc} alt={key}/>
+						</OverlayTrigger>
+					</ToggleButton>
+				);
+			} else {
+				return (
+					<ToggleButton key={key} name={groupName} value={key} onChange={() => loadMount(true, mount)} >
+						{key}
+					</ToggleButton>
+				);
+			}
+
 		})
 	}
 
