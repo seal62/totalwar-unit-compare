@@ -33,11 +33,23 @@ class Faction extends Component {
 	}
 
 	setupState(factionName) {
-		const faction = unitData[`${factionName}`]
+
+		const faction = Object.keys(unitData).filter( faction => unitData[faction].factions.includes( factionName ) )[0]
+		const factionStats = unitData[`${faction}`].units
+		// const faction = unitData[`${factionName}`]
+		const unitsToRemove = Object.keys(factionStats)
+			.filter(unit => factionStats[`${unit}`].excluded
+				&& factionStats[`${unit}`].excluded.includes(this.props.match.params.faction));
+		const units = {}
+		const factionUnits = Object.keys( factionStats )
+			.filter( unit => !unitsToRemove.includes(unit))
+			.map( unit => {
+				units[unit] = factionStats[unit]
+			})
 
 		this.setState({
-			faction: faction,
-			unit: faction[Object.keys(faction)[0]]
+			faction: units,
+			unit: units[Object.keys(units)[0]]
 		})
 	}
 

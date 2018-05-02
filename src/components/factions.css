@@ -1,11 +1,26 @@
 section.factions {
 	width: 90%;
 	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 section.factions h2 {
 	text-align: center;
 	margin-bottom: 1em;
+	width: 100%;
+}
+
+.faction-row {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.faction-row h3 {
+	margin-bottom: .8rem;
 }
 
 .factions-container {
@@ -13,21 +28,43 @@ section.factions h2 {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+
 }
 
 .factions-container li {
 	padding: 0;
+	/*margin-right: 20px;*/
+	text-align: center;
 	width: 25%;
+}
+.factions-container li:last-of-type {
+	margin-right: 0;
+}
+
+.factions-container li a {
 	text-align: center;
 }
 
-.factions-container li img {
-	width: 60px;
-
+.factions-container li a img {
+	max-width: 50px;
 }
-
+.factions-container li a p {
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.2;
+}
+.ability-container {
+	margin-bottom: 20px;
+}
 .ability-container img {
 	width: 25px;
 	margin: 0 5px;
 	margin-right: 5px !important;
+}
+
+@media (min-width: 768px) {
+	.faction-row {
+		width: 50%;
+	}
 }

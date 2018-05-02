@@ -59,6 +59,7 @@ nav.faction-nav span {
 nav.faction-nav h1 a,
 nav.faction-nav h2 a {
 	margin: 0;
+  text-decoration: underline;
 }
 nav.faction-nav span {
 	font-size: 0.8em;

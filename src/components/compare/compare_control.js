@@ -69,8 +69,10 @@ class CompareControl extends Component {
 	}
 
 	renderUnitDropDown() {
-
-		const units = unitData[`${this.state.faction}`]
+		let units = null;
+		if ( this.state.faction ) {
+			units = unitData[`${this.state.faction}`].units	
+		}
 
 		if (units == null) {
 			// return select faction first message
@@ -82,7 +84,7 @@ class CompareControl extends Component {
 	}
 
 	renderMultiUnitDropDown() {
-		const units = unitData[`${this.state.faction}`][`${unformatTitle(this.state.unitTitle)}`].units
+		const units = unitData[`${this.state.faction}`].units[`${unformatTitle(this.state.unitTitle)}`].units
 
 		return _.map(units, (unit, key) => {
 			return <MenuItem key={key} onSelect={() => this.multiTypeSelected(unit, key)}>{formatTitle(key)}</MenuItem>

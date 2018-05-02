@@ -20,6 +20,7 @@ class Spells extends Component {
 			);
 
 			const imageSrc = spell.name.replace(/[() .!]/g, '-').toLowerCase();
+			// console.log(images)
 			return ( //return img with overlaytrigger for popover
 				<OverlayTrigger key={`spell-${spellKey}`} trigger={['hover','click']} placement="top" overlay={popover}>
 					<span><img className="spell-thumb" src={images[`${imageSrc}.png`]} alt={spell.name} /></span>

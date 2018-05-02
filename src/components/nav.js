@@ -29,8 +29,8 @@ class Nav extends Component {
 			<nav className="faction-nav">
 				<div className="nav-container">
 					<div className="nav-links">
-						<h1><Link to='/factions'>Choose your Faction<span className="m-hidden">:</span>&nbsp;</Link></h1>
-						<h2><span>or&nbsp;&nbsp;</span><Link to='/compare'>Compare Units</Link></h2>
+						<h1><Link to='/factions'>Choose your Faction</Link></h1>
+						<h2><span>&nbsp;&nbsp;or&nbsp;&nbsp;</span><Link to='/compare'>Compare Units</Link></h2>
 					</div>
 					<div className="nav-icons">{this.renderFactions()}</div>
 				</div>

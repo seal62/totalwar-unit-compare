@@ -1,7 +1,8 @@
 import _ from 'lodash';
 
 export function formatTitle(toFormat) {
-	let formatStr = toFormat.replace('-', ' ')
+  // console.log( toFormat )
+	let formatStr = (typeof toFormat) === 'string' ? toFormat.replace('-', ' ') : ''
 
 	return _.startCase(formatStr)
 }

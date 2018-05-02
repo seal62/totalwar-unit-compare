@@ -22,7 +22,6 @@ class Unit extends Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-
 		if (this.props.unit_data.name !== nextProps.unit_data.name) {
 			this.setState({
 				isMounted: false,
