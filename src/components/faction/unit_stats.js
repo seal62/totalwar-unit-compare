@@ -26,7 +26,7 @@ export default ({data, isMounted, mount, forCompare, comparedTo}) => {
 				const specialAttackIcon = (type) => {
 
 					let images;
-					const spAttackAttributes = ["37","38","124","81","83","87","94","112","115","127","129"] //attribute indeces to match
+					const spAttackAttributes = ["37","38","124","81","83","87","94","112","115","127","129","134","133"] //attribute indeces to match
 					const unitAttributes = isMounted ? mount.attributes : data.attributes;
 					const armouredShielded = ["4","5","6"];
 

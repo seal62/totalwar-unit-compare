@@ -45,7 +45,9 @@ export default ({attributes, isMounted, mount}) => {
 								attribute.name !== 'Magical Attacks' &&
 								attribute.name !== 'Flaming Attacks' &&
 								attribute.name !== 'Armour-Piercing' &&
-								attribute.name !== 'Shielded'
+								attribute.name !== 'Shielded' &&
+								attribute.name !== 'Sundered Armour' &&
+								attribute.name !== 'Frostbite!'
 								? {verticalAlign:"text-bottom"}
 								: null
 							}
@@ -54,7 +56,9 @@ export default ({attributes, isMounted, mount}) => {
 								attribute.name !== 'Magical Attacks' &&
 								attribute.name !== 'Flaming Attacks' &&
 								attribute.name !== 'Armour-Piercing' &&
-								attribute.name !== 'Shielded'
+								attribute.name !== 'Shielded' &&
+								attribute.name !== 'Sundered Armour' &&
+								attribute.name !== 'Frostbite!'
 								? <img src={image} alt={attribute.name} />
 								: placeholder()
 							}

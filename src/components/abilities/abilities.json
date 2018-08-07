@@ -2408,7 +2408,7 @@
 		"effect-range": "40m",
 		"effects": {
 			"green1": "+4 Leadership",
-			"green2": "+100% Charge Resistance"
+			"green2": "+5 Melee Defence"
 		},
 		"desc": "Those in command of the ranks will issue their orders with a ferocious bark, expecting instant obeisance."
 	},
@@ -3919,7 +3919,7 @@
 		"target-if": "Unit is a Lord or Hero",
 		"effect-range": "30m",
 		"effects": {
-			"green1": "+22% Physical Resistance"
+			"green1": "+18% Physical Resistance"
 		},
 		"desc": "In the midst of a bloodbath it's good to know that someone has your back."
 	},
@@ -4997,5 +4997,765 @@
 			"green2": "+20% Armour-Piercing Explosion"
 		},
 		"desc": "The Hellcannon's blasts are devastating!"
+	},
+	"346": {
+		"name": "Warp Gaze",
+		"atype": "Unit ability",
+		"type": "Hex",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "12 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "Cannot move"
+		},
+		"desc": "Never make direct eye-contact with a Beastman lest it mark you out for a hideous, flesh-ripping demise."
+	},
+	"347": {
+		"name": "Blood Frenzy",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"recharge": "45",
+		"duration": "90 seconds",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "Stage One (30 seconds) - 5% Armour-Piercing Damage",
+			"green2": "Stage Two (30 seconds) - 10% Armour-Piercing Damage, 9% Vigour",
+			"green3": "Stage Three (30 seconds) - 15% Armour-Piercing Damage, 18% Vigour"
+		},
+		"desc": "The Bride of Khaine is a consummate murderer; as she reaps the blood, her desire for further slaughter intensifies."
+	},
+	"348": {
+		"name": "Gaze of Khaine",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "45",
+		"uses-per-battle": "3",
+		"duration": "90 seconds",
+		"target": "Ground, Ally. Affects allies in range",
+		"range": "100m",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+8 Leadership",
+			"green2": "+25% Weapon Damage",
+			"green3": "+25 Melee Attack",
+			"red1": "Rampage!"
+		},
+		"desc": "Those who fall under the glare of Hellebron share her lust and rage."
+	},
+	"349": {
+		"name": "The Cursed Blade",
+		"atype": "Weapon",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"target-if": "Losing melee combat",
+		"active-if": "In melee",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Strong vs. a single combatant",
+			"red1": "Chance opponent will resist damage"
+		},
+		"desc": "The Deathsword glistens with murder and the Cursed Blade moves with a life of its own."
+	},
+	"350": {
+		"name": "Amulet of Dark Fire",
+		"atype": "Item",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+22% Magic Resistance"
+		},
+		"desc": "This amulet wreathes its wearer in a mystical flame that burns magic instead of flesh."
+	},
+	"351": {
+		"name": "Bloodshield of Khaine",
+		"atype": "Unit ability",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+6% Physical Resistance"
+		},
+		"desc": "Dark enchantments ensure that those who stand close to a Cauldron of Blood enjoy a degree of protection from the Bloody-handed God."
+	},
+	"352": {
+		"name": "Fury of Khaine",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "62 seconds",
+		"recharge": "90",
+		"target": "Ally",
+		"range": "100m",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+18% Charge Bonus",
+			"green3": "+25% Weapon Damage",
+			"red1": "Rampage!"
+		},
+		"desc": "As the blood in the cauldron boils and bubbles, Khaine drives bloodlust to a fever pitch and stokes hearts with a violent fire."
+	},
+	"353": {
+		"name": "Arnzipal's Black Horror",
+		"atype": "Bound spell",
+		"type": "Wind",
+		"recharge": "120",
+		"uses-per-battle": "1",
+		"duration": "21 seconds",
+		"target": "Ground",
+		"range": "100m",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Can disrupt unit formation",
+			"green3": "Medium, forward-moving area of effect",
+			"green4": "Strong vs. multiple units"
+		},
+		"desc": "Reading the dark scrawl etched upon the scroll will summon Arnzipal's Black Horror."
+	},
+	"354": {
+		"name": "The Trial of Blades",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "3",
+		"duration": "15 seconds",
+		"target": "Self",
+		"active-if": "In melee",
+		"recharge-if": "Losing melee combat",
+		"effects": {
+			"green1": "+4 Armour-Piercing Damage",
+			"green2": "+9 Melee Attack"
+		},
+		"desc": "The laughing warrior-women dance into battle, spinning their blades with ferocious grace."
+	},
+	"355": {
+		"name": "Lesser Doombolt",
+		"atype": "Bound spell",
+		"type": "Bombardment",
+		"recharge": "90",
+		"uses-per-battle": "2",
+		"duration": "7 seconds",
+		"target": "Enemy",
+		"range": "200m",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Strong vs. a single unit",
+			"green3": "Good against armour"
+		},
+		"desc": "The sky opens and a bolt of burning, pure Chaos black lightning hurtles towards the foe."
+	},
+	"356": {
+		"name": "Soulblight",
+		"atype": "Bound spell",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "90",
+		"uses-per-battle": "2",
+		"duration": "25 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "200m",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-30 Armour",
+			"red2": "-25% Weapon Damage"
+		},
+		"desc": "Harnessing the sickly power of Shyish, the Wizard weakens the foe's will to survive the battle."
+	},
+	"357": {
+		"name": "Word of Pain",
+		"atype": "Bound spell",
+		"type": "Hex",
+		"recharge": "90",
+		"uses-per-battle": "2",
+		"duration": "40 seconds",
+		"target": "Enemy",
+		"range": "200m",
+		"effects": {
+			"red1": "-44 Melee Attack",
+			"red2": "-60% Accuracy"
+		},
+		"desc": "As the caster utters a forbidden name, their enemies are wracked with waves of agony."
+	},
+	"358": {
+		"name": "Soul Stealer",
+		"atype": "Bound spell",
+		"type": "Direct Damage (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "120",
+		"uses-per-battle": "1",
+		"duration": "12 seconds",
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "100m",
+		"effect-range": "30m",
+		"miscast-chance": "100%",
+		"effects": {
+			"green1": "Causes damage to combatants",
+			"green2": "Absorbs hitpoints from enemies",
+			"green3": "Strong vs. a single combatant",
+			"red1": "Weak vs. multiple combatants"
+		},
+		"desc": "Tendrils of solidified darkness writhe outwards, draining the lifeforce from foes and renewing the caster's own vigour."
+	},
+	"359": {
+		"name": "Frost Breath",
+		"atype": "Unit ability",
+		"type": "Magic Missiles",
+		"recharge": "60",
+		"uses-per-battle": "3",
+		"target": "Enemy",
+		"range": "90m",
+		"cannot-use-if": "Engaged in melee",
+		"projectile-range": "90m",
+		"effects": {
+			"green1": "Powerful explosion",
+			"green2": "Strong vs. a single unit",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "This ice-cold breath delivers freezing death, slowing down those who are fortunate to survive the exposure."
+	},
+	"360": {
+		"name": "Abyssal Howl",
+		"atype": "Unit ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "30m",
+		"effects": {
+			"red1": "-8 Leadership"
+		},
+		"desc": "The Kharibdyss lets out a spine-chilling howl, terrifying those who would dare to stand in its path."
+	},
+	"361": {
+		"name": "Red Ruin",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"recharge": "90",
+		"uses-per-battle": "1",
+		"duration": "50 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+60% Weapon Damage",
+			"green2": "+60% Armour-Piercing Damage",
+			"red1": "-27 Melee Defence"
+		},
+		"desc": "Seeking a mighty death - despite his kingly obligations - Ungrim recklessly carves a path of red ruin through foolish enemies."
+	},
+	"362": {
+		"name": "Ironbeard's Ring",
+		"atype": "Item",
+		"type": "Ward Save Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "+22% Weakness to Fire Damage"
+		},
+		"desc": "Such a ring is wrought in runes of cooling, allowing its bearer a certain immunity from fire."
+	},
+	"363": {
+		"name": "Prospector's Spyglass",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+18% Accuracy"
+		},
+		"desc": "Dwarfs excel at crafting lenses, making their spy-glasses the envy of all umgi, except Elves, the gits."
+	},
+	"364": {
+		"name": "Boon of Isha",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"imbues": "Magical Damage",
+		"effects": {
+			"green1": "Immune to Psychology"
+		},
+		"desc": "Under Isha's embrace, those of fey heart will be protected; that is the Everqueen's will."
+	},
+	"365": {
+		"name": "Shieldstone of Isha",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+12% Physical Resistance"
+		},
+		"desc": "As old as Ulthuan itself, the Shieldstone pulses with warding and protective energies."
+	},
+	"366": {
+		"name": "Stave of Avelorn",
+		"atype": "Item",
+		"type": "Augment",
+		"recharge": "60",
+		"uses-per-battle": "1",
+		"duration": "40 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Greatly improved power recharge rate",
+			"green2": "-100% Miscast Chance"
+		},
+		"desc": "The symbol of Alarielle's rule of Averlorn is an ancient heirloom passed from one Everqueen to the next."
+	},
+	"367": {
+		"name": "Star of Avelorn",
+		"atype": "Item",
+		"type": "Regeneration (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "120",
+		"uses-per-battle": "2",
+		"duration": "27 seconds",
+		"target": "Self, Ground, Ally. Affects allies in range(max:3)",
+		"effect-range": "15m",
+		"cannot-use-if": "Climbing, Manning equipment",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Replenishes hit points of combatants"
+		},
+		"desc": "A diadem of ithilmar with a radiant gem set within it, said to be a star plucked from the heavens."
+	},
+	"368": {
+		"name": "Darken the Skies",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+20 Reload Skill"
+		},
+		"desc": "Above the battlefield, the air is filled with arrows; a shroud of pure death blotting out the sun."
+	},
+	"369": {
+		"name": "Mislead",
+		"atype": "Lord ability",
+		"type": "Hiding",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "47 seconds",
+		"target": "Ground",
+		"range": "60m",
+		"cannot-use-if": "Climbing, Manning equipment, On a wall, Engaged in melee",
+		"cannot-target-if": "On a wall",
+		"miscast-chance": "100%",
+		"effects": {
+			"green1": "Alith Anar gets Stalk, Snipe, Unspottable",
+			"green2": "Creates an image of Alith Anar",
+			"red1": "Image does not cause damage"
+		},
+		"desc": "As a follower of the Trickster God, Loec, the Shadow King is a master of deception and distraction."
+	},
+	"370": {
+		"name": "The Shadow Crown",
+		"atype": "Item",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"active-if": "Enemy presence in ability range.",
+		"effect-range": "55m",
+		"effects": {
+			"green1": "Ability range 70m",
+			"green2": "+18% Speed",
+			"green3": "+5 Melee Defence"
+		},
+		"desc": "Symbol of the true ruler of Nagarythe, the Shadow Crown is a simple silver circlet set with a single diamond."
+	},
+	"371": {
+		"name": "Stone of Midnight",
+		"atype": "Item",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "55m",
+		"effects": {
+			"green1": "+22% Missile Resistance"
+		},
+		"desc": "This jewel was originally gifted to Morathi by Aenarion, before it was stolen by Anar; it cloaks the wearer in shadow."
+	},
+	"372": {
+		"name": "The Moonbow",
+		"atype": "Weapon",
+		"type": "Magic Missile",
+		"recharge": "120",
+		"uses-per-battle": "2",
+		"target": "Enemy",
+		"effect-range": "300m",
+		"effects": {
+			"green1": "Causes armour-piercing damage",
+			"green2": "Powerful explosion",
+			"green3": "Strong vs. a single unit",
+			"green4": "Effective at long range"
+		},
+		"desc": "The deadly Moonbow was handed to Alith Anar by the goddess Lileath herself."
+	},
+	"373": {
+		"name": "Quicksilver Shot",
+		"atype": "Hero ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+10 Reload Skill"
+		},
+		"desc": "The warriors of Avelorn are famed for their ability to fire and reload in the blink of an eye."
+	},
+	"374": {
+		"name": "Loec's Shroud",
+		"atype": "Unit ability",
+		"type": "Hiding",
+		"duration": "38 seconds",
+		"recharge": "120",
+		"target": "Self",
+		"effects": {
+			"green1": "+24% Speed",
+			"green2": "Stalk",
+			"green3": "Spotted only at very close range"
+		},
+		"desc": "Shadows be thy cloak and darkness thy ally."
+	},
+	"375": {
+		"name": "Banner of Avelorn",
+		"atype": "Item",
+		"type": "Augment of the Winds (Area)",
+		"duration": "Constant",
+		"target": "Self",
+		"effects": {
+			"green1": "Improved power recharge rate"
+		},
+		"desc": "Crafted anew when an Everqueen ascends to the throne, the banner is a beacon of life and light."
+	},
+	"376": {
+		"name": "Rage",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "45",
+		"duration": "135 seconds",
+		"target": "Self",
+		"disabled-if": "Leadership is broken",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "Stage One (45 seconds) - +8 Leadership",
+			"green2": "Stage Two (45 seconds) - +8 Leadership, +11% Physcial Resistance",
+			"green3": "Stage Three (45 seconds) - +8 Leadership, +11% Physcial Resistance, +5 Melee Attack"
+		},
+		"desc": "These warriors have something of an anger management problem. Funnily enough, no one has yet found a safe way to broach the issue."
+	},
+	"377": {
+		"name": "Seafang",
+		"atype": "Lord ability",
+		"type": "Wind",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"duration": "8 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes massive magical damage",
+			"green2": "Small, forward-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"red1": "Frostbite! (10 seconds)",
+			"red2": "-36% Speed"
+		},
+		"desc": "There's no outrunning the terrible, flying Longship known as the 'Seafang'; once in its sights, an agonising, merciless death is your only possible destination."
+	},
+	"378": {
+		"name": "Fight or Die!",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "90",
+		"duration": "18 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+16 Leadership"
+		},
+		"desc": "There is no other choice. There never was."
+	},
+	"379": {
+		"name": "Hunter of Champions",
+		"atype": "Lord ability",
+		"type": "Hex",
+		"recharge": "90",
+		"duration": "24 seconds",
+		"target": "Enemy",
+		"effect-range": "100m",
+		"target-if": "Unit is a Lord or Hero",
+		"effects": {
+			"red1": "-48% Speed",
+			"red2": "-30 Armour",
+			"red3": "-46 Melee Defence"
+		},
+		"desc": "Cursed to wander the length and breadth of the world, his never-ending quest to challenge and best the most gifted warriors."
+	},
+	"380": {
+		"name": "Copious Vomit",
+		"atype": "Lord ability",
+		"type": "Magic Missile",
+		"recharge": "60",
+		"uses-per-battle": "3",
+		"target": "Enemy",
+		"range": "60m",
+		"cannot-use-if": "Climbing, Engaged in melee",
+		"cannot-target-if": "Flying",
+		"projectile-range": "60m",
+		"effects": {
+			"green1": "Powerful explosion",
+			"green2": "Good against armour",
+			"green3": "Strong vs. a single unit"
+		},
+		"desc": "'HUUUURGGEHH!!! BLUUUURGGEHH!!! HUUUUUUUURRRRRGGGGGGGGGGGEHH!!!'"
+	},
+	"381": {
+		"name": "The Wintertooth Crown",
+		"atype": "Item",
+		"type": "Augment",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "120",
+		"duration": "24 seconds",
+		"target": "Self. Affects allies in range.",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "Unbreakable"
+		},
+		"desc": "Whether by the crown's own properties, or by the grace of the Dark Gods, all things bestial and savage obey the wearer."
+	},
+	"382": {
+		"name": "Sword of Torgald",
+		"atype": "Weapon",
+		"type": "Augment",
+		"recharge": "120",
+		"duration": "44 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+75% Weapon Damage"
+		},
+		"desc": "Although King Torgald's blade is a prized trophy, it is also an eternal reminder of the consequences of grand proclaimations afore the Gods."
+	},
+	"383": {
+		"name": "Flaming Axe of Cormac",
+		"atype": "Weapon",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is lower than 50%",
+		"imbues": "Fire Damage",
+		"effects": {
+			"green1": "+9 Melee Attack",
+			"green2": "+18% Weapon Damage"
+		},
+		"desc": "'These are days of great power: the trides of the North, the beasts of the forest and a great prince of Kharnath will baptise this world in blood!'"
+	},
+	"384": {
+		"name": "Ruinous Flesh",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range.",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+11% Missile Resistance",
+			"green2": "+18 Armour"
+		},
+		"desc": "Werekin flesh is scored with the symbols and marks of the Dark Gods, granting additional arcane protection to their ravaged physical forms."
+	},
+	"385": {
+		"name": "From the Mist",
+		"atype": "Unit ability",
+		"type": "Ward Save",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Leadership is lower than 50%",
+		"effects": {
+			"green1": "+22% Missile Resistance"
+		},
+		"desc": "Dark figures move and twist within the magical miasma woven by the Fimir Balefiends as additional protection against the foe."
+	},
+	"386": {
+		"name": "Berserk",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "30",
+		"duration": "90 seconds",
+		"target": "Self",
+		"disabled-if": "Leadership is broken",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "Stage One (30 seconds) - +22% Physical Resistance",
+			"green2": "Stage Two (30 seconds) - +22% Physical Resistance, +13 Melee Attack",
+			"green3": "Stage Three (30 seconds) - +22% Physical Resistance, +13 Melee Attack, Rampage!"
+		},
+		"desc": "When going berserk, savage, barely-controllable warriors become savage, completely-uncontrollable warriors; best keep your distance!"
+	},
+	"387": {
+		"name": "Favour of the Ruinous Powers",
+		"atype": "Unit ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+10 Leadership"
+		},
+		"desc": "When the Dark Gods bless the faithful assembled from atop their mighty battle-altars, loyalty is assured forevermore."
+	},
+	"388": {
+		"name": "Giver of Glory",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "60",
+		"duration": "16 seconds",
+		"target": "Ally",
+		"range": "25m",
+		"imbues": "Fire Damage",
+		"effects": {
+			"green1": "Unbreakable"
+		},
+		"desc": "The shrinemaster implores the fickle Chaos Gods for their aid, bestowing their dark blessings upon nearby Champions."
+	},
+	"389": {
+		"name": "Enrage",
+		"atype": "Unit ability",
+		"type": "Ward Save",
+		"recharge": "90",
+		"duration": "22 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+44% Damage Resistance"
+		},
+		"desc": "You really don't want to make them angry. No, *really*."
+	},
+	"390": {
+		"name": "Swarm of Flies",
+		"atype": "Hero ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "30m",
+		"effects": {
+			"red1": "-5 Melee Attack"
+		},
+		"desc": "Flies surround this rotting creature, making combat even harder as the swarm buzzes into mouths, ears and other vulnerable orifices!"
+	},
+	"391": {
+		"name": "Apocalyptic Charge",
+		"atype": "Unit ability",
+		"type": "Augment (Area)",
+		"uses-per-battle": "1",
+		"duration": "41 seconds",
+		"target": "Self. Affects allies in range.",
+		"recharge-if": "Enemy presence in ability range.",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "Ability range 70m",
+			"green2": "+24% Charge Speed",
+			"green3": "+24% Speed"
+		},
+		"desc": "If you see him coming run as fast as you can... not that it will do you any good whatsoever!"
+	},
+	"392": {
+		"name": "Chain Lightning",
+		"atype": "Bound spell",
+		"type": "Vortex",
+		"uses-per-battle": "1",
+		"recharge": "60",
+		"duration": "21 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Large, randomly-moving area of effect",
+			"green3": "Good against armour",
+			"green4":"Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
+		},
+		"desc": "Lightning arcs across the battlefield, leaping from foe-to-foe with crackling fury until there are none left within the storm."
+	},
+	"393": {
+		"name": "Soul Devourer",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "44 seconds",
+		"target": "Self",
+		"active-if": "Enemy presence in ability range.",
+		"effects": {
+			"green1": "Ability range 200m",
+			"green2": "+40 Reload Skill"
+		},
+		"desc": "Sometimes less really is more; the souls of the fallen feed the engines of war."
+	},
+	"394": {
+		"name": "Storm of Blades",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"recharge": "30",
+		"duration": "30 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"red1": "-27 Melee Defence"
+		},
+		"desc": "What beauty and violence there is in the dance? A flurry of blades and a certain savagery of intent..."
+	},
+	"395": {
+		"name": "Loec's Shroud",
+		"atype": "Unit ability",
+		"type": "Hiding",
+		"recharge": "120",
+		"duration": "38 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+24% Speed",
+			"green2": "Stalk",
+			"green3": "Spotted only at very close range"
+		},
+		"desc": "Shadows be thy cloak and darkness thy ally."
+	},
+	"396": {
+		"name": "The Wildfire Aura",
+		"atype": "Unit ability",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects allies in range.",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+25% Flame Resistance"
+		},
+		"desc": "The forest looks after its own."
 	}
 }

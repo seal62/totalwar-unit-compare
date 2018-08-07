@@ -526,5 +526,33 @@
 	"129": {
 		"name": "Take cover!",
 		"text": "** || (10 seconds) -8 Leadership"
+	},
+	"130": {
+		"name": "Defender",
+		"text": "This elite unit excels at pinning the enemy down in melee, buying time for the rest of your army to get into position."
+	},
+	"131": {
+		"name": "Frost Breath",
+		"text": "This icy blast freezes and slows the foe, its withering cold hampering their attacks."
+	},
+	"132": {
+		"name": "Frostbite",
+		"text": "The intense cold cuts into the flesh and burns the foe's extremities, greatly reducing their speed."
+	},
+	"133": {
+		"name": "Frostbite!",
+		"text": "**"
+	},
+	"134": {
+		"name": "Sundered Armour",
+		"text": "**"
+	},
+	"135": {
+		"name": "Bows of Avelorn",
+		"text": "Loosing arrows of mystical blue fire, they excel at setting vulnerable units ablaze and piercing the toughest armour."
+	},
+	"136": {
+		"name": "Mark of Asuryan",
+		"text": "Those who bear the Creator's mark are afforded his divine vengeance; when struck down, their unworthy killer is soon engulfed by Asuryan's vengeful flames!"
 	}
 }
