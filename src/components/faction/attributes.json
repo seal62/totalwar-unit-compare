@@ -554,5 +554,29 @@
 	"136": {
 		"name": "Mark of Asuryan",
 		"text": "Those who bear the Creator's mark are afforded his divine vengeance; when struck down, their unworthy killer is soon engulfed by Asuryan's vengeful flames!"
+	},
+	"137": {
+		"name": "Disrupted!",
+		"text": "**"
+	},
+	"138": {
+		"name": "Enthralling Attacks",
+		"text": "This unit's melee attacks can stay the hand of those on the receiving end."
+	},
+	"139": {
+		"name": "Charmed!",
+		"text": "**"
+	},
+	"140": {
+		"name": "Cursed Ammunition",
+		"text": "Imbued with the foulest proclamations of hate, these ethereal projectiles can tear through entire enemy columns."
+	},
+	"141": {
+		"name": "Monstrous Impact",
+		"text": "**"
+	},
+	"142": {
+		"name": "Torch of Bogenhafen",
+		"text": "Instead of salvoes of cannonballs, the infamous 'Gallows Giant' covers its enemies in a wave of incinerating fire."
 	}
 }

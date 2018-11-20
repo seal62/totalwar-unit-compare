@@ -92,7 +92,7 @@
 		"range": "150m",
 		"effect-range": "40m",
 		"effects": {
-			"green1": "+44% Magic Resistance",
+			"green1": "+22% Ward Save",
 			"green2": "+8 Leadership"
 		},
 		"desc": "The resilience of the Old Ones is channelled into an energy barrier that protects its users from the full brunt of magical attacks against them."
@@ -164,9 +164,11 @@
 		"atype": "Weapon",
 		"type": "Direct Damage (Area)",
 		"typeDesc": "Only acts on targets when in area",
-		"recharge": "135",
+		"recharge": "120",
+		"uses-per-battle": "2",
 		"duration": "17 seconds",
-		"target": "Around self. Affects enemies in range.",
+		"target": "Ground, Enemy. Affects enemies in range.",
+		"range": "100m",
 		"effect-range": "30m",
 		"effects": {
 			"green1": "Causes damage to combatants",
@@ -448,17 +450,13 @@
 	"32": {
 		"name": "The Dark Mail",
 		"atype": "Item",
-		"type": "Hex (Area)",
-		"typeDesc": "Only acts on targets when in area",
+		"type": "Augment",
 		"duration": "Constant",
-		"target": "Around self. Affects enemies in range.",
-		"target-if": "Casting",
-		"effect-range": "40m",
+		"target": "Self",
+		"active-if": "In melee",
 		"effects": {
-			"red1": "The Dark Mail (32 seconds)",
-			"red2": "-27 Melee Defence",
-			"red3": "-30 Armour",
-			"red4": "-18% Vigour"
+			"green1": "+22% Magic Resistance",
+			"green2": "+24 Armour"
 		},
 		"desc": "This ancient suit of chainmail can counter the fanciful enchantments and magicks of enemy blades."
 	},
@@ -1046,7 +1044,7 @@
 		"typeDesc": "Only acts on targets when in area",
 		"duration": "Constant",
 		"target": "Self. Affects allies in range",
-		"effect-range": "40m",
+		"effect-range": "45m",
 		"effects": {
 			"green1": "Immune to Psychology"
 		},
@@ -1234,7 +1232,7 @@
 		"type": "Augment",
 		"typeDesc": "Instantly affects targets in area",
 		"recharge": "90",
-		"duration": "57 seconds",
+		"duration": "32 seconds",
 		"target": "Self. Affects allies in range",
 		"range": "40m",
 		"effects": {
@@ -1544,7 +1542,8 @@
 		"target": "Self",
 		"effects": {
 			"green1": "Increase to power reserves",
-			"green2": "Improved power recharge rate"
+			"green2": "Improved power recharge rate",
+			"red1": "+30 Ability Recharge (seconds)"
 		},
 		"desc": "The bearer of this black wand, flecked in glowing jade, can increase the Winds and more quickly power his spells."
 	},
@@ -1676,8 +1675,8 @@
 		"name": "Gaze of Malice",
 		"atype": "Lord ability",
 		"type": "Breath",
-		"recharge": "45",
-		"uses-per-battle": "4",
+		"recharge": "90",
+		"uses-per-battle": "3",
 		"duration": "8 seconds",
 		"target": "Ground",
 		"range": "100m",
@@ -1728,8 +1727,8 @@
 		"target": "Around self. Affects enemies in range",
 		"effect-range": "40m",
 		"effects": {
-			"red1": "Destroyer (45 seconds)",
-			"red2": "+45 Ability Recharge (seconds)"
+			"red1": "Destroyer (15 seconds)",
+			"red2": "+15 Ability Recharge (seconds)"
 		},
 		"desc": "Forged by the Witch King, the blade's merest touch can unmake enchantments and wither minds."
 	},
@@ -1833,7 +1832,8 @@
 		"target": "Self. Affects allies in range",
 		"effect-range": "40m",
 		"effects": {
-			"green1": "Immune to Psychology"
+			"green1": "Immune to Psychology",
+			"green2": "+8 Leadership"
 		},
 		"desc": "This peal of blackest jets soaks up dread, fear and self-doubt, leaving its wearer stronger within."
 	},
@@ -2014,7 +2014,7 @@
 		"uses-per-battle": "1",
 		"duration": "Constant",
 		"target": "Self",
-		"disabled-if": "Hit Points greater than 10%",
+		"disabled-if": "Hit Points greater than 20%",
 		"effects": {
 			"green1": "Burst of life-saving hit points",
 			"green2": "Heart of Avelorn (1 seconds)"
@@ -3234,7 +3234,7 @@
 		"typeDesc": "Only acts on targets when in area",
 		"duration": "Constant",
 		"target": "Self. Affects allies in range",
-		"effect-range": "40m",
+		"effect-range": "55m",
 		"effects": {
 			"green1": "+4 Leadership",
 			"green2": "Immune to Psychology"
@@ -3486,15 +3486,13 @@
 		"atype": "Character ability",
 		"type": "Regeneration",
 		"duration": "40 seconds",
-		"uses-per-battle": "1",
+		"recharge": "60",
 		"target": "Self, Ally",
 		"range": "200m",
 		"target-if": "Lizardmen",
 		"effects": {
-			"green1": "Replenishes hit points of combatants",
-			"red1": "-24% Speed",
-			"red2": "-27 Melee Defence",
-			"red3": "-26 Melee Attack"
+			"green1": "Stops Rampage",
+			"green2": "+16 Leadership"
 		},
 		"desc": "While Lizardmen may be slow to react due to their cold-blooded nature, this also makes them stoic in battle."
 	},
@@ -5513,7 +5511,7 @@
 		"effects": {
 			"red1": "-48% Speed",
 			"red2": "-30 Armour",
-			"red3": "-46 Melee Defence"
+			"red3": "-45 Melee Defence"
 		},
 		"desc": "Cursed to wander the length and breadth of the world, his never-ending quest to challenge and best the most gifted warriors."
 	},
@@ -5757,5 +5755,571 @@
 			"green1": "+25% Flame Resistance"
 		},
 		"desc": "The forest looks after its own."
+	},
+	"397": {
+		"name": "Extra Powder",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Ammunition below 80%",
+		"effects": {
+			"green1": "+30% Armour-Piercing Missile Damage",
+			"green2": "+30% Missile Damage",
+			"green3": "+30% Armour-Piercing Explosion",
+			"green4": "+30% Explosion"
+		},
+		"desc": "Because you can never have too much."
+	},
+	"398": {
+		"name": "Magical Void",
+		"atype": "Lord ability",
+		"type": "Ward Save (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range.",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+33% Magic Resistance"
+		},
+		"desc": "Beyond the power to raise and bind his Undead hordes, Harkon is barren; in fact, he emanates a field of anti-magic."
+	},
+	"399": {
+		"name": "Power Siphon",
+		"type": "Hex",
+		"duration": "30 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "-18% Vigour",
+			"red2": "+15 Ability Recharge (seconds)"
+		},
+		"desc": "By which opponents are prevented from marshalling their abilities to counteract Harkon's own lore."
+	},
+	"400": {
+		"name": "Hornswaggle",
+		"atype": "Character ability",
+		"type": "Hex",
+		"duration": "32 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "-27 Melee Defence",
+			"red2": "-30 Armour",
+			"red3": "-24% Speed"
+		},
+		"desc": "Do pay attention or this one'll 'ave the shirt from yer back!"
+	},
+	"401": {
+		"name": "All Hands Hoay!",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "20 seconds",
+		"target": "Self. Affects allies in range.",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+16 Leadership",
+			"green2": "+20% Weapon Damage",
+			"green3": "+20% Armour-Piercing Damage"
+		},
+		"desc": "Everyone on deck! We 'ave them now!"
+	},
+	"402": {
+		"name": "Slann Gold",
+		"atype": "Item",
+		"type": "Hex of the Winds",
+		"duration": "55 seconds",
+		"recharge": "120",
+		"target": "Enemy",
+		"range": "200m",
+		"cannot-target-if": "Doesn't have casting ability",
+		"effects": {
+			"red1": "Greatly reduced power recharge rate"
+		},
+		"desc": "It is well known that Lustrian gold is enchanted with all manner of esoteric properties; Harkon thinks it will restore his fractured mind!"
+	},
+	"403": {
+		"name": "Wraith Storm",
+		"atype": "Lord ability",
+		"type": "Bombardment",
+		"duration": "9 seconds",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"target": "Enemy",
+		"range": "200m",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Good against armour",
+			"green3": "Strong vs. a single unit"
+		},
+		"desc": "A bombardment of unearthly projectiles; a storm that's extremely hard to weather."
+	},
+	"404": {
+		"name": "Captain Roth's Moondial",
+		"atype": "Item",
+		"type": "Augment",
+		"duration": "3 seconds",
+		"recharge": "120",
+		"uses-per-battle": "2",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-use-if": "Army is full, Climbing",
+		"cannot-target-if": "On a wall",
+		"effects": {
+			"green1": "Summons a unit of Zombie Pirate Deckhands Mob",
+			"red1": "Summoned units degrade over time"
+		},
+		"desc": "This particular moondial enables its owner to pull off seemingly-impossible feats of navigation and piloting."
+	},
+	"405": {
+		"name": "Manann's Luck",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"duration": "15 seconds",
+		"recharge": "60",
+		"target": "Self",
+		"effects": {
+			"green1": "+27 Melee Defence",
+			"green2": "+22% Damage Resistance"
+		},
+		"desc": "The Seafather looks after his own."
+	},
+	"406": {
+		"name": "Spearfisher's Net",
+		"atype": "Lord ability",
+		"type": "Hex",
+		"duration": "18 seconds",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"target": "Enemy",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying",
+		"effects": {
+			"red1": "-27 Melee Defence",
+			"red2": "Cannot move"
+		},
+		"desc": "Look at 'em all, trapped like stranded sea-turtles they are!"
+	},
+	"407": {
+		"name": "Kraken's Bane",
+		"atype": "Weapon",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+5 Melee Attack",
+			"green2": "+8 Bonus vs. Large"
+		},
+		"desc": "Having deprived the biggest and the worst of its life, this blade hungers for other monstrous opponents worthy of its bite."
+	},
+	"408": {
+		"name": "Song of Enthrallment",
+		"atype": "Lord ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "22 seconds",
+		"recharge": "90",
+		"target": "Around self. Affects enemies in range",
+		"cannot-use-if": "Climbing",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-48% Speed",
+			"red2": "-26 Melee Attack"
+		},
+		"desc": "From which tide do you hide? The dark moon's tide is not on our side, so that is the tide that you must bribe."
+	},
+	"409": {
+		"name": "Ghosts of the Past",
+		"atype": "Character ability",
+		"type": "Augment",
+		"recharge": "120",
+		"uses-per-battle": "1",
+		"target": "Ground",
+		"range": "60m",
+		"effects": {
+			"green1": "Summons a unit of Damned Knights Errant",
+			"red1": "Summoned units degrade over time"
+		},
+		"desc": "Pale warriors, death-pale were they all; They cried - 'La Belle Dame sans Merci thee hath in thrall!'"
+	},
+	"410": {
+		"name": "The Bordeleaux Flabellum",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "Casting",
+		"effects": {
+			"green1": "Improved power recharge rate",
+			"green2": "The Bordeleaux Flabellum (15 seconds)",
+			"green3": "-10 Ability Recharge (seconds)"
+		},
+		"desc": "This enchanted fan keeps Cylostra cool when the heat is on, improving the recharge of her abilities and reducing their cooldown times."
+	},
+	"411": {
+		"name": "Van Horstmann's Speculum",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"duration": "16 seconds",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-27 Melee Defence",
+			"red2": "-25% Weapon Damage",
+			"red3": "-26 Melee Attack"
+		},
+		"desc": "Van Horstmann's small magical mirror has the ability to destroy the enemy if only they will look upon its cracked surface..."
+	},
+	"412": {
+		"name": "Black Periapt",
+		"atype": "Item",
+		"type": "Augment of the Winds",
+		"recharge": "120",
+		"duration": "30 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Great increase to power reserves",
+			"green2": "Greatly improved power recharge rate"
+		},
+		"desc": "The Black Periapt is a grandiose gem of sullen darkness whose power can only be realised in the hands of a spellcaster."
+	},
+	"413": {
+		"name": "Dead Eyes",
+		"atype": "Hero ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Self. Affects allies in range",
+		"effect-range": "30m",
+		"effects": {
+			"green1": "+10% Armour-Piercing Missile Damage",
+			"green2": "+10% Missile Damage"
+		},
+		"desc": "What dead eyes see can never be unseen, nor spoken of."
+	},
+	"414": {
+		"name": "Bomb-Throw",
+		"atype": "Hero ability",
+		"type": "Magic Missile",
+		"recharge": "60",
+		"uses-per-battle": "4",
+		"target": "Enemy",
+		"range": "70m",
+		"cannot-use-if": "Climbing, Manning equipment, Engaged in melee",
+		"projectile-range": "70m",
+		"effects": {
+			"green1": "Causes damage to combatants"
+		},
+		"desc": "Supernatural reserves of strength can be brought to bear with devastating effect."
+	},
+	"415": {
+		"name": "Enchanted Ballistics",
+		"atype": "Character ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "90",
+		"duration": "25 seconds",
+		"target": "Self. Affects allies in range",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "+60% Accuracy",
+			"green2": "+20 Reload Skill"
+		},
+		"desc": "These particular balls give the shooter a magical advantage over their targets."
+	},
+	"416": {
+		"name": "Cackle Fruit",
+		"atype": "Characer ability",
+		"type": "Magic Missile",
+		"recharge": "90",
+		"uses-per-battle": "3",
+		"target": "Enemy",
+		"range": "70m",
+		"cannot-use-if": "Climbing, Manning equipment, Engaged in melee",
+		"projectile-range": "70m",
+		"effects": {
+			"green1": "Powerful explosion",
+			"red1": "-48% Speed"
+		},
+		"desc": "These particular eggs bog the foe down in ectoplasmic goo, slowing their charge and leaving them prone."
+	},
+	"417": {
+		"name": "Pigeon Plucker Pendant",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"target-if": "Flying unit",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-5 Melee Attack"
+		},
+		"desc": "The wearer of this bizarre pendant is supernaturally protected against attacks from flying creatures."
+	},
+	"418": {
+		"name": "Scarecrow Banner",
+		"atype": "Item",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"recharge": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"target-if": "Flying unit",
+		"effect-range": "55m",
+		"effects": {
+			"red1": "-8 Leadership"
+		},
+		"desc": "The mangled form of a terrifying scarecrow has spent too long under Morrslieb's glow. It was taken from the fields and now is a banner to frighten anything with wings."
+	},
+	"419": {
+		"name": "Taunt",
+		"atype": "Character ability",
+		"type": "Hex",
+		"recharge": "60",
+		"duration": "17 seconds",
+		"target": "Enemy",
+		"range": "100m",
+		"effects": {
+			"red1": "-30 Armour",
+			"red2": "-27 Melee Defence",
+			"red3": "-24% Speed"
+		},
+		"desc": "You're nowt but a bunch of lily-livered landlubbers! Know that your deaths will be short - soon you'll serve under the black flag!"
+	},
+	"420": {
+		"name": "Speed of Lykos",
+		"atype": "Item",
+		"type": "Hiding",
+		"recharge": "60",
+		"uses-per-battle": "1",
+		"duration": "44 seconds",
+		"target": "Self, Ally",
+		"range": "200m",
+		"effects": {
+			"green1": "+24% Speed",
+			"green2": "Stalk",
+			"green3": "Unspottable"
+		},
+		"desc": "The words upon this scroll, when read aloud, allow an ally to move at such a speed as to be unseen."
+	},
+	"421": {
+		"name": "Noxious Disintegration",
+		"atype": "Unit ability",
+		"type": "Explosion",
+		"uses-per-battle": "1",
+		"duration": "Constant",
+		"target": "Self",
+		"disabled-if": "Hit Points greater than 20%, Battle outcome decided",
+		"effects": {
+			"green1": "Powerful explosion",
+			"red1": "Causes severe damage to self"
+		},
+		"desc": "Corpses bloated from spending too long at sea are like foul, decomposing balloons waiting to burst."
+	},
+	"422": {
+		"name": "Gaseous Demise",
+		"atype": "Unit ability",
+		"type": "Explosion",
+		"uses-per-battle": "1",
+		"recharge": "1",
+		"duration": "1 seconds",
+		"target": "Self",
+		"recharge-if": "Engaged in melee",
+		"effects": {
+			"green1": "Powerful explosion",
+			"red1": "Causes severe damage to self"
+		},
+		"desc": "Some drowned sailors lurch from the sea swollen with noxious gases, ready to explode upon contact with enemy blades. Keep well back!"
+	},
+	"423": {
+		"name": "Abandon Ship!",
+		"atype": "Unit ability",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"duration": "Constant",
+		"target": "Self",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"disabled-if": "Hit Points greater than 50%",
+		"effects": {
+			"green1": "Summons a unit of Zombie Pirate Deckhands Mob"
+		},
+		"desc": "Every man for 'imself! Swim for it!!"
+	},
+	"424": {
+		"name": "Merciless Slaver",
+		"atype": "Lord ability",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-4 Leadership"
+		},
+		"desc": "Sometimes death is preferable to surrender."
+	},
+	"425": {
+		"name": "Dreaded Duellist",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"recharge": "60",
+		"duration": "22 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+26 Melee Attack",
+			"green2": "+27 Melee Defence"
+		},
+		"desc": "There are but a few who've faced 'im and lived to tell the tale - you can count them on the fingers of Bernard's 'ands... and 'e's got no 'ands."
+	},
+	"426": {
+		"name": "Helm of the Kraken",
+		"atype": "Item",
+		"type": "Regeneration",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "In melee",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"green2": "+9 Melee Defence"
+		},
+		"desc": "Bow down before the true Lord of the Sea."
+	},
+	"427": {
+		"name": "Dark Protection",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"duration": "30 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+22% Damage Resistance",
+			"green2": "+27 Melee Defence"
+		},
+		"desc": "If you need the strength, then turn to me..."
+	},
+	"428": {
+		"name": "Pestilential Breath",
+		"atype": "Unit ability",
+		"type": "Magic Missile",
+		"uses-per-battle": "3",
+		"recharge": "60",
+		"target": "Enemy",
+		"range": "80m",
+		"can-use-if": "Flying",
+		"cannot-use-if": "Engaged in melee",
+		"projectile-range": "90m",
+		"effects": {
+			"green1": "Powerful explosion",
+			"green2": "Good against large combatants",
+			"green3": "Strong vs. a single unit"
+		},
+		"desc": "Some Dragons breathe noxious fumes that have a long-lasting effect on their target's coordination - if it survived the attack in the first place."
+	},
+	"429": {
+		"name": "Storm of the Night",
+		"atype": "Lord ability",
+		"type": "Vortex",
+		"typeDesc": "Instantly affects targets in area",
+		"uses-per-battle": "3",
+		"recharge": "90",
+		"duration": "11 seconds",
+		"target": "Enemy. Affects enemies in range",
+		"range": "150m",
+		"target-if": "Flying",
+		"effect-range": "20m",
+		"effects": {
+			"green1": "Causes major magical damage",
+			"green2": "Huge, randomly-moving area of effect",
+			"green3": "Good against flying",
+			"green4": "Strong vs. a single combatants",
+			"red1": "-72% Speed"
+		},
+		"desc": "When light is absent, the storm rages all the worse, filling the living with existential dread."
+	},
+	"430": {
+		"name": "Earthing Rod",
+		"atype": "Item",
+		"type": "Augment",
+		"uses-per-battle": "1",
+		"recharge": "60",
+		"duration": "36 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "-100% Miscast Chance"
+		},
+		"desc": "When planted in the ground this obsidian rod becalms the arcane winds for the briefest moment, allowing the Wizard to cast one of his powerful enchantments unopposed."
+	},
+	"431": {
+		"name": "Honour or Death",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"duration": "Constant",
+		"target": "Self",
+		"active-if": "In melee",
+		"effects": {
+			"green1": "+8 Leadership",
+			"green2": "+11% Damage Resistance"
+		},
+		"desc": "Unsurprisingly, some beings reconsider their options when faced with certain death."
+	},
+	"432": {
+		"name": "Heart Piercing",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"recharge": "120",
+		"duration": "28 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+40% Armour-Piercing Damage",
+			"green2": "+36% Charge Bonus"
+		},
+		"imbued": {
+			"red1": "Sundered Armour (10 seconds)",
+			"red2": "-30 Armour"
+		},
+		"desc": "When supernatural strength and speed work together, lesser opponents have little chance to counter."
+	},
+	"433": {
+		"name": "Helm of Discord",
+		"atype": "Weapon",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"duration": "25 seconds",
+		"target": "Around self. Affects enemies in range",
+		"effect-range": "40m",
+		"effects": {
+			"red1": "-27 Melee Defence",
+			"red2": "-26 Melee Attack"
+		},
+		"desc": "The battered Helm of Discord is a bronze helmet covered in withering symbols that both distract and unsettle any attacker."
+	},
+	"434": {
+		"name": "Claws of Mourkain",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"recharge": "120",
+		"duration": "34 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+40% Armour-Piercing Damage"
+		},
+		"desc": "From deep within the Marshes of Madness, the Strigoi shall rise again!"
+	},
+	"435": {
+		"name": "Ghoul King of Ushoran",
+		"atype": "Lord ability",
+		"type": "Regeneration",
+		"recharge": "120",
+		"duration": "32 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "Replenishes hit points of combatants",
+			"green2": "+8 Leadership"
+		},
+		"desc": "From his shattered kingdom, Prince Ushoran reaches forth and makes Lahmian dreams a twisted, hateful reality."
 	}
 }

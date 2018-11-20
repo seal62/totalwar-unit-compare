@@ -4,7 +4,7 @@ class Footer extends Component {
 	
 	render() {
 
-		const version = 'v1.4.1'
+		const version = 'v1.5.0'
 
 		return (
 			<footer className="footer">

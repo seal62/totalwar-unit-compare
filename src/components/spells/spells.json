@@ -58,10 +58,10 @@
 		"subtitle": "Spell",
 		"description": "Reaching into the Wind of Hysh, the Wizard draws forth ennobling energies to steady faint hearts - augmenting allies with courage.",
 		"type": "Augment",
-		"cost": 6,
+		"cost": 7,
 		"recharge": 43,
 		"wind-up-time": null,
-		"duration": "30 seconds",
+		"duration": "22 seconds",
 		"target": "Self, Ally",
 		"range": "200m",
 		"effects": {
@@ -687,12 +687,11 @@
 		"cost": 6,
 		"recharge": 42,
 		"wind-up-time": null,
-		"duration": "47 seconds",
+		"duration": "44 seconds",
 		"target": "Self, Ally",
 		"range": "200m",
 		"effects": {
-			"green1": "+30 Armour",
-			"green2": "+8 Leadership"
+			"green1": "+60 Armour"
 		}
 	},
 	"37": {
@@ -1094,7 +1093,7 @@
 		"subtitle": "Spell",
 		"description": "Kadon was able to shift his shape to that of any monster, even a Manticore. One day he found he could not change back...",
 		"type": "Augment",
-		"cost": 16,
+		"cost": 14,
 		"recharge": 45,
 		"wind-up-time": null,
 		"uses-per-battle": 2,
@@ -1175,14 +1174,14 @@
 		"cost": 8,
 		"recharge": 44,
 		"wind-up-time": null,
-		"duration": "29 seconds",
+		"duration": "22 seconds",
 		"target": "Self, Ground, Ally. Affects allies in range",
 		"range": "200m",
 		"effect-range": "40m",
 		"effects": {
 			"green1": "Good against AP damage",
 			"green2": "+25% Weapon Damage",
-			"green3": "+22% Missile Resistance"
+			"green3": "+22% Physical Resistance"
 		}
 	},
 	"62": {
@@ -1199,9 +1198,8 @@
 		"range": "200m",
 		"cannot-target-if": "Hit point replenishment cap reached",
 		"effects": {
-			"green1": "Good against AP damage",
-			"green2": "Replenishes hit points of combatants",
-			"green3": "+22% Physical Resistance"
+			"green1": "Replenishes hit points of combatants",
+			"green2": "+100% Vigour"
 		}
 	},
 	"63": {
@@ -1486,7 +1484,7 @@
 		"type": "Augment",
 		"cost": 4,
 		"recharge": 28,
-		"wind-up-time": null,
+		"wind-up-time": 1,
 		"duration": "19 seconds",
 		"target": "Self, Ally",
 		"range": "200m",
@@ -1501,7 +1499,7 @@
 		"subtitle": "Spell",
 		"description": "Green bolts of purest spite burst forth from the Shaman and streak towards the enemy.",
 		"type": "Magic Missiles",
-		"cost": 5,
+		"cost": 4,
 		"recharge": 29,
 		"wind-up-time": null,
 		"target": "Enemy",
@@ -1526,14 +1524,14 @@
 		"cost": 7,
 		"recharge": 43,
 		"wind-up-time": null,
-		"duration": "21 seconds",
+		"duration": "24 seconds",
 		"target": "Ground, Enemy. Affects enemies in range",
 		"range": "200m",
 		"effect-range": "40m",
 		"effects": {
 			"red1": "-18% Charge Bonus",
-			"red2": "-24% Speed",
-			"red3": "-18% Vigour"
+			"red2": "-48% Speed",
+			"red3": "-48% Charge Speed"
 		}
 	},
 	"79": {
@@ -1561,16 +1559,18 @@
 		"subtitle": "Spell",
 		"description": "The Shaman throws a black-capped nightshade mushroom into the air, which bursts into a cloud of murky darkness.",
 		"type": "Hiding",
-		"cost": 8,
+		"typeDesc": "Instantly affects targets in area",
+		"cost": 13,
 		"recharge": 48,
 		"wind-up-time": null,
-		"duration": "75 seconds",
-		"target": "Self, Ally",
-		"range": "300m",
+		"duration": "41 seconds",
+		"target": "Self, Ground, Ally. Affects allies in range",
+		"range": "200m",
 		"cannot-use-if": "Climbing",
+		"effect-range": "40m",
 		"effects": {
 			"green1": "Stalk",
-			"green2": "Spotted only at a very close range"
+			"green2": "Unspottable"
 		}
 	},
 	"81": {
@@ -1598,7 +1598,7 @@
 			"red1": "Da Nasty Curse! (22 seconds)",
 			"red2": "-24% Speed",
 			"red3": "-30 Armour",
-			"red4": "-26 Melee Attack"
+			"red4": "-27 Melee Defence"
 		}
 	},
 	"82": {
@@ -1607,7 +1607,7 @@
 		"subtitle": "Spell",
 		"description": "Mork gives the Shaman the ability to project beams of coruscating energy from his eyes.",
 		"type": "Magic Missiles",
-		"cost": 5,
+		"cost": 4,
 		"recharge": 29,
 		"wind-up-time": null,
 		"target": "Enemy",
@@ -1668,7 +1668,7 @@
 		"subtitle": "Spell",
 		"description": "A wave of green energy emanates outwards, forming a shockwave of power that assaults any unfortunate foe.",
 		"type": "Breath",
-		"cost": 9,
+		"cost": 7,
 		"recharge": 45,
 		"wind-up-time": null,
 		"duration": "18 seconds",
@@ -1773,7 +1773,7 @@
 		"cost": 6,
 		"recharge": 43,
 		"wind-up-time": null,
-		"duration": "21 seconds",
+		"duration": "28 seconds",
 		"target": "Self, Ally",
 		"range": "200m",
 		"cannot-use-if": "Climbing",
@@ -1807,23 +1807,25 @@
 	},
 	"92": {
 		"lore": "ruin",
-		"name": "Skitterclap",
+		"name": "Skitterleap",
 		"subtitle": "Spell",
 		"description": "The Skaven caster disappers in a puff of greenish smoke, only to reappear elsewhere on the battlefield.",
 		"type": "Hiding",
-		"cost": 8,
+		"typeDesc": "Instantly affects targets in area",
+		"cost": 14,
 		"recharge": 48,
 		"wind-up-time": null,
-		"duration": "75 seconds",
-		"target": "Self, Ally",
+		"duration": "41 seconds",
+		"target": "Self, Ground, Ally. Affects allies in range",
 		"range": "200m",
 		"cannot-use-if": "Climbing, Manning equipment",
+		"effect-range": "40m",
 		"effects": {
 			"green1": "Target is hidden",
 			"green2": "Effective when flanking",
 			"green3": "+24% Speed",
 			"green4": "Stalk",
-			"green5": "Spotted only at very close range"
+			"green5": "Unspottable"
 		}
 	},
 	"93": {
@@ -2400,7 +2402,7 @@
 		"subtitle": "Spell",
 		"description": "Imbued with the essence of the God of Death, the Nehekharan's blades strike with supernatural force to harvest souls for Djaf.",
 		"type": "Augment",
-		"cost": 4,
+		"cost": 3,
 		"recharge": 28,
 		"wind-up-time": null,
 		"duration": "25 seconds",
@@ -2474,7 +2476,7 @@
 		"subtitle": "Spell",
 		"description": "A whirlwind of skulls tears across the battlefield, devouring all in its path in the Goddess of the Green Moon's bitter, vindictive name.",
 		"type": "Vortex",
-		"cost": 12,
+		"cost": 11,
 		"recharge": 49,
 		"wind-up-time": null,
 		"duration": "27 seconds",
@@ -2506,6 +2508,165 @@
 		"effects": {
 			"red1": "-26 Melee Attack",
 			"red2": "-27 Melee Defence"
+		}
+	},
+	"131": {
+		"lore": "",
+		"name": "Drowned Dead",
+		"subtitle": "Spell",
+		"description": "Drowned sailors are easily bound, for they remember their last voyage and many of their worldly duties.",
+		"type": "Augment",
+		"cost": 6,
+		"recharge": 41,
+		"wind-up-time": null,
+		"uses-per-battle": 4,
+		"duration": "3 seconds",
+		"target": "Ground",
+		"range": "60m",
+		"cannot-use-if": "Army is full, Climbing",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Summons a unit of Zombie Pirate Deckhands Mob",
+			"green2": "Good at defending spellcaster",
+			"red1": "Summoned units degrade over time"
+		}
+	},
+	"132": {
+		"lore": "deep",
+		"name": "Kiss of the Deep",
+		"subtitle": "Lore attribute",
+		"description": "No matter how far away, none can escape the Kiss of the Deep, nor breathe again with lungs full of seawater.",
+		"type": "Hex (Area)",
+		"duration": "Constant",
+		"target": "Around self. Affects enemies in range",
+		"active-if": "Casting",
+		"effect-range": "Map-wide",
+		"effects": {
+			"green1": "Kiss of the Deep (9 seconds)",
+			"green2": "Causes damage to combatants"
+		}
+	},
+	"133": {
+		"lore": "deep",
+		"name": "Spiteful Shot",
+		"subtitle": "Spell",
+		"description": "Imbued with the purest hatred for the foe and all their ways, to better bring about an ignominious end.",
+		"type": "Augment",
+		"cost": 4,
+		"recharge": 28,
+		"wind-up-time": null,
+		"target": "Self, Ally",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"target-if": "Missile attack possible",
+		"imbues": "Magical Damage",
+		"effects": {
+			"green1": "+90 Accuracy"
+		}
+	},
+	"134": {
+		"lore": "deep",
+		"name": "Tidecall",
+		"subtitle": "Spell",
+		"description": "The sea is summoned, and a great tide coalesces upon the battlefield to drench all those that oppose the caster.",
+		"type": "Breath",
+		"cost": 5,
+		"recharge": 32,
+		"wind-up-time": null,
+		"duration": "6 seconds",
+		"target": "Ground",
+		"range": "100m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"effects": {
+			"green1": "Causes moderate magical damage",
+			"green2": "Can disrupt unit formation",
+			"green3": "Expanding tear-shaped attack",
+			"red1": "Weak against armour"
+		},
+		"contact": {
+			"red1": "Tidecall (10 seconds)",
+			"red2": "-24% Speed"
+		}
+	},
+	"135": {
+		"lore": "deep",
+		"name": "Fog of the Damned",
+		"subtitle": "Spell",
+		"description": "They'll never know how many we are in this fog... Attack!",
+		"type": "Hex (Area)",
+		"typeDesc": "Only acts on targets when in area",
+		"cost": 8,
+		"recharge": 44,
+		"wind-up-time": null,
+		"target": "Ground, Enemy. Affects enemies in range",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying",
+		"effect-range": "30m",
+		"effects": {
+			"red1": "-8 Leadership",
+			"red2": "-26 Melee Attack"
+		}
+	},
+	"136": {
+		"lore": "deep",
+		"name": "Denizens of the Deep",
+		"subtitle": "Spell",
+		"description": "Some things should never rise above the waves or be seen by mortal eyes.",
+		"type": "Augment",
+		"cost": 13,
+		"recharge": 39,
+		"wind-up-time": null,
+		"uses-per-battle": 2,
+		"duration": "3 seconds",
+		"target": "Ground",
+		"range": "60m",
+		"cannot-use-if": "Army is full, Climbing",
+		"cannot-target-if": "Climbing or manning equipment or on a platform",
+		"effects": {
+			"green1": "Summons a unit of Rotting Prometheans",
+			"red1": "Summoned units degrade over time"
+		}
+	},
+	"137": {
+		"lore": "deep",
+		"name": "Kraken's Pull",
+		"subtitle": "Spell",
+		"description": "Few have the strength to break free once the Kraken has them within its horrid, betentacled grasp.",
+		"type": "Vortex",
+		"cost": 15,
+		"recharge": 49,
+		"wind-up-time": null,
+		"duration": "16 seconds",
+		"target": "Ground",
+		"range": "200m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flying, On a wall",
+		"contact": {
+			"red1": "Kraken's Pull (10 seconds)",
+			"red2": "-48% Speed"
+		}
+	},
+	"138": {
+		"lore": "deep",
+		"name": "Vangheist's Revenge",
+		"subtitle": "Spell",
+		"description": "Every mariner has heard the tale of Vangheist, and now his restless spirit is summoned on board the Shadewraith to deliver a devastating broadside.",
+		"type": "Wind",
+		"cost": 16,
+		"recharge": 54,
+		"wind-up-time": null,
+		"duration": "7 seconds",
+		"target": "Ground",
+		"range": "150m",
+		"cannot-use-if": "Climbing",
+		"cannot-target-if": "Flyng, On a wall",
+		"effects": {
+			"green1": "Causes massive magical damage",
+			"green2": "Medium, forward-moving area of effect",
+			"green3": "Strong vs. multiple units",
+			"red1": "Weak vs. a single combatant"
 		}
 	}
 }
