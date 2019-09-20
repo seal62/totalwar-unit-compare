@@ -2470,16 +2470,15 @@
 	"173": {
 		"name": "Accusation",
 		"atype": "Hero ability",
-		"type": "Direct Damage",
+		"type": "Hex",
 		"recharge": "90",
-		"duration": "20 seconds",
+		"duration": "35 seconds",
 		"target": "Enemy",
 		"range": "75m",
 		"effects": {
-			"green1": "Causes damage to combatants",
-			"green2": "Strong vs. a single combatant",
-			"red1": "Chance opponent will resist damage",
-			"red2": "Weak vs. multiple combatants"
+			"red1": "-26 Melee Defence",
+			"red2": "-30 Armour",
+			"red3": "-22% Missile Resistance"
 		},
 		"desc": "The Witch Hunter levels his finger across the battlefield and accuses one of the enemy of arch-heresy!"
 	},
@@ -4657,8 +4656,10 @@
 		"type": "Hex",
 		"duration": "Constant",
 		"target": "Self",
-		"disabled-if": "Hit Points greater than 50% base",
+		"disabled-if": "Hit Points greater than 20% base",
 		"effects": {
+			"green1": "+16% Charge Bonus",
+			"green2": "+8 Melee Attack",
 			"red1": "Rampage!"
 		},
 		"desc": "When under pressure, the primal instincts of these natural predators take over - they may then go on a rampage against nearby enemy units, attacking the closest one and ignoring any orders given."
@@ -6321,5 +6322,34 @@
 			"green2": "+8 Leadership"
 		},
 		"desc": "From his shattered kingdom, Prince Ushoran reaches forth and makes Lahmian dreams a twisted, hateful reality."
+	},
+	"436": {
+		"name": "Focus Instincts",
+		"atype": "Lord ability",
+		"type": "Augment (Area)",
+		"typeDesc": "Instantly affects targets in area",
+		"recharge": "90",
+		"duration": "40 seconds",
+		"target": "Self, Affects allies in range",
+		"target-if": "Lizardmen",
+		"effect-range": "40m",
+		"effects": {
+			"green1": "Stops Rampage",
+			"red1": "Rampage!"
+		},
+		"desc": "By which the mind is concentrated on the task at hand, allowing it to be carried out effectively whilst keeping passion and abandon firmly in check."
+	},
+	"437": {
+		"name": "Warrior's Crest",
+		"atype": "Lord ability",
+		"type": "Augment",
+		"recharge": "90",
+		"duration": "30 seconds",
+		"target": "Self",
+		"effects": {
+			"green1": "+44 Melee Attack",
+			"green2": "+27 Melee Defence"
+		},
+		"desc": "It's not just for decoration, you know!"
 	}
 }

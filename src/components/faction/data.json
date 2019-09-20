@@ -3264,7 +3264,7 @@
 				"leadership": 80,
 				"speed": 44,
 				"melee-attack": 70,
-				"melee-defence": 45,
+				"melee-defence": 48,
 				"weapon-strength": {
 					"weapon-damage": 140,
 					"armour-piercing-damage": 330,
@@ -4364,7 +4364,7 @@
 				"health": 3688,
 				"armour": 30,
 				"leadership": 65,
-				"speed": 43,
+				"speed": 45,
 				"melee-attack": 70,
 				"melee-defence": 42,
 				"weapon-strength": {
@@ -4387,13 +4387,14 @@
 					"36": null,
 					"41": null,
 					"9": null,
-					"42": "Melee",
-					"124": "Melee || (10 seconds) -24% Speed, -22% Weapon Damage, -22% Missile Damage, -18% Armour-Piercing Damage, -18% Armour-Piercing Missile Damage, -18% Vigour",
+					"42": "Melee & Ranged",
+					"124": "Melee & Ranged || (10 seconds) -20% Armour-Piercing Missile Damage, -24% Speed, -20% Weapon Damage, -20% Armour-Piercing Damage, -20% Missile Damage",
 					"32": "15%",
 					"33": null,
 					"2": null,
 					"3": null,
-					"25": null
+					"25": null,
+					"22": null
 				},
 				"abilities": [132,133,134,135,136],
 				"hasMounts": false,
@@ -4948,7 +4949,7 @@
 				"weapon-strength": {
 					"weapon-damage": 21,
 					"armour-piercing-damage": 7,
-					"bonus-vs-infantry": 7
+					"bonus-vs-infantry": 8
 				},
 				"charge-bonus": 16,
 				"custom-cost": 650,
@@ -5440,7 +5441,7 @@
 					"number-of-projectiles": 2,
 					"reload-time": 9.8
 				},
-				"custom-cost": 950,
+				"custom-cost": 900,
 				"recruitment-cost": 950,
 				"upkeep-cost": 244,
 				"attributes": {
@@ -5522,8 +5523,8 @@
 				"armour": 90,
 				"leadership": 75,
 				"speed": 66,
-				"melee-attack": 32,
-				"melee-defence": 28,
+				"melee-attack": 30,
+				"melee-defence": 27,
 				"weapon-strength": {
 					"weapon-damage": 12,
 					"armour-piercing-damage": 30,
@@ -5588,8 +5589,8 @@
 				"armour": 120,
 				"leadership": 75,
 				"speed": 66,
-				"melee-attack": 42,
-				"melee-defence": 44,
+				"melee-attack": 40,
+				"melee-defence": 43,
 				"weapon-strength": {
 					"weapon-damage": 14,
 					"armour-piercing-damage": 34
@@ -5654,15 +5655,15 @@
 				"armour": 120,
 				"leadership": 85,
 				"speed": 66,
-				"melee-attack": 49,
-				"melee-defence": 58,
+				"melee-attack": 47,
+				"melee-defence": 57,
 				"weapon-strength": {
 					"weapon-damage": 14,
 					"armour-piercing-damage": 34
 				},
 				"charge-bonus": 36,
-				"custom-cost": 1550,
-				"recruitment-cost": 1550,
+				"custom-cost": 1500,
+				"recruitment-cost": 1500,
 				"upkeep-cost": 388,
 				"attributes": {
 					"6": null,
@@ -5762,13 +5763,13 @@
 				"leadership": 65,
 				"speed": 66,
 				"melee-attack": 24,
-				"melee-defence": 26,
+				"melee-defence": 24,
 				"weapon-strength": {
 					"weapon-damage": 21,
 					"armour-piercing-damage": 32,
 					"bonus-vs-infantry": 22
 				},
-				"charge-bonus": 60,
+				"charge-bonus": 50,
 				"ammunition": 48,
 				"range": 125,
 				"missile-damage": {
@@ -5893,7 +5894,7 @@
 				"unit-type": "Monster",
 				"units": 1,
 				"health": 9458,
-				"armour": 50,
+				"armour": 60,
 				"leadership": 65,
 				"speed": 46,
 				"melee-attack": 55,
@@ -5927,7 +5928,7 @@
 				"unit-type": "Monster",
 				"units": 1,
 				"health": 9458,
-				"armour": 50,
+				"armour": 60,
 				"leadership": 65,
 				"speed": 46,
 				"melee-attack": 52,
@@ -5992,7 +5993,7 @@
 				"unit-type": "Regiments of Renown",
 				"units": 1,
 				"health": 9458,
-				"armour": 50,
+				"armour": 60,
 				"leadership": 75,
 				"speed": 46,
 				"melee-attack": 61,
@@ -6033,15 +6034,15 @@
 				"type": 1,
 				"unit-type": "Great Axe Infantry",
 				"units": 1,
-				"health": 7308,
-				"armour": 120,
+				"health": 7708,
+				"armour": 125,
 				"leadership": 85,
 				"speed": 30,
-				"melee-attack": 50,
+				"melee-attack": 52,
 				"melee-defence": 62,
 				"weapon-strength": {
-					"weapon-damage": 280,
-					"armour-piercing-damage": 170
+					"weapon-damage": 325,
+					"armour-piercing-damage": 175
 				},
 				"charge-bonus": 20,
 				"custom-cost": 2050,
@@ -6065,12 +6066,12 @@
 				"type": 1,
 				"unit-type": "Great Axe Infantry",
 				"units": 1,
-				"health": 5136,
+				"health": 5536,
 				"armour": 120,
 				"leadership": 100,
 				"speed": 32,
 				"melee-attack": 70,
-				"melee-defence": 35,
+				"melee-defence": 39,
 				"weapon-strength": {
 					"weapon-damage": 145,
 					"armour-piercing-damage": 285,
@@ -6112,8 +6113,8 @@
 					"armour-piercing-damage": 315
 				},
 				"charge-bonus": 45,
-				"custom-cost": 1789,
-				"recruitment-cost": 1700,
+				"custom-cost": 1739,
+				"recruitment-cost": 1650,
 				"upkeep-cost": 425,
 				"attributes": {
 					"5": null,
@@ -6215,8 +6216,8 @@
 					"armour-piercing-damage": 100
 				},
 				"charge-bonus": 16,
-				"custom-cost": 1652,
-				"recruitment-cost": 850,
+				"custom-cost": 1702,
+				"recruitment-cost": 900,
 				"upkeep-cost": 250,
 				"attributes": {
 					"5": null,
@@ -6740,7 +6741,7 @@
 				"leadership": 80,
 				"speed": 28,
 				"melee-attack": 46,
-				"melee-defence": 34,
+				"melee-defence": 35,
 				"weapon-strength": {
 					"weapon-damage": 14,
 					"armour-piercing-damage": 41
@@ -6818,8 +6819,8 @@
 					"bonus-vs-large": 30
 				},
 				"charge-bonus": 32,
-				"custom-cost": 1250,
-				"recruitment-cost": 1250,
+				"custom-cost": 1200,
+				"recruitment-cost": 1200,
 				"upkeep-cost": 313,
 				"attributes": {
 					"7": null,
@@ -6987,7 +6988,7 @@
 				"leadership": 90,
 				"speed": 28,
 				"melee-attack": 54,
-				"melee-defence": 46,
+				"melee-defence": 47,
 				"weapon-strength": {
 					"weapon-damage": 15,
 					"armour-piercing-damage": 40
@@ -7510,8 +7511,8 @@
 				"ammunition": 18,
 				"range": 100,
 				"missile-damage": {
-					"missile-damage": 24,
-					"armour-piercing-missile-damage": 74,
+					"missile-damage": 28,
+					"armour-piercing-missile-damage": 85,
 					"number-of-projectiles": 1,
 					"reload-time": 9.9
 				},
@@ -7861,7 +7862,7 @@
 				"type": 1,
 				"unit-type": "Great Axe Infantry",
 				"units": 1,
-				"health": 5136,
+				"health": 5536,
 				"armour": 120,
 				"leadership": 75,
 				"speed": 38,
@@ -8004,7 +8005,7 @@
 				"type": 1,
 				"unit-type": "Halberd Infantry",
 				"units": 1,
-				"health": 6268,
+				"health": 6668,
 				"armour": 50,
 				"leadership": 75,
 				"speed": 34,
@@ -8686,20 +8687,20 @@
 				"name": "Krimson Killerz (Black Orcs)",
 				"type": 4,
 				"unit-type": "Regiments of Renown",
-				"units": 60,
-				"health": 8160,
-				"armour": 115,
+				"units": 80,
+				"health": 10800,
+				"armour": 110,
 				"leadership": 82,
 				"speed": 29,
 				"melee-attack": 43,
 				"melee-defence": 36,
 				"weapon-strength": {
 					"weapon-damage": 14,
-					"armour-piercing-damage": 38
+					"armour-piercing-damage": 36
 				},
-				"charge-bonus": 30,
-				"custom-cost": 1400,
-				"recruitment-cost": 1400,
+				"charge-bonus": 29,
+				"custom-cost": 1550,
+				"recruitment-cost": 1550,
 				"upkeep-cost": 350,
 				"attributes": {
 					"5": null,
@@ -9640,8 +9641,8 @@
 				"ammunition": 22,
 				"range": 400,
 				"missile-damage": {
-					"missile-damage": 175,
-					"armour-piercing-missile-damage": 65,
+					"missile-damage": 70,
+					"armour-piercing-missile-damage": 170,
 					"explosive-base-damage": 40,
 					"explosive-armour-piercing-damage": 15,
 					"number-of-projectiles": 1,
@@ -9707,7 +9708,7 @@
 				"health": 12620,
 				"armour": 30,
 				"leadership": 100,
-				"speed": 36,
+				"speed": 39,
 				"melee-attack": 65,
 				"melee-defence": 30,
 				"weapon-strength": {
@@ -9742,7 +9743,8 @@
 				"melee-defence": 30,
 				"weapon-strength": {
 					"weapon-damage": 100,
-					"armour-piercing-damage": 280
+					"armour-piercing-damage": 280,
+					"bonus-vs-large": 14
 				},
 				"charge-bonus": 40,
 				"ammunition": 200,
@@ -9783,7 +9785,8 @@
 				"melee-defence": 41,
 				"weapon-strength": {
 					"weapon-damage": 100,
-					"armour-piercing-damage": 280
+					"armour-piercing-damage": 280,
+					"bonus-vs-large": 14
 				},
 				"charge-bonus": 40,
 				"ammunition": 200,
@@ -10020,8 +10023,8 @@
 				"ammunition": 30,
 				"range": 300,
 				"missile-damage": {
-					"missile-damage": 70,
-					"armour-piercing-missile-damage": 250,
+					"missile-damage": 77,
+					"armour-piercing-missile-damage": 275,
 					"reload-time": 9.9
 				},
 				"custom-cost": 1580,
@@ -10115,6 +10118,7 @@
 					},
 					"Moon Dragon": {
 						"health": 3376,
+						"armour": 10,
 						"speed": 45,
 						"melee-attack": -19,
 						"melee-defence": 3,
@@ -10343,14 +10347,14 @@
 						"armour": 30,
 						"speed": 42,
 						"melee-attack": -10,
-						"melee-defence": -22,
+						"melee-defence": -24,
 						"weapon-strength": {
 							"weapon-damage": -30,
 							"armour-piercing-damage": -10,
 							"bonus-vs-large": -35,
 							"bonus-vs-infantry": 20
 						},
-						"charge-bonus": 62,
+						"charge-bonus": 52,
 						"attributes": {
 							"5": null,
 							"7": null,
@@ -10799,9 +10803,9 @@
 					"armour-piercing-damage": 235,
 					"bonus-vs-infantry": 16
 				},
-				"charge-bonus": 35,
-				"custom-cost": 1485,
-				"recruitment-cost": 1000,
+				"charge-bonus": 30,
+				"custom-cost": 1335,
+				"recruitment-cost": 850,
 				"upkeep-cost": 267,
 				"attributes": {
 					"10": null,
@@ -10885,7 +10889,7 @@
 				"units": 100,
 				"health": 8000,
 				"armour": 90,
-				"leadership": 75,
+				"leadership": 80,
 				"speed": 33,
 				"melee-attack": 46,
 				"melee-defence": 36,
@@ -11462,8 +11466,8 @@
 					"armour-piercing-damage": 7
 				},
 				"charge-bonus": 40,
-				"custom-cost": 600,
-				"recruitment-cost": 600,
+				"custom-cost": 550,
+				"recruitment-cost": 550,
 				"upkeep-cost": 150,
 				"attributes": {
 					"13": null,
@@ -11849,13 +11853,13 @@
 				"armour": 80,
 				"leadership": 85,
 				"speed": 100,
-				"melee-attack": 34,
+				"melee-attack": 35,
 				"melee-defence": 48,
 				"weapon-strength": {
-					"weapon-damage": 110,
-					"armour-piercing-damage": 250
+					"weapon-damage": 120,
+					"armour-piercing-damage": 280
 				},
-				"charge-bonus": 42,
+				"charge-bonus": 38,
 				"custom-cost": 1650,
 				"recruitment-cost": 1650,
 				"upkeep-cost": 412,
@@ -11878,7 +11882,7 @@
 				"unit-type": "Flying Monster",
 				"units": 1,
 				"health": 6008,
-				"armour": 50,
+				"armour": 60,
 				"leadership": 70,
 				"speed": 95,
 				"melee-attack": 46,
@@ -11911,7 +11915,7 @@
 				"unit-type": "Flying Monster",
 				"units": 1,
 				"health": 7324,
-				"armour": 50,
+				"armour": 60,
 				"leadership": 75,
 				"speed": 85,
 				"melee-attack": 46,
@@ -12057,7 +12061,7 @@
 				"type": 1,
 				"unit-type": "Spear Infantry",
 				"units": 1,
-				"health": 5000,
+				"health": 5136,
 				"armour": 95,
 				"leadership": 75,
 				"speed": 34,
@@ -12066,7 +12070,7 @@
 				"weapon-strength": {
 					"weapon-damage": 130,
 					"armour-piercing-damage": 310,
-					"bonus-vs-large": 22
+					"bonus-vs-large": 30
 				},
 				"charge-bonus": 50,
 				"custom-cost": 1675,
@@ -12085,7 +12089,7 @@
 				"hasMounts": true,
 				"mounts": {
 					"Cold One": {
-						"health": 556,
+						"health": 420,
 						"armour": 15,
 						"speed": 34,
 						"charge-bonus": 20,
@@ -12102,7 +12106,7 @@
 						"custom-cost": 200
 					},
 					"Horned One": {
-						"health": 824,
+						"health": 688,
 						"armour": 25,
 						"speed": 42,
 						"charge-bonus": 35,
@@ -12119,14 +12123,14 @@
 						"custom-cost": 300
 					},
 					"Grymloq": {
-						"health": 3276,
+						"health": 3140,
 						"speed": 41,
 						"melee-attack": -2,
 						"melee-defence": -4,
 						"weapon-strength": {
 							"weapon-damage": 35,
 							"armour-piercing-damage": 65,
-							"bonus-vs-large": 13
+							"bonus-vs-large": 5
 						},
 						"charge-bonus": 17,
 						"attributes": {
@@ -12141,6 +12145,144 @@
 							"16": null
 						},
 						"custom-cost": 900
+					}
+				}
+			},
+			"red-crested-skink-chief": {
+				"name": "Red Crested Skink Chief",
+				"type": 2,
+				"unit-type": "Great Axe Infantry",
+				"units": 1,
+				"health": 3772,
+				"armour": 50,
+				"leadership": 65,
+				"speed": 46,
+				"melee-attack": 55,
+				"melee-defence": 45,
+				"weapon-strength": {
+					"weapon-damage": 120,
+					"armour-piercing-damage": 220,
+					"bonus-vs-large": 30,
+					"bonus-vs-infantry": 0
+				},
+				"charge-bonus": 40,
+				"ammunition": 0,
+				"range": 0,
+				"missile-damage": {
+					"missile-damage": 0,
+					"armour-piercing-missile-damage": 0,
+					"number-of-projectiles": 0,
+					"reload-time": 0
+				},
+				"custom-cost": 988,
+				"recruitment-cost": 750,
+				"upkeep-cost": 187,
+				"attributes": {
+					"7": null,
+					"19": null,
+					"42": "Melee",
+					"124": "Melee || (10 seconds) -20% Armour-Piercing Missile Damage, -24% Speed, -20% Weapon Damage, -20% Armour-Piercing Damage, -20% Missile Damage",
+					"107": null,
+					"32": "15%",
+					"24": null,
+					"2": null,
+					"1": null,
+					"16": null
+				},
+				"abilities": [287,436, 1, 437, 25, 104],
+				"hasMounts": true,
+				"mounts": {
+					"Horned One": {
+						"health": 608,
+						"armour": 30,
+						"speed": 32,
+						"weapon-strength": {
+							"weapon-damage": -5,
+							"armour-piercing-damage": 45
+						},
+						"charge-bonus": 25,
+						"attributes": {
+							"7": null,
+							"19": null,
+							"42": "Melee",
+							"124": "Melee || (10 seconds) -20% Armour-Piercing Missile Damage, -24% Speed, -20% Weapon Damage, -20% Armour-Piercing Damage, -20% Missile Damage",
+							"107": null,
+							"32": "15%",
+							"11": null,
+							"2": null,
+							"1": null,
+							"16": null
+						},
+						"custom-cost": 300
+					},
+					"Ripperdactyl": {
+						"health": 608,
+						"speed": 44,
+						"weapon-strength": {
+							"weapon-damage": 0,
+							"armour-piercing-damage": 60,
+							"bonus-vs-large": -30,
+							"bonus-vs-infantry": 20
+						},
+						"charge-bonus": 15,
+						"attributes": {
+							"7": null,
+							"19": null,
+							"42": "Melee",
+							"124": "Melee || (10 seconds) -20% Armour-Piercing Missile Damage, -24% Speed, -20% Weapon Damage, -20% Armour-Piercing Damage, -20% Missile Damage",
+							"107": null,
+							"32": "15%",
+							"11": null,
+							"2": null,
+							"16": null
+						},
+						"custom-cost": 400
+					},
+					"Ancient Stegadon": {
+						"health": 6124,
+						"armour": 90,
+						"leadership": 10,
+						"speed": 4,
+						"melee-attack": -29,
+						"melee-defence": -13,
+						"weapon-strength": {
+							"weapon-damage": 20,
+							"armour-piercing-damage": 120,
+							"bonus-vs-large": -30,
+							"bonus-vs-infantry": 18
+						},
+						"charge-bonus": 30,
+						"ammunition": 10,
+						"range": 115,
+						"missile-damage": {
+							"missile-damage": 41,
+							"armour-piercing-missile-damage": 14,
+							"number-of-projectiles": 8,
+							"reload-time": 6.3
+						},
+						"attributes": {
+							"10": null,
+							"5": null,
+							"7": null,
+							"32": "15%",
+							"33": null,
+							"11": null,
+							"12": null,
+							"2": null,
+							"25": null,
+							"16": null,
+							"42": "Ranged",
+							"124": "Ranged || (10 seconds) -20% Armour-Piercing Missile Damage, -24% Speed, -20% Weapon Damage, -20% Armour-Piercing Damage, -20% Missile Damage"
+						},
+						"abilities": [
+							287,
+							436,
+							1,
+							437,
+							25,
+							104
+						],
+						"custom-cost": 1200
 					}
 				}
 			},
@@ -13121,8 +13263,8 @@
 				"armour": 90,
 				"leadership": 75,
 				"speed": 66,
-				"melee-attack": 34,
-				"melee-defence": 28,
+				"melee-attack": 32,
+				"melee-defence": 27,
 				"weapon-strength": {
 					"weapon-damage": 15,
 					"armour-piercing-damage": 35
@@ -13152,8 +13294,8 @@
 				"armour": 90,
 				"leadership": 75,
 				"speed": 66,
-				"melee-attack": 30,
-				"melee-defence": 28,
+				"melee-attack": 28,
+				"melee-defence": 27,
 				"weapon-strength": {
 					"weapon-damage": 14,
 					"armour-piercing-damage": 34,
@@ -13185,8 +13327,8 @@
 				"armour": 100,
 				"leadership": 85,
 				"speed": 78,
-				"melee-attack": 47,
-				"melee-defence": 30,
+				"melee-attack": 45,
+				"melee-defence": 29,
 				"weapon-strength": {
 					"weapon-damage": 19,
 					"armour-piercing-damage": 41
@@ -16894,7 +17036,7 @@
 				"leadership": 80,
 				"speed": 34,
 				"melee-attack": 55,
-				"melee-defence": 40,
+				"melee-defence": 45,
 				"weapon-strength": {
 					"weapon-damage": 230,
 					"armour-piercing-damage": 150
@@ -16955,7 +17097,8 @@
 						"melee-defence": -20,
 						"weapon-strength": {
 							"weapon-damage": -65,
-							"armour-piercing-damage": -70
+							"armour-piercing-damage": -70,
+							"bonus-vs-infantry": 15
 						},
 						"charge-bonus": 20,
 						"attributes": {
@@ -16970,7 +17113,7 @@
 							"37": "Melee",
 							"38": "Melee"
 						},
-						"custom-cost": 750
+						"custom-cost": 700
 					}
 				},
 				"excluded": ["middenland"]
@@ -18729,7 +18872,7 @@
 				"armour": 160,
 				"leadership": 100,
 				"speed": 48,
-				"melee-attack": 30,
+				"melee-attack": 32,
 				"melee-defence": 10,
 				"weapon-strength": {
 					"weapon-damage": 60,
@@ -19188,7 +19331,8 @@
 							"52": null,
 							"37": "Ranged"
 						},
-						"abilities": [246,247,248,253,39,257,258,259]
+						"abilities": [246,247,248,253,39,257,258,259],
+						"custom-cost": 600
 					}
 				},
 				"excluded": ["court-of-lybaras", "followers-of-nagash"]
@@ -19761,7 +19905,7 @@
 					"armour-piercing-damage": 7
 				},
 				"charge-bonus": 15,
-				"custom-cost": 575,
+				"custom-cost": 525,
 				"recruitment-cost": 0,
 				"upkeep-cost": 0,
 				"attributes": {
@@ -20057,8 +20201,8 @@
 					"armour-piercing-damage": 10,
 					"bonus-vs-infantry": 12
 				},
-				"charge-bonus": 52,
-				"custom-cost": 750,
+				"charge-bonus": 58,
+				"custom-cost": 700,
 				"recruitment-cost": 0,
 				"upkeep-cost": 0,
 				"attributes": {
@@ -20161,7 +20305,7 @@
 					"armour-piercing-damage": 10,
 					"bonus-vs-infantry": 12
 				},
-				"charge-bonus": 52,
+				"charge-bonus": 58,
 				"ammunition": 40,
 				"range": 140,
 				"missile-damage": {
@@ -20198,7 +20342,7 @@
 					"armour-piercing-damage": 10
 				},
 				"charge-bonus": 12,
-				"custom-cost": 350,
+				"custom-cost": 400,
 				"recruitment-cost": 0,
 				"upkeep-cost": 0,
 				"attributes": {
@@ -20357,7 +20501,7 @@
 				"weapon-strength": {
 					"weapon-damage": 21,
 					"armour-piercing-damage": 57,
-					"bonus-vs-large": 21
+					"bonus-vs-large": 24
 				},
 				"charge-bonus": 10,
 				"ammunition": 3,
@@ -20594,8 +20738,8 @@
 				"ammunition": 20,
 				"range": 350,
 				"missile-damage": {
-					"missile-damage": 67,
-					"armour-piercing-missile-damage": 304,
+					"missile-damage": 80,
+					"armour-piercing-missile-damage": 324,
 					"explosive-base-damage": 102,
 					"explosive-armour-piercing-damage": 66,
 					"bonus-vs-large": 150,
@@ -20670,7 +20814,7 @@
 				"armour": 100,
 				"leadership": 60,
 				"speed": 32,
-				"melee-attack": 52,
+				"melee-attack": 56,
 				"melee-defence": 45,
 				"weapon-strength": {
 					"weapon-damage": 137,
@@ -20829,8 +20973,8 @@
 				"missile-damage": {
 					"missile-damage": 40,
 					"armour-piercing-missile-damage": 90,
-					"explosive-base-damage": 24,
-					"explosive-armour-piercing-damage": 56,
+					"explosive-base-damage": 28,
+					"explosive-armour-piercing-damage": 64,
 					"number-of-projectiles": 7,
 					"reload-time": 17.1
 				},
@@ -20950,8 +21094,8 @@
 				"type": 1,
 				"unit-type": "Wizard",
 				"units": 1,
-				"health": 5496,
-				"armour": 110,
+				"health": 4996,
+				"armour": 100,
 				"leadership": 75,
 				"speed": 38,
 				"melee-attack": 45,
@@ -20982,8 +21126,8 @@
 				"hasMounts": true,
 				"mounts": {
 					"Necrofex Colossus": {
-						"health": 4379,
-						"armour": -35,
+						"health": 4879,
+						"armour": -25,
 						"speed": 7,
 						"melee-attack": 1,
 						"melee-defence": -30,
@@ -21657,10 +21801,10 @@
 				"unit-type": "Melee Specialist",
 				"units": 1,
 				"health": 6568,
-				"armour": 50,
+				"armour": 40,
 				"leadership": 60,
 				"speed": 54,
-				"melee-attack": 50,
+				"melee-attack": 48,
 				"melee-defence": 38,
 				"weapon-strength": {
 					"weapon-damage": 140,
@@ -22141,7 +22285,7 @@
 				"type": 5,
 				"unit-type": "Pistol Missile Infantry",
 				"units": 160,
-				"health": 9280,
+				"health": 8640,
 				"armour": 15,
 				"leadership": 30,
 				"speed": 23,
@@ -22183,19 +22327,19 @@
 				"name": "Zombie Pirate Gunnery Mob (Bombers)",
 				"type": 5,
 				"unit-type": "Explosives Infantry",
-				"units": 120,
-				"health": 6960,
+				"units": 160,
+				"health": 8640,
 				"armour": 15,
 				"leadership": 30,
 				"speed": 23,
-				"melee-attack": 8,
-				"melee-defence": 7,
+				"melee-attack": 12,
+				"melee-defence": 6,
 				"weapon-strength": {
 					"weapon-damage": 13,
 					"armour-piercing-damage": 2
 				},
-				"charge-bonus": 2,
-				"ammunition": 3,
+				"charge-bonus": 7,
+				"ammunition": 5,
 				"range": 55,
 				"missile-damage": {
 					"missile-damage": 1,
@@ -22229,12 +22373,12 @@
 				"type": 5,
 				"unit-type": "Missile Infantry",
 				"units": 160,
-				"health": 9280,
+				"health": 8640,
 				"armour": 15,
 				"leadership": 30,
 				"speed": 23,
 				"melee-attack": 8,
-				"melee-defence": 7,
+				"melee-defence": 6,
 				"weapon-strength": {
 					"weapon-damage": 13,
 					"armour-piercing-damage": 2
@@ -22271,13 +22415,13 @@
 				"name": "Zombie Pirate Gunnery Mob (Hand Cannons)",
 				"type": 5,
 				"unit-type": "Close-Quarters Missile Infantry",
-				"units": 120,
-				"health": 6960,
+				"units": 160,
+				"health": 8640,
 				"armour": 15,
 				"leadership": 30,
 				"speed": 23,
 				"melee-attack": 8,
-				"melee-defence": 7,
+				"melee-defence": 6,
 				"weapon-strength": {
 					"weapon-damage": 13,
 					"armour-piercing-damage": 2
@@ -22291,7 +22435,7 @@
 					"reload-time": 13.0,
 					"number-of-projectiles": 3
 				},
-				"custom-cost": 550,
+				"custom-cost": 600,
 				"recruitment-cost": 0,
 				"upkeep-cost": 0,
 				"attributes": {
@@ -22357,12 +22501,12 @@
 				"type": 5,
 				"unit-type": "Regiment of Renown",
 				"units": 160,
-				"health": 9280,
+				"health": 8640,
 				"armour": 15,
 				"leadership": 40,
 				"speed": 23,
 				"melee-attack": 18,
-				"melee-defence": 17,
+				"melee-defence": 16,
 				"weapon-strength": {
 					"weapon-damage": 8,
 					"armour-piercing-damage": 19,
@@ -22587,10 +22731,10 @@
 				"unit-type": "Monstrous Infantry",
 				"units": 16,
 				"health": 8960,
-				"armour": 40,
+				"armour": 30,
 				"leadership": 50,
 				"speed": 45,
-				"melee-attack": 38,
+				"melee-attack": 36,
 				"melee-defence": 24,
 				"weapon-strength": {
 					"weapon-damage": 30,
@@ -22663,10 +22807,10 @@
 				"unit-type": "Regiment of Renown",
 				"units": 16,
 				"health": 8960,
-				"armour": 40,
+				"armour": 30,
 				"leadership": 72,
 				"speed": 45,
-				"melee-attack": 54,
+				"melee-attack": 52,
 				"melee-defence": 34,
 				"weapon-strength": {
 					"weapon-damage": 36,
@@ -22938,7 +23082,7 @@
 					"number-of-projectiles": 3,
 					"reload-time": 9.1
 				},
-				"custom-cost": 1500,
+				"custom-cost": 1600,
 				"recruitment-cost": 0,
 				"upkeep-cost": 0,
 				"attributes": {
@@ -24664,8 +24808,8 @@
 					"armour-piercing-damage": 2
 				},
 				"charge-bonus": 3,
-				"custom-cost": 150,
-				"recruitment-cost": 150,
+				"custom-cost": 100,
+				"recruitment-cost": 100,
 				"upkeep-cost": 50,
 				"attributes": {
 					"54": null,
@@ -24810,7 +24954,7 @@
 				"armour": 0,
 				"leadership": 38,
 				"speed": 48,
-				"melee-attack": 26,
+				"melee-attack": 28,
 				"melee-defence": 20,
 				"weapon-strength": {
 					"weapon-damage": 6,
@@ -24882,8 +25026,8 @@
 					"armour-piercing-damage": 2
 				},
 				"charge-bonus": 3,
-				"custom-cost": 250,
-				"recruitment-cost": 250,
+				"custom-cost": 200,
+				"recruitment-cost": 200,
 				"upkeep-cost": 96,
 				"attributes": {
 					"54": null,
@@ -25286,13 +25430,13 @@
 				"armour": 10,
 				"leadership": 62,
 				"speed": 92,
-				"melee-attack": 40,
+				"melee-attack": 50,
 				"melee-defence": 24,
 				"weapon-strength": {
 					"weapon-damage": 62,
 					"armour-piercing-damage": 38
 				},
-				"charge-bonus": 22,
+				"charge-bonus": 26,
 				"custom-cost": 1000,
 				"recruitment-cost": 1000,
 				"upkeep-cost": 250,
@@ -25348,13 +25492,13 @@
 				"armour": 10,
 				"leadership": 72,
 				"speed": 92,
-				"melee-attack": 47,
+				"melee-attack": 57,
 				"melee-defence": 34,
 				"weapon-strength": {
 					"weapon-damage": 62,
 					"armour-piercing-damage": 38
 				},
-				"charge-bonus": 22,
+				"charge-bonus": 26,
 				"custom-cost": 1300,
 				"recruitment-cost": 1475,
 				"upkeep-cost": 300,
@@ -25575,8 +25719,8 @@
 				"melee-attack": 50,
 				"melee-defence": 42,
 				"weapon-strength": {
-					"weapon-damage": 85,
-					"armour-piercing-damage": 205
+					"weapon-damage": 95,
+					"armour-piercing-damage": 225
 				},
 				"charge-bonus": 50,
 				"custom-cost": 1400,
@@ -28698,8 +28842,8 @@
 					"bonus-vs-large": 15
 				},
 				"charge-bonus": 12,
-				"custom-cost": 1250,
-				"recruitment-cost": 1200,
+				"custom-cost": 1300,
+				"recruitment-cost": 1250,
 				"upkeep-cost": 300,
 				"attributes": {
 					"62": null,
@@ -28779,8 +28923,8 @@
 					"number-of-projectiles": 1,
 					"reload-time": 9.9
 				},
-				"custom-cost": 550,
-				"recruitment-cost": 550,
+				"custom-cost": 500,
+				"recruitment-cost": 500,
 				"upkeep-cost": 138,
 				"attributes": {
 					"62": null,
@@ -28850,8 +28994,8 @@
 				"ammunition": 22,
 				"range": 170,
 				"missile-damage": {
-					"missile-damage": 18,
-					"armour-piercing-missile-damage": 4,
+					"missile-damage": 15,
+					"armour-piercing-missile-damage": 7,
 					"number-of-projectiles": 1,
 					"reload-time": 9.9
 				},
@@ -28864,7 +29008,8 @@
 					"42": "Ranged",
 					"124": "Ranged || (10 seconds) -20% Armour-Piercing Missile Damage, -24% Speed, -20% Weapon Damage, -20% Armour-Piercing Damage, -20% Missile Damage",
 					"1": null,
-					"25": null
+					"25": null,
+					"37": "Ranged"
 				},
 				"abilities": {},
 				"hasMounts": false,
@@ -28970,7 +29115,7 @@
 					"missile-damage": 6,
 					"armour-piercing-missile-damage": 20,
 					"number-of-projectiles": 1,
-					"reload-time": 9.0
+					"reload-time": 9.9
 				},
 				"custom-cost": 1100,
 				"recruitment-cost": 1100,
@@ -29010,7 +29155,7 @@
 					"missile-damage": 6,
 					"armour-piercing-missile-damage": 20,
 					"number-of-projectiles": 1,
-					"reload-time": 7.0
+					"reload-time": 7.7
 				},
 				"custom-cost": 1450,
 				"recruitment-cost": 1450,
@@ -29156,8 +29301,8 @@
 					"number-of-projectiles": 1,
 					"reload-time": 9.9
 				},
-				"custom-cost": 725,
-				"recruitment-cost": 725,
+				"custom-cost": 700,
+				"recruitment-cost": 700,
 				"upkeep-cost": 181,
 				"attributes": {
 					"62": null,
@@ -29189,8 +29334,8 @@
 				"ammunition": 20,
 				"range": 150,
 				"missile-damage": {
-					"missile-damage": 18,
-					"armour-piercing-missile-damage": 4,
+					"missile-damage": 15,
+					"armour-piercing-missile-damage": 7,
 					"number-of-projectiles": 1,
 					"reload-time": 9.9
 				},
@@ -29204,7 +29349,8 @@
 					"42": "Ranged",
 					"124": "Ranged || (10 seconds) -20% Armour-Piercing Missile Damage, -24% Speed, -20% Weapon Damage, -20% Armour-Piercing Damage, -20% Missile Damage",
 					"1": null,
-					"25": null
+					"25": null,
+					"37": "Ranged"
 				},
 				"abilities": {},
 				"hasMounts": false,
@@ -29324,13 +29470,13 @@
 				"armour": 80,
 				"leadership": 70,
 				"speed": 34,
-				"melee-attack": 20,
-				"melee-defence": 54,
+				"melee-attack": 25,
+				"melee-defence": 51,
 				"weapon-strength": {
 					"weapon-damage": 40,
 					"armour-piercing-damage": 18
 				},
-				"charge-bonus": 14,
+				"charge-bonus": 12,
 				"custom-cost": 900,
 				"recruitment-cost": 900,
 				"upkeep-cost": 225,
